@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Augmented Reality Dungeons and Dragons</title>
+  <meta name="description" content="Amber Miller User Experience Researcher, Designer and Developer Portfolio">
+  <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
+  <meta name="author" content="Amber Miller">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+<style>
+    .swiper {
+  width: 600px;
+  height: 300px;
+}
+/* .swiper {
+      width: 100%;
+      height: 100%;
+    } */
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/caseStudy.css">
+ 
+</head>
+  <body>
+    <section class="navbar-holder">
+      <div class="topnav" id="myTopnav">
+        <a class="logo" href="/"></a>
+        <a href="/projects.html">Case Studies</a>
+        <a href="/designs.html">Designs</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="linkBtn">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+    </section>
+        <section class="firstSection">
+            <section class="HeroSection">
+                <div class="container">
+                  <h1>ARDND Research and Design Project</h1>
+                  <h3>Project Goal:</h3><h2> Explore the possible application of mixed reality to help people stay connected over video call games </h2>
+                </div>
+        </section>
+            <section class="problemStatement">
+              <div class="container">
+                <h2>Problem Statament</h2>
+                <div class="row">
+                <h4>Lockdown and Social Isolation had a massive impact on social connectedness. Focussing on the players of Dungeons and Dragons, how can mixed reality take social games beyond the video call to help people stay connected and have fun the same as when they played in person?</h4>
+            </div>
+            </div>
+              </section>
+              <section class="sectionHeading">
+                <h4>Project Plan</h4>
+            </section>
+            <section class="startofTopic">
+                <div class="container">
+                    <h4>Project Resources</h4>
+                    <div class="row ">
+                        
+                       <div class="col-md-4">
+                        <h4>Team</h4>
+                        <ul>
+                            <li>Myself, <span>UX/UI Designer, UX Researcher, AR Developer</span></li>
+                        </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Resources</h4>
+                        <ul>
+                            <li>User Interviews</li>
+                            <li>Focus Groups</li>
+                            <li>Empathy Mapping</li>
+                            <li>Figma - Mock Ups and Interactive Prototyping</li>
+                            <li>Blockly - Front end of interface</li>
+                        </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Timeframe: 8 months</h4>
+                            <ul>
+                                <li> Months One - Two <span>Research and Scoping project. Initial observational studies.</span></li>
+                                <li> Months Three - Five <span>Prototyping and Design. Further observational studies</span></li>
+                                <li> Month Six - Seven <span>Design and Development</span></li>
+                                <li>Month Eight <span>User Testing and Review</span></li>
+                            </ul>
+                            </div>
+                     </div>
+                </div>
+            </section>
+            <section class="endOfTopic">
+                <div class="container">
+                    <h4>What is the project?</h4>
+                    <div class="row">
+                       <p> Dungeons & Dragons is a tabletop role-play game where players collaborate together to build a world in which they explore and solve quests. Covid-19 has negatively affected everyone, limiting social contact to video calls, and I wanted to explore the specific impact of this on the dungeons and dragons community. By conducting research, and using design thinking, it was possible to present a potential solution to alleviate some player problems. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionHeading">
+                <div class="container">
+                    <h2>Exploration and Discovery</h2>
+                </div>
+            </section>
+            <section class="startofTopic">
+                <div class="container">
+                    <h3>Establishing a D&D Baseline</h3>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p> To understand the challenge, we must first understand what players have been used to. No two groups would necessarily play the same way, but some core assets of the game include:
+                        </p>
+                      </div>
+                        <div class="col-md-6">
+                             <ul>
+                                    <li>Dice - Dice are core to Dungeons and Dragons, their roll indicated probability, if a player rolls high it's likely what they rolled for will work, and scoring low typically results in failure. Examples of this are perception checks, rolling a 20 sided dice to see if you notice anythng interesting in an enviroment, rolling a 12 you may just find a cool plant, a 19 you notice the treasure chest behind the plant, while a roll of 1 you may not even notice the plant at all. </li>
+                                    <li>Character Sheets - These can be physical or digital sheets, that include information such as your characters abilitiies, their special features, any spells they know etc</li>
+                                    <li>Player Handbook - while not strictly necessary, it's good to keep it handy for reminders of how mecanics work, what ability different creatures have, spells etc.</li>
+                                </ul>
+                               
+                        </div>
+                        <div class="col-md-6">
+                          <img class="img-fluid" src="/images/ARDND/8.png" >
+                        </div>
+                      
+                        <!-- <div style="margin:auto; width:100%; display:flex; justify-content: space-between;">
+                        <img class="img-fluid" src="/images/ARDND/5.png" height="200" width="350">
+                        <img class="img-fluid" src="/images/ARDND/7.png" height="200" width="350">
+                        <img class="img-fluid" src="/images/ARDND/8.png" height="200" width="350">
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <section>
+              <div class="container">
+                <div class="row manualFlip">
+                  <div class="col-md-6">
+                    <p>Many in-person groups also embelish beyond this with any number of the following examples:
+                      </p>
+                      <ul>
+                            <li>Character Tokens - Physical props representing different characters, races, classes, creatures etc. These can be highly personal and as simple or as embellished as preferred</li>
+                            <li>Music - Speaker set up with music themed for the gameplay style</li>
+                            <li>Maps - Typically a printed or hand drawn representation of the entire world or the current playable enviroment</li>
+                            <li>Whiteboard - Not essential, but an excellent embellishment on maps is an adjustable surface to redraw the enviroment or keep track of information</li>
+                            <li>Notebooks - Players often like to keep track of events and experiences to refer back to at later points</li>
+                        </ul>
+                        </div>
+              <div class="col-md-6">
+              
+                <img class="img-fluid" src="/images/ARDND/5.png" height="200" width="350">
+                <br>
+                <br>
+                        <img class="img-fluid" src="/images/ARDND/7.png" height="200" width="350">
+              </div>
+                </div>
+              </div>
+            </section>
+                <section>
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                              <h3>Researcher as Participant Observational Studies</h2>
+                                <p> As a player myself, I sat in on several games with players consent to take notes on pain points and challenges adapting to the online enviroment. This group were using an online platform Roll20 to try and emulate the in-person experiene, which features maps and movable tokens to represent players and non-playable characters.<br>
+                                    The initial observations included some of the primary emotions involved in the player experience being confusion, lack of enthusiasm and frustration due to challenges such as visualisation of tasks, internet issues, and lack of engagement due to playing alone talking to a camera.</p>        
+                            </div>
+                            <div class="col-md-6">
+                            <p> Some important observation quotes included: <br><ul class="importantQuote">
+                                <li>"Ahh sorry my internet cut out again. Where did you get to?"</li>
+                                <li>"Wait I lost track who's left?" (Who referring to characters in the game) </li>
+                                <li>"Wait who's turn is it again?"</li>
+                                <li>"Hang on I know this let me find the right tab" (Players often have multiple browser tabs open to reference useful information. This would typically be a book kept on the table in person.) </li>
+                            </ul></p></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                       
+                        <div class="row manualFlip">
+                            <div class="col-md-6">
+                              <h3>The Dungeon Master</h3>
+                                <p>For d&d to work, one person must lead the game, narrating the story and controlling the non-player characters, and they are called the Dungeon Master. To create a positive experience for everyone, it was important they didn't feel left out. Some pain points noted for dungeon masters included:
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                 <ul class="importantQuote">
+                                    <li>"It takes way longer to set up. In person I have a box of characters I can look through and use, but now I have to search on google for every single character and load up their picture"</li>
+                                    <li>"Noone is as creative without the maps. When I draw a map in person and we move our characters about it, people play smart, try to hide or use the enviroment to their advantage. Online even with a picture noone wants to think outside the box"</li>
+                                    <li>"One new thing I like about online is that when there's something only one or two characters should know about, I just message the players directly, to keep it a secret."</li>
+                                </ul>
+                         
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        
+                        <div class="row" style="justify-content: center;margin-top:4rem;">
+                          <h3>Empathy Mapping</h3>
+                          <div class="col-md-12" style="align-items: center;">
+                                <p>These observations were turned into a summative empathy map, to chart the general consensus of how it felt to play D&D online when players are used to in person games.</p>
+                                <img class="img-fluid" height="65%" width="72%" src="/images/ARDND/0001.jpg">
+                            </div>
+                            </div>
+                           
+                    </div>
+                </section>
+                <section class="endOfTopic">
+                    <div class="container">
+               
+                        <div class="row manualFlip">
+                            <div class="col-md-5">
+                                <p>To help further identify pain points, I broke down the gameplay of Dungeons and Dragons to it's core, to identify what the solution <b>had</b> to cover as a minimum. This boiled down to three distinct sections <br>
+                                    <ul>
+                                        <li><b>Rolling</b> - Players roll dice to determine outcomes of decisions and probablity of something happening</li>
+                                        <li><b>Encounters</b> - Players meet characters throughout their gameplay, some may be friends to offer aid, neutral to provide a service or exposition, or foes to defeat.</li>
+                                        <li><b>Explorations</b> - Players are often described a location or enviroment to explore and search for items, oftentimes clues, supplies or an artefact.</li>
+                                    </ul> </p>
+                            </div>
+                            <div class="col-md-7">
+                              <h3>Identify Minimum Viable Product</h3>
+                                <img class="img-fluid" width="100%" height="100%" src="/images/ARDND/0001 2.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="sectionHeading">
+                    <div class="container">
+                        <h2>User Experience Design</h2>
+                    </div>
+                    </section>
+                <section class="startofTopic">
+                    <div class="container">
+                        <h3>Design Decisions</h3>
+                        <div class="row importantQuote">
+                            <p> From observations, it became clear players needed a way to track lots of information in one place, while the solution needed to avoid drawing immersion away from the playing experience. <br>
+                              A mobile app was selected as the design output to allow computers to be reserved for communicating with the other players.<br>
+                                 Based on visualisation being a reoccurant problem augmented reality was selected for use as their was already a required physical artefact for playing, dice, allowing them to form the base for physical triggers for an augmented reality experience.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h3>Addressing the 3 core aspects of d&d</h3>
+                        <div class="row manualFlip">
+                            <p>ARDND is a mobile app and dice. They work in tangent, with the dice functioning for gameplay and as a target for augmented reality. The app is split into 3 modes:</p>
+                            <div class="col-md-6">​<ul>
+                            <li><b>Rolling</b> - for seeing the outcome of dice rolls such as probability checks, magical attacks and investigation rolls. For example, a successful Fireball spell would reveal a huge flame, however a poor roll may result in a puff of smoke.</li>
+                            <li><b>Encounter</b> - to show the characters the players meet. This is particularly useful for allowing players to rely on physical stereotyping like they would with physical character models, trying to determine wether to trust a character</li>
+                            <li><b>Explore</b> - as an open-world game there are a variety of maps and environments players can enter, so by providing a visual aid its possible to increase immersion and allow better gameplay tactics</li>
+                            ​</ul>
+                        </div>
+                            <div class="col-md-6" style="align-items: center;">
+                             
+                                <div id="carousel-example" class="carousel slide" data-ride="carousel" style="width:50%; margin:auto;">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carousel-example" data-slide-to="1"></li>
+                                      <li data-target="#carousel-example" data-slide-to="2"></li>
+                                      <li data-target="#carousel-example" data-slide-to="3"></li>
+                                      <li data-target="#carousel-example" data-slide-to="4"></li>
+                                      <li data-target="#carousel-example" data-slide-to="5"></li>
+                                      <li data-target="#carousel-example" data-slide-to="6"></li>
+                                    </ol>
+                                  
+                                    <div class="carousel-inner">
+                                      <div class="item active">
+                                         <a target="_blank" href="/images/ARDND/Sign In.png"><img src="/images/ARDND/Sign In.png" /></a>
+                                       
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/Home.png"><img src="/images/ARDND/Home.png" /></a>
+                                    
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/Character Sheet.png"><img src="/images/ARDND/Character Sheet.png" style="max-height:44rem;" /></a>
+                                    
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/Chat.png"><img src="/images/ARDND/Chat.png" /></a>
+                                      
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/AR - Roll.png"><img src="/images/ARDND/AR - Roll.png" /></a>
+                                      
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/AR - Encounter.png"><img src="/images/ARDND/AR - Encounter.png" /></a>
+                                      
+                                      </div>
+                                      <div class="item">
+                                        <a target="_blank" href="/images/ARDND/AR - Investigate.png"><img src="/images/ARDND/AR - Investigate.png" /></a>
+                                      
+                                      </div>
+                                      <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                      </a>
+                                      <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                      </a>
+                                    </div>
+                                    <h6> Initial prototypes to figure out navigation</H6>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h3>How will it work?</h3>
+                        <div class="row importantQuote">
+                            <p>ARDND addresses pain points around getting lost, confused and bored playing D&D by describing things and using static maps on roll20. The dungeon master can select from a gallery of common visual aids, and share it with players phones. The 3d model will then be mapped to their dice, allowing them to explore it in 3d space, just like they would physical character tokens.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                      
+                        <div class="row manualFlip" style="    margin-top: 5rem;">
+                          <div class="col-md-5">
+                            <h3>UI Design</h3>
+                            <p> For the UI Design I wanted the design to enhance and compliment the lore of the dungeons and dragons world, and took inspiration from scrolls and medieval games to capture a high-fantasy historic feel in keeping with the general D&D world. I also drew inspiration from snapchat for the easy convenient sliding buttons in the AR Experience as a way to transition between different view modes.</p>
+                            </div>
+                            <div class="col-md-7">
+                              <div id="carousel-final" class="carousel slide" data-ride="carousel" style="width:50%; margin:auto;">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carousel-final" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel-final" data-slide-to="1"></li>
+                                  <li data-target="#carousel-final" data-slide-to="2"></li>
+                                  <li data-target="#carousel-final" data-slide-to="3"></li>
+                                  <li data-target="#carousel-final" data-slide-to="4"></li>
+                            
+                                </ol>
+                              
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                     <a target="_blank" href="/images/ARDND/Sign In.png"><img src="/images/ARDND/Screenshot_20210502-162002_ARDND.jpg" /></a>
+                                   
+                                  </div>
+                                  <div class="item">
+                                    <a target="_blank" href="/images/ARDND/Character Sheet.png"><img src="/images/ARDND/Screenshot_20210502-170815_ARDND.jpg"  /></a>
+                                
+                                  </div>
+                                  <div class="item">
+                                    <a target="_blank" href="/images/ARDND/Chat.png"><img src="/images/ARDND/Screenshot_20210502-172456_ARDND.jpg" /></a>
+                                  
+                                  </div>
+                                  <div class="item">
+                                    <a target="_blank" href="/images/ARDND/AR - Roll.png"><img src="/images/ARDND/Screenshot_20210502-172533_ARDND.jpg" /></a>
+                                  
+                                  </div>
+                                  <div class="item">
+                                    <a target="_blank" href="/images/ARDND/AR - Encounter.png"><img src="/images/ARDND/Screenshot_20210502-172547_ARDND.jpg" /></a>
+                                  
+                                  </div>
+                                  
+                                  <a class="left carousel-control" href="#carousel-final" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-final" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                  </a>
+                                </div>
+
+                    </div>
+                             
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h3>Dice Design</h3>
+                            <p> Fiducial markers, similar to qr codes, were settled on as a simple and visually appealing means of easily triggering computer-based vision for AR. The dice prototypes went through several iterations to determine size and design complexity to be suitable for reliable camera detection.</p>
+                            <a target="_blank" href="/images/ARDND/dice/20210331_131022.jpg"><img class="img-fluid" src="/images/ARDND/dice/20210331_131022.jpg"  /></a>
+                          </div>
+                           <div class="col-md-8">
+                            <div id="carousel-dice" class="carousel slide" data-ride="carousel" style="width:50%; margin:auto;">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-dice" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-dice" data-slide-to="1"></li>
+                                <li data-target="#carousel-dice" data-slide-to="2"></li>
+                                <li data-target="#carousel-dice" data-slide-to="3"></li>
+                                <li data-target="#carousel-dice" data-slide-to="4"></li>
+                                <li data-target="#carousel-dice" data-slide-to="5"></li>
+                              
+                          
+                              </ol>
+                            
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <a target="_blank" href="/images/ARDND/dice/20210331_220849.jpg"><img src="/images/ARDND/dice/instagram.jpg"  /></a>
+                              
+                                </div>
+                               
+                                <div class="item">
+                                  <a target="_blank" href="/images/ARDND/dice/OldFiducialDiceObjectTarget.png"><img src="/images/ARDND/dice/OldFiducialDiceObjectTarget.png" /></a>
+                                
+                                </div>
+                                <div class="item">
+                                  <a target="_blank" href="/images/ARDND/dice/20210421_174942.jpg"><img src="/images/ARDND/dice/20210421_174942.jpg"  /></a>
+                              
+                                </div>
+                                <div class="item">
+                                  <a target="_blank" href="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg"><img src="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg" /></a>
+                                
+                                </div>
+                                <div class="item">
+                                  <a target="_blank" href="/images/ARDND/ARDND/FiducialDiceTemplate-WithInstructions.png">
+                                    <img class="img-fluid"  src="/images/ARDND/ARDND/FiducialDiceTemplate-WithInstructions.png">
+                                    </a>
+                                
+                                </div>
+                                
+                                <a class="left carousel-control" href="#carousel-dice" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-dice" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                              </div>
+
+                  </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="container">
+                        <h3>Development</h3>
+                        <div class="row importantQuote">
+                            <p>As per my honours project requirements, I built a minimally functional version of the system using the Unity engine as a base, Vuforia for augmented reality, and Photon PUN to create networking. This MVP included a shared server, where multiple phones could be connected to created a shared experience. There, one user could select what content to send to other players phones. In rolling mode, they could share the outcome of a fireball spell, in Encounter mode, the players meet a dragon, and in Explore mode players can explore outside an old house</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="endofTopic">
+                    <div class="container">
+                        <h3>Review with research participants</h3>
+                        <div class="row ">
+                          <div class="col-md-7">
+                            <p>The working experience was presened to the same research participans in a focus group setting. They were highly impressed with how many of their pain points were addressed in a singular design. They found the dice fun, and quickly understood without help how the experience worked.</p>
+                        </div>
+                        <div class="col-md-4">
+                              <a target="_blank" href="/images/ARDND/done.jpg"><img height="50%" class="img-fluid" src="/images/ARDND/done.jpg"> </a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="sectionHeading finalSections">
+                  <h2>Final Design</h2>
+                    <div class="contaner">
+                      
+                     
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div id="carousel-video" class="carousel slide" data-ride="carousel" data-mdb-interval="false">
+                              <!-- <ol class="carousel-indicators">
+                                <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-video" data-slide-to="1"></li>
+                              </ol> -->
+                              <div class="carousel-inner">
+                                <div class="item active" style="text-align: center;">
+                                  <video width="60%" style="position:relative;z-index:100" controls>
+                                    <source src="/images/ARDND/ARDND Demo labelled.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                                </div>
+                               
+                                <div class="item"  style="text-align: center;">
+                                  <video width="60%" style="position:relative;z-index:100" controls>
+                                    <source src="/images/ARDND/ARDND.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                                  </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-video" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-video" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                              </div>
+                          </div>
+                        
+                        </div>
+                        
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h3>Insights</h3>
+                        <div class="row">
+                            <ul class="importantQuote">
+                                <li> “This would be so sick at the height of the battle, everyone looking at you to save the day and then all watching if like the giant axe swings or something like that. It's almost like our own cinematic cutscene”</li>
+                                <li>  “This would simplify my setup time if I just search for like idk if you guys were exploring a town I'll just think of some buildings, load them up and boom you can explore like a tavern or a mill and all I did was click some things, but its way more impressive than some pictures I found on deviantart”</li>
+                                <li> “This'll sound bad but I love that this brings back the chance for me to be a bit of a pain. Like hmm yes I can now see the person I'm talking to and have decided my character won't like them because of their hat or something. Like it's way easier to do the (nonsense) I usually do this way that with the wee pictures on roll20”</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h3>Learnings</h3>
+                        <div class="row importantQuote">
+                          <p>I feel I successfully navigated the users pain points well, managing to address a wide array in a single solution. It goes beyond providing a tool to enhance the game play, but allows players to connect in shared augmented reality. Testing revealed the power of the solution, as it was immediatly obvious the surge in creativity and innovation in players compared to the online games, and most importantly they were visibly having fun.</p>
+                            <p>The prototype requires further iteration before being a marketable project. An idealised version would have a filterable database based on the player handbook to store all 3D Models and effects to make displaying content straightforward. It would also be envisioned voice recognition would be incorporated to trigger animations and displays based on voice commands to reduce manual user input.
+                            While this project needs work to get to a desirable standard, it has been suggested by multiple interested parties the product should be brought to Kickstarter, so ARDND could eventually become a reality for tabletop role-play players everywhere.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>   
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
