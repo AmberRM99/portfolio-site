@@ -1,0 +1,358 @@
+:root {
+    --mainGrey: #575757;
+    --orange: #F88B58;
+    --darkOrange:#e15210;
+    --white:#ffffff;
+    --black:#000000;
+    /* --lightGrey:#CDD6DD; */
+    --lightGrey:#dbd9d8;
+    --darkGrey:#1f1f1f;
+    --bg:#e7e7e7
+  }
+
+body{
+    background: var(--bg);
+    color:var(--darkGrey);
+    font-family:'Open Sans';
+}
+/* html {
+  scroll-snap-type: y mandatory;
+}
+
+section:not(.navbar-holder){
+  
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-snap-type: y mandatory;
+
+  } */
+
+  img{
+    border-radius:10px;
+  }
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: var(--mainGrey);
+    color: white;
+  }
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a, footer a{
+  color: var(--orange);
+}
+
+a:hover{
+  color: var(--darkOrange);
+}
+
+footer .footer-social ul {
+    display: flex;
+    justify-content: flex-start;
+}
+  
+  .navbar-holder{
+    background: var(--mainGrey);
+    block-size: 5%;
+    top: 0;
+    position:fixed;
+    z-index:100;
+    width:100%;
+  }
+  
+    .mynavbar{
+      list-style-type: none;
+    margin: 0;
+    font-size: 1.2rem;
+    height: 4rem;
+    padding: 0;
+    padding-right: 8px;
+    width:100%;
+    position:fixed;
+    background: var(--mainGrey);
+    }
+
+    .mynavbar a{
+        color: var(--white)
+    }
+
+    .logoHolder{
+      width:50%;
+    }
+
+    .h2-title{
+      text-align:center;
+      margin:2rem 0;
+      border-bottom: 2px solid var(--orange)
+    }
+  
+    .projectPreview{
+      background: var(--lightGrey);
+      height:20rem;
+      border-radius:10px;
+        margin-bottom:2rem;
+        /* color:var(--white); */
+        text-align:center;
+        filter:drop-shadow(0 7px 4px var(--mainGrey));
+        transition:all .2s ease;
+      }
+      .projectPreview:nth-child(odd) {
+        margin-right:2rem;
+      }
+
+      .projectPreview h6{
+        font-weight:bolder;
+        padding: 10px 0;
+     
+      }
+
+      .projectPreview:hover{
+transform:scale(1.05);
+filter:drop-shadow(0 0 4px var(--orange));
+      }
+
+    .previewImg{
+      height:100%;
+      width:100%;
+      border:2px solid var(--mainGrey);
+      border-radius:5px;
+    }
+
+    .previewImgContainer{
+      height: 75%;
+      width: 85%;
+      margin:auto;
+    }
+    
+    .projectRow{
+        justify-content: center;
+    }
+  
+    /* li {
+    float: left;
+  } */
+
+  .firstSection{
+    min-height:calc(100vh - 4rem);
+    margin-top:4rem;
+  }
+  
+  .landing{
+    margin-top:4rem;
+    background-image: url('/canva-assets/lightbulbs-resized.png');
+    background-size:100vw calc(100vh - 4rem);
+    height:calc(100vh - 4rem);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    /* background-color: #dddddd; */
+  }
+
+  .projectLink, .projectLink:hover{
+    text-decoration: none;
+    padding: 0;
+    display: unset;
+    color:inherit;
+  }
+  
+  .linkBtn{
+    background:var(--orange);
+    border-radius:5px;
+    border:none;
+    color:white;
+    font-weight: bolder;
+    transition:all .2s ease;
+    text-decoration: none;
+  }
+
+  .linkBtn:hover{
+  background:var(--darkOrange);
+  transform:scale(1.05);
+  color:var(--white);
+  text-decoration: none;
+  }
+  
+  .headerBtn{
+    width:40%;
+    display: inline-block
+  }
+
+  /* .tag{
+    display:none
+  } */
+
+  .socialBtn{
+    background:var(--orange);
+    border-radius:50%;
+    padding:5px;
+    transition: all .2s ease;
+    max-height:5rem;
+    max-width:5rem;
+    margin:1rem;
+  }
+  .socialBtn:hover{
+    transform:scale(1.1);
+    background:var(--darkOrange);
+  
+  }
+
+  .Skills, .Achivements{
+    background:white;
+    border:2px solid var(--orange);
+    padding:5rem;
+    border-radius:5px;
+    filter:drop-shadow(0 0 6px var(--mainGrey));
+    font-weight:bold;
+  }
+
+  .Skills li, .Achivements li{
+margin: 1rem 0;
+  }
+
+  .Skills h3, .Achivements h3{
+    text-align:center
+  }
+  
+  .Skills{
+    height:100%;
+  }
+  
+  .Achivements{
+    margin:auto;
+  }
+  
+  .tag{
+    border-radius: 0% 100% 100% 0% / 100% 90% 90% 100%;
+    padding: 2px 10px;
+  }
+
+  .tagsHolder{
+    padding:5px;
+    font-size: 0.8em;
+  }
+  
+  .designer{
+    color: rgb(116, 10, 10)
+  }
+  
+  .researcher{
+    color:rgb(82, 11, 82);
+  }
+  
+  .developer{
+  color:rgb(14, 40, 93);
+  }
+
+  @media screen and (max-width:768px){
+    .projectPreview:nth-child(odd) {
+      margin-right:unset;
+    }
+
+    .logoHolder{
+      width:34%;
+    }
+
+    .landing{
+      background-image: none;
+    }
+    .landing .col-md-6{
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width:555px){
+ .mynavbar li{
+      width:min-content;
+    }
+    .mynavbar a:not(.linkBtn){
+      font-size:0.9em;
+      padding:0;
+    }
+  }
+
+  .topnav {
+    overflow: hidden;
+    background: var(--mainGrey);
+    display:flex;
+    justify-content: space-around;
+  }
+  .topnav .logo{
+      flex: 0 0 50%;
+  }
+
+  .logo {
+background-image: url("/logo/2.png");
+width: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+.logo:hover{
+  background-image: url("/logo/1.png");
+}
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+.logo{
+  height: 5rem;
+}
+      .topnav{
+          display:block;
+      }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
