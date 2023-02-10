@@ -331,6 +331,10 @@ background-position: center;
   .topnav .icon {
     display: none;
   }
+
+  .icon::before{
+    content:'/f0c9';
+  }
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
