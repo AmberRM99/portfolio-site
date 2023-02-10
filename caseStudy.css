@@ -149,6 +149,22 @@ ul.importantQuote span{
 ul.importantQuote li{
   font-size:1.6rem;
 }
+.carousel-indicators.video{
+  bottom:-5rem!important;
+}
+
+.carousel-indicators.video li{
+  background-color:var(--orange)
+}
+.youtube{
+  width:60vw;
+  height:63vh;
+}
+
+.finalArcVid{
+  width:64vw;
+  height:63vh;
+}
 
 /* .blocktypes{
   height:10em;
