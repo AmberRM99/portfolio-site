@@ -27,7 +27,7 @@ section:not(.navbar-holder){
 
   } */
 
-  img{
+  img:not(.blocks){
     border-radius:10px;
   }
 
