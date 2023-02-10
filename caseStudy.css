@@ -213,5 +213,8 @@ ul.importantQuote li{
     .manualFlip{
       flex-direction: column;
     }
+    html {
+      scroll-snap-type: none;
+    }
   }
 
