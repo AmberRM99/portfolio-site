@@ -78,10 +78,11 @@ li:not(.nav-item){
 
 .carousel-indicators .active {
   margin: 18px 6px;
+  background-color:var(--orange);
 }
 
 .carousel-indicators{
-  bottom:0!important;
+  bottom:-5rem!important;
 }
 
 /* .standAlone{
@@ -237,6 +238,9 @@ ul.importantQuote li{
     }
     html {
       scroll-snap-type: none;
+    }
+    .landing-img{
+      width:20%;
     }
   }
 

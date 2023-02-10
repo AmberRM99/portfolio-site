@@ -338,7 +338,7 @@ background-position: center;
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
-    margin-right: 2rem;
+    font-size:3rem;
       display: block;
     }
 .logo{
