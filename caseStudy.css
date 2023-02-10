@@ -94,6 +94,12 @@ display:flex;
 justify-content: center;
 } */
 
+.landing-img{
+  width:60%;
+  margin:auto;
+  filter:drop-shadow(0 2px 2px #692709)
+}
+
 .endOfTopic{
   background-position: bottom;
   width: 100vw;
