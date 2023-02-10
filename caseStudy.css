@@ -176,6 +176,23 @@ ul.importantQuote li{
 /* .blocktypes{
   height:10em;
 } */
+.niceHeaders{
+  width:100%;
+}
+
+.niceHeaders .col-md-4{
+align-items: center;
+}
+.smallHeader{
+  display:none;
+}
+.bigHeader{
+  display:block;
+}
+
+.resources .col-md-4{
+  justify-content: start;
+}
 
 .HeroSection{
     min-height:unset;
@@ -231,7 +248,7 @@ ul.importantQuote li{
       }
   @media only screen and (max-width: 780px){
     section:not(.navbar-holder){
-        min-height:100vh;
+        /* min-height:100vh; */
     }
     .manualFlip{
       flex-direction: column;
@@ -241,6 +258,15 @@ ul.importantQuote li{
     }
     .landing-img{
       width:20%;
+    }
+    .importantQuote{
+      padding:3rem;
+    }
+    .smallHeader{
+      display:block;
+    }
+    .bigHeader,.niceHeaders{
+      display:none;
     }
   }
 

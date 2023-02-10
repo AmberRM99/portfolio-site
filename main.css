@@ -193,9 +193,7 @@ filter:drop-shadow(0 0 4px var(--orange));
     display: inline-block
   }
 
-  /* .tag{
-    display:none
-  } */
+
 
   .socialBtn{
     background:var(--orange);
@@ -275,6 +273,9 @@ margin: 1rem 0;
       margin-bottom: 3rem;
       text-align: center;
     }
+      .tagsHolder{
+    display:none
+  }
   }
 
   @media screen and (max-width:555px){
