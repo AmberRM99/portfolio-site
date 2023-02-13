@@ -123,10 +123,12 @@ justify-content: center;
   background:var(--orange)
 }
 
+
 .sectionHeading h2{
 background: var(--orange);
 color: var(--bg);
 font-weight:bold;
+font-size:4rem;
 padding: 3rem 4rem;
 }
 .importantQuote{
@@ -137,10 +139,15 @@ padding: 3rem 4rem;
   filter:drop-shadow(0 0 6px var(--mainGrey));
 }
 
+.importantQuote h4, .importantQuote h3{
+  font-family:'Open Sans';
+}
+
 ul.importantQuote{
   padding: 1rem 7rem;
   font-weight:bold;
   list-style-type: none;
+  
 }
 
 li i{
@@ -195,6 +202,7 @@ align-items: center;
 }
 
 .HeroSection{
+text-align:center;
     min-height:unset;
     margin-top:4rem;
     height:calc(100vh - 4rem)!important;
@@ -247,9 +255,7 @@ align-items: center;
         clear: both;
       }
   @media only screen and (max-width: 780px){
-    section:not(.navbar-holder){
-        /* min-height:100vh; */
-    }
+  
     .manualFlip{
       flex-direction: column;
     }

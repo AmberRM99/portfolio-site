@@ -11,21 +11,35 @@
   }
 
 body{
+  font-size:16px;
     background: var(--bg);
     color:var(--darkGrey);
     font-family:'Open Sans';
 }
-/* html {
-  scroll-snap-type: y mandatory;
+
+.projectIntro h2,.projectIntro h3{
+  font-family:'Open Sans';
 }
 
-section:not(.navbar-holder){
-  
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  scroll-snap-type: y mandatory;
+h1{
+  font-size:35px;
+}
+h2{
+  font-size:30px;
+}
+h3{
+  font-size:28px;
+}
+h4{
+  font-size:24px;
+}
 
-  } */
+
+  h1, h2, h3, h4{
+    /* font-family: 'Gloria Hallelujah', cursive; */
+/* font-family: 'Shadows Into Light', cursive; */
+font-family:'Indie Flower', cursive;
+  }
 
   img:not(.blocks){
     border-radius:10px;
