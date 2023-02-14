@@ -18,12 +18,25 @@
     }
     </script>
     <style>
+      .headshot{
+        background: url(/images/me_headshot.jpg);
+    background-size: cover;
+    border-radius: 50% 50% 50% 50%;
+    width: 15rem;
+    height: 15rem;
+    border: 10px solid var(--orange);
+      }
       .firstSection{
         display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align:center;
+      }
+
+      .firstSection .container{
+        display: flex;
+    justify-content: space-around;
       }
 
       .aboutMe{
@@ -44,6 +57,9 @@
         }
       }
       </script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -68,9 +84,18 @@
     <section >
       <section class="firstSection">
         <div class="container aboutMe">
-<h1> About Me</h1>
-<h3>Hi there! I'm Amber Miller, I'm a UX/UI Designer, researcher and developer and all round creative type!</h3>
+          <div class="row">
+            <div class="col-md-8">
+<h1>Hi there! I'm Amber Miller.</h1> <br><br> <h2>I'm a UX/UI Designer, researcher, developer and all round creative type!</h2>
+<br>
 <p>I'm not your average User Experience professional, I bring a special blend of creativity and technical ability to the table. I not only turn research into powerful, problem solving prototypes, but I've also got the technical know-how to make sure they become a reality. I've designed for a range of sectors including fintech, education, lawtech and mixed reality, so I'm adaptable to any design challenge.</p>
+</div>
+<div class="col-md-4">
+  <div class="headshot"></div>
+  <!-- <img class="headshot" src="/images/me_headshot.jpg"> -->
+</div>
+</div>
+<div class="row" style="flex-direction:column;">
 <h3>
   Find me on other platforms
 </h3>
@@ -78,6 +103,7 @@
 <a class="socialBtn" target="_blank" href="https://www.linkedin.com/in/amber-miller-interactive/"><img class="img-fluid" src="linkedin.png"> </a>
 <a class="socialBtn" target="_blank" href="https://www.behance.net/amberrmiller"><img class="img-fluid" src="behance.png"> </a>
 </div></div>
+</div>
 </section>
 
 <section>

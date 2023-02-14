@@ -104,7 +104,7 @@ justify-content: center;
 .endOfTopic{
   background-position: bottom;
   width: 100vw;
-  background-image: url(/images/decoration/Artboard\ 2_2.svg);
+  background-image: url(/images/decoration/wiggle-bottom.svg);
   background-repeat: no-repeat;
   background-size:100vw;
 }
@@ -112,7 +112,7 @@ justify-content: center;
 .startofTopic{
   background-position: top;
   width: 100vw;
-  background-image: url(/images/decoration/Artboard\ 2_1.svg);
+  background-image: url(/images/decoration/wiggle-top.svg);
   background-repeat: no-repeat;
   background-size:100vw;
 }
@@ -132,9 +132,10 @@ font-size:4rem;
 padding: 3rem 4rem;
 }
 .importantQuote{
-  background:white;
+  background:rgb(246, 244, 243);
   border:2px solid var(--orange);
   padding:5rem;
+  margin:2rem;
   border-radius:5px;
   filter:drop-shadow(0 0 6px var(--mainGrey));
 }
