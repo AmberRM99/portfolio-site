@@ -112,7 +112,7 @@ footer .footer-social ul {
   
     .projectPreview{
       background: var(--lightGrey);
-      height:20rem;
+      min-height:20rem;
       border-radius:10px;
         margin-bottom:2rem;
         /* color:var(--white); */
