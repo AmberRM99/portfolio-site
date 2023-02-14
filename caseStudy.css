@@ -76,14 +76,7 @@ li:not(.nav-item){
   margin: 18px 6px;
 }
 
-.carousel-indicators .active {
-  margin: 18px 6px;
-  background-color:var(--orange);
-}
 
-.carousel-indicators{
-  bottom:-5rem!important;
-}
 
 /* .standAlone{
   display: flex;
@@ -168,9 +161,7 @@ ul.importantQuote li{
   bottom:-5rem!important;
 }
 
-.carousel-indicators li{
-  background-color:var(--orange)
-}
+
 .youtube{
   width:60vw;
   height:63vh;

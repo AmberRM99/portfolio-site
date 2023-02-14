@@ -17,6 +17,24 @@ body{
     font-family:'Open Sans';
 }
 
+@font-face {
+  font-family: 'Indie Flower';
+  src: url('IndieFlower.woff2') format('woff2'),
+      url('IndieFlower.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Regular.woff2') format('woff2'),
+      url('OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .projectIntro h2,.projectIntro h3{
   font-family:'Open Sans';
 }
@@ -222,6 +240,54 @@ filter:drop-shadow(0 0 4px var(--orange));
     transform:scale(1.1);
     background:var(--darkOrange);
   
+  }
+
+  .carousel-indicators .active {
+    margin: 18px 6px;
+    background-color:var(--orange);
+  }
+  
+  .carousel-indicators{
+    bottom:-5rem!important;
+  }
+  .carousel-indicators li{
+    background-color:var(--orange)
+  }
+
+  .closePopup{
+    right: 0;
+    position: absolute;
+    z-index: 99;
+    background: none;
+    border: none;
+    color: #d2d2d2;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .popup{
+    
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  .carousel-pop{
+    z-index: 100;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,0);
   }
 
   .Skills, .Achivements{

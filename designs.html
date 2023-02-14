@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
   <link rel="stylesheet" href="/main.css">
  
   <style>
@@ -64,40 +66,41 @@
       <div class="container">
         <div class="row projectRow">
           
-          <div class="col-md-5 projectPreview">
+          <button onclick="carouselMaker(this)" id="DataVis" class="col-md-5 projectPreview">
             <h2>Data Visualisation</h2>
             <div class="previewImgContainer">
             <img class="img-fluid" src="/images/DataVis/legotower-done.png">
             </div>
-        </div>
-        <div class="col-md-5 projectPreview">
+          </button>
+        <button onclick="carouselMaker(this)" id="dashboards" class="col-md-5 projectPreview">
           <h2>Dashboards</h2>
           <div class="previewImgContainer">
-          <img class="img-fluid" src="/images/DataVis/Screenshot 2022-06-30 at 16.53.18.png">
+          <img class="img-fluid" src="/images/dashboards/Screenshot 2022-06-30 at 16.53.18.png">
           </div>
-      </div>
+        </button>
       </div>
       <div class="row projectRow">
-      <div class="col-md-5 projectPreview">
+      <button onclick="carouselMaker(this)" id="landing" class="col-md-5 projectPreview">
         <h2>Landing Pages</h2>
         <div class="previewImgContainer">
-        <img class="img-fluid" src="/images/DataVis/landing-arc.gif">
+        <img class="img-fluid" src="/images/landing/landing-arc.gif">
         </div>
-      </div>
-      <div class="col-md-5 projectPreview">
+      </button>
+      <button onclick="carouselMaker(this)" id="marketing" class="col-md-5 projectPreview">
         <h2>Marketing Designs</h2>
         <div class="previewImgContainer">
-        <img style="height:80%;" class="img-fluid" src="/images/Graphic Design/FLYER.png">
-        </div>
+        <img style="height:80%;" class="img-fluid" src="/images/GraphicDesign/FLYER.png">
+        </button>
       
     </div>
     </div>
     <div class="row projectRow">
-      <div class="col-md-5 projectPreview">
+      <button onclick="carouselMaker(this)" id="graphicDesign" class="col-md-5 projectPreview">
         <h2>Graphic Design</h2>
         <div class="previewImgContainer">
-        <img class="img-fluid" src="/images/Graphic Design/strategyStyledNoBackground.png">
+        <img class="img-fluid" src="/images/GraphicDesign/strategyStyledNoBackground.png">
         </div>
+        </button>
   </div>
   
 
@@ -105,32 +108,36 @@
     </section>
     
 </section>
-<!-- <section class="popup">
-  <div id="carousel-video" class="carousel slide" data-interval="false" >
-    <ol class="carousel-indicators video">
-      <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-video" data-slide-to="1"></li>
+
+<section id="popup" class="popup">
+  <div class="carousel-pop">
+    <button class="closePopup" id="close"><i class="fa-solid fa-x"></i> </button>
+  <div id="carousel-popup" class="carousel slide carousel-fade" data-interval="false" >
+    <ol class="carousel-indicators" id="carousel-indicators">
+      <!-- <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example" data-slide-to="1"></li> -->
     </ol>
-    <div class="carousel-inner">
-      <div class="item active" style="text-align: center;">
-        <iframe class="youtube" src="https://www.youtube.com/embed//pRu9dM2s9pA" >
-       
-        </iframe>
+    <div id="itemHolder" class="carousel-inner">
+     
+      <!-- <div class="item active" style="text-align: center;">
+        
       </div>
      
       <div class="item"  style="text-align: center;">
-        <iframe class="youtube" src="https://www.youtube.com/embed//3QgBH1yhk1A">
-    
-        </iframe>
-        </div>
+      
+        </div> -->
       </div>
-      <a class="left carousel-control" href="#carousel-video" data-slide="prev">
+      <a class="left carousel-control" href="#carousel-popup" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
-      <a class="right carousel-control" href="#carousel-video" data-slide="next">
+      <a class="right carousel-control" href="#carousel-popup" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
+      
     </div>
-</section> -->
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="createPopUpCarousel.js"></script>
 </body>
 </html>
