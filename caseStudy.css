@@ -4,6 +4,7 @@
   
   html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
 
   .container{
@@ -33,6 +34,17 @@
   .discovery{
     width:80%;
     text-align:center;
+  }
+
+  .resources-holder{
+    margin-top:2rem;
+    background: var(--lightGrey);
+    border-radius:10px;
+    filter:drop-shadow(0 2px 3px var(--darkGrey));
+  }
+
+ .resources .col-md-4:not(:last-child){
+    border-right:2px solid var(--mainGrey);
   }
 
 
@@ -74,6 +86,20 @@ h4{
 
 li:not(.nav-item){
   margin: 18px 6px;
+}
+
+footer{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-snap-type: y mandatory;
+}
+
+.skip{
+  padding:1rem;
+}
+
+.skip i{
+  margin: 4px 10px;
 }
 
 
