@@ -17,7 +17,7 @@ Carousel(source.id)
 let arr = []
 
 function Carousel(foldere){
-var folder = "/images/"+foldere;
+var folder = "images/"+foldere;
 
 $.ajax({
     url : folder,
