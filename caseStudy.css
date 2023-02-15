@@ -93,6 +93,10 @@ justify-content: center;
   margin:auto;
   filter:drop-shadow(0 2px 2px #692709)
 }
+/* 
+#sneakPeak::before{
+  content: '/e481'
+} */
 
 .endOfTopic{
   background-position: bottom;
