@@ -17,13 +17,13 @@ Carousel(source.id)
 let arr = []
 
 function Carousel(foldere){
-var folder = "images/"+foldere;
+var folder = "/images/"+foldere;
 
 $.ajax({
     url : folder,
+    
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
-            
 
             if( val.match(/\.(jpe?g|png|gif)$/) ) { 
 arr.push(val)
