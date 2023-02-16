@@ -71,9 +71,7 @@ h4{
   font-weight:bold;
 }
 
-.manualFlip{
-  flex-direction: row-reverse;
-}
+
 
 
 .projectIntro{
@@ -278,9 +276,7 @@ text-align:center;
       }
   @media only screen and (max-width: 780px){
   
-    .manualFlip{
-      flex-direction: column;
-    }
+    
     html {
       scroll-snap-type: none;
     }
