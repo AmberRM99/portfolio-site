@@ -45,6 +45,11 @@
         min-height:70vh;
         justify-content: space-between;
       }
+      @media screen and (max-width:780px){
+        .headshot{
+        margin: 2rem auto;
+        }
+      }
     </style>
     
     <script>
@@ -64,6 +69,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
+<!-- <link rel="stylesheet" href="caseStudy.css"> -->
 
 
 </head>
@@ -84,17 +90,20 @@
     <section >
       <section class="firstSection">
         <div class="container aboutMe">
-          <div class="row">
+          <div class="row manualFlip">
+            <div class="col-md-4">
+              <div class="headshot"></div>
+              <!-- <img alt="Photograph of me (Amber Miller), blonde woman with glasses. Blurred background of plants and paintings" class="headshot" src="/images/me_headshot.jpg"> -->
+            </div>
             <div class="col-md-8">
 <h1>Hi there! I'm Amber Miller.</h1> <br><br> <h2>I'm a UX/UI Designer, researcher, developer and all round creative type!</h2>
 <br>
 <p>I'm not your average User Experience professional, I bring a special blend of creativity and technical ability to the table. I not only turn research into powerful, problem solving prototypes, but I've also got the technical know-how to make sure they become a reality. I've designed for a range of sectors including fintech, education, lawtech and mixed reality, so I'm adaptable to any design challenge.</p>
 </div>
-<div class="col-md-4">
-  <div class="headshot"></div>
-  <!-- <img alt="Photograph of me (Amber Miller), blonde woman with glasses. Blurred background of plants and paintings" class="headshot" src="/images/me_headshot.jpg"> -->
+
+<br>
 </div>
-</div>
+<br>
 <div class="row" style="flex-direction:column;">
 <h3>
   Find me on other platforms
@@ -108,52 +117,66 @@
 
 <section>
   <div class="container">
-      <div class="row " style="margin:auto auto 5rem;">
-        <div class="col-md-6">
+      <div class="row" style="margin:auto auto 5rem;    justify-content: space-between;">
+        <div class="col-md-5">
          
-          <div class="Skills">
+          <div class="Skills row">
+            <div class="col-md-12">
+              <img width="100%" src="/decoration/technical.png">
+            </div>
+            <div class="col-md-12 " style="margin-top:2rem">
             <h3>Technical Skills</h3>
           <ul>
-            <li>Low/High Fidelity Prototypes</li>
-            <li>Wireframes</li>
-            <li>HTML/ CSS</li>
-            <li>JavaScript</li>
-            <li>Figma</li>
-            <li>Adobe Creative Cloud</li>
-            <li>Invision</li>
+            <li><i class="fas fa-swatchbook"></i>Low/High Fidelity Prototypes</li>
+            <li><i class="fa-solid fa-window-restore"></i> Wireframes</li>
+            <li><i class="fas fa-code"></i>HTML/ CSS</li>
+            <li><i class="fas fa-terminal"></i>JavaScript</li>
+            <li><i class="fa-brands fa-figma"></i>Figma</li>
+            <li><i class="fa-solid fa-cloud"></i>Adobe Creative Cloud</li>
         </ul>
         </div>
+        </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         
-        <div class="Skills">
+        <div class="Skills row">
+          <div class="col-md-10">
+            <img width="100%" src="/decoration/personal.png">
+          </div>
+          <div class="col-md-12 " style="margin-top:2rem">
           <h3>Personal Skills</h3>
         <ul>
-          <li>Thorough Researcher</li>
-          <li>Strong Communicator</li>
-          <li>Avid Storyteller</li>
-          <li>Coordinated Collaborator</li>
-          <li>Problem Solving Wizard</li>
-          <li>Detail Orientated</li>
-          <li>Design Thinker</li>
+          <li><i class="fas fa-user-group"></i> Thorough Researcher</li>
+          <li><i class="fas fa-comments"></i> Strong Communicator</li>
+          <li><i class="fas fa-book"></i>Avid Storyteller</li>
+          <li><i class="fas fa-people-group"></i>Coordinated Collaborator</li>
+          <li><i class="fas fa-hat-wizard"></i>Problem Solving Wizard</li>
+          <li><i class="fas fa-magnifying-glass"></i>Detail Orientated</li>
+          <!-- <li><i class="fa-solid fa-thought-bubble"></i>Design Thinker</li> -->
         </ul>
+        </div>
         </div>
       </div>
   </div>
   <br>
-  <div class="row" style="justify-content: center;">
-    <div class="col-md-10">
-      <div class="Achivements">
+  <div class="row" style="justify-content: center;margin:auto auto 5rem;">
+    <div class="col-md-8">
+      <div class="Achivements row">
+        <div class="col-md-12">
+          <img width="100%" src="/decoration/achieve.png">
+        </div>
+        <div class="col-md-12 " style="margin-top:2rem">
         <h3>Achievments</h3>
       <ul>
-      <li> Speaker at Google Developer Blockly Summit on Accessibility and Onboarding Design in No-Code applications</li>
-      <li>Contributor to Google Blockly forum helping other no-code developers</li>
-      <li>First Class Honours degree in Digital Media and Interaction Design with a focus in User Experience</li>
-      <li>CITI certified in advanced social/ behavioral research</li>
-      <li>Self-Taught front end developer</li>
-      <li>Mentee in Dell STEMAspire program</li>
+        <li><i class="fas fa-graduation-cap"></i> First Class Honours degree in Digital Media and Interaction Design with a focus in User Experience</li>
+      <li><i class="fas fa-microphone"></i> Speaker at Google Developer Blockly Summit on Accessibility and Onboarding Design in No-Code applications</li>
+      <li><i class="fas fa-keyboard"></i> Contributor to Google Blockly forum helping other no-code developers</li>
+      <li><i class="fas fa-certificate"></i> CITI certified in advanced social/ behavioral research</li>
+      <li><i class="fas fa-brain"></i> Self-Taught front end developer</li>
+      <li><i class="fas fa-lightbulb"></i> Mentee in Dell STEMAspire program</li>
   
   </ul>
+  </div>
   </div>
     </div>
   </div>

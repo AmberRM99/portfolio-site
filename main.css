@@ -176,9 +176,10 @@ footer .footer-social ul {
     }
 
     .h2-title{
-      text-align:center;
-      margin:2rem 0;
-      border-bottom: 2px solid var(--orange)
+      text-align: center;
+      margin: 2rem auto;
+      width: max-content;
+      border-bottom: 2px solid var(--orange);
     }
   
     .projectPreview{
@@ -368,12 +369,22 @@ filter:drop-shadow(0 0 4px var(--orange));
 
   .Skills li, .Achivements li{
 margin: 1rem 0;
+list-style: none;
   }
 
-  .Skills li::marker, .Achivements li::marker{
-color:var(--orange);
-font-size:20px;
+  .Skills li i, .Achivements li i{
+font-size:1.5rem;
+margin: 1rem;
+
+color: var(--orange);
   }
+
+  .Skills ul, .Achivements ul{
+    padding: 0;
+    min-width: 30vw;
+  }
+
+  
 
   .Skills h3, .Achivements h3{
     text-align:center
@@ -460,7 +471,8 @@ font-size:20px;
       display: block;
     }
 .logo{
-  height: 5rem;
+  height: 6rem;
+  margin-left: 1rem;
 }
       .topnav{
           display:block;
