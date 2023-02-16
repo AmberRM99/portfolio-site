@@ -119,7 +119,7 @@ transition:all .2s ease;
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: var(--mainGrey);
+    background-color: var(--darkGrey);
     color: white;
   }
 
@@ -153,6 +153,7 @@ footer .footer-social ul {
     position:fixed;
     z-index:100;
     width:100%;
+    filter:drop-shadow(0 2px 2px var(--darkGrey))
   }
   
     .mynavbar{

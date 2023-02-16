@@ -52,16 +52,7 @@
       }
     </style>
     
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+   
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -80,7 +71,7 @@
         <a href="/projects.html">Case Studies</a>
         <!-- <a href="/designs.html">Designs</a> -->
         <a href="/about.html">About</a>
-        <a href="/contact.html" class="linkBtn">Contact</a>
+        <a href="/contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -189,7 +180,17 @@
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at
-  <a href="mailto:hege@example.com">AmberInteractive@gmail.com</a></p>
+    <a href="mailto:AmberInteractive@gmail.com"><i class="fas fa-envelope"></i> AmberInteractive@gmail.com</a></p>
 </footer>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
   </body>
   </html>
