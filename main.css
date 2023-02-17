@@ -100,6 +100,7 @@ transition:all .2s ease;
   .topnav a:hover {
     background-color: #ddd;
     color: black;
+    border-radius:10px;
   }
   
   .topnav a.active {
