@@ -61,37 +61,8 @@
       </div>
     
     </section>
-    <div class="skipBtns">
-      <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fas fa-project-diagram"></i>Jump to Research Stage</button>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-pencil"></i>Jump to Design Stage</button><br><br><br>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-forward"></i>Skip To Final Design</button>
-    </div>
 <section class="firstSection">
-  <section class="projectIntro">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <img alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
-              </div>
-        <div class="col-md-8">
-          <span> <h1>Blended Interactions </h1><h2>Research and Design Project</h2></span>
-        <h2>What new and emerging technologies can help the academic experience more positive during covid?</h2>
-        
-        </div>
-    
-        <div class="col-md-2">
-    <img alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
-        </div>
-      </div>
-      <div>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fas fa-project-diagram"></i>Jump to Research Stage</button>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-pencil"></i>Jump to Design Stage</button><br><br><br>
-        <p>No time to ready the whole case study and just want to cut to the chase?</p>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-forward"></i>Skip To Final Design</button>
-    </div>
-       </div>
-    </section>
-  <section id="research" class="sectionHeading">
+  <section class="sectionHeading">
     <h2>Project Plan</h2>
 </section>
 <section class="startofTopic">
@@ -186,10 +157,10 @@
 </section>
 <section >
   <div class="container">
-      <h3>Second Survey</h2>
+      <h3>First Survey</h2>
       <div class="row">
           <div class="col-md-4">
-         <p>Due to the support of the greek life community in initial research, we chose to focus on this aspect of rese </p>
+         <p>Based on the mindmappings focus on a loss of social space became our primary focus, and we constructed a survey based on this topic. For our research, it was important to establish a baseline of before covid and how it compared to now, to properly address the impact of covid. </p>
          </div>
          <div class="col-md-8">
           <a target="_blank" href="/images/Savings/Untitled.jpg">
@@ -213,65 +184,5 @@
     }
   }
   </script>
-   <script>
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    
-    $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-    
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-    
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-    var lastScrollTop = 0;
-    window.onscroll = function(){
-      var st = window.pageYOffset || document.documentElement.scrollTop; 
-      if ($('#research').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','research')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','')
-       } 
-    }
-    if ($('#design').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','design')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','research')
-       } 
-    }
-    if ($('#final').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','final')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','design')
-       } 
-    }
-    lastScrollTop = st <= 0 ? 0 : st;
-    }
-    
-          function setActiveView(button, string){
-            let currStage;
-            if(button === ''){
-              currStage = string;
-            } else{
-              currStage = button.classList[1];
-            }
-            let Stage = document.getElementsByClassName('SkipIcon');
-    
-            for(let i=0; i< Stage.length; i++){
-              if(Stage[i].classList.contains(currStage)){
-                Stage[i].classList.add('active')
-              }else{
-                Stage[i].classList.remove('active')
-              }
-            }
-          }
-        </script>
 </body>
 </html>

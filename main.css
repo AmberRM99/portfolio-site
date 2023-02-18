@@ -270,6 +270,18 @@ filter:drop-shadow(0 0 4px var(--orange));
   
     color:inherit;
   }
+
+  .btnOutline{
+    border:2px solid var(--orange);
+    border-radius:5px;
+    color:var(--orange);
+    font-weight: bolder;
+    transition:all .5s ease;
+  }
+  .btnOutline:hover{
+    background:var(--orange);
+    color:var(--black)
+  }
   
   .linkBtn{
     background:var(--orange);

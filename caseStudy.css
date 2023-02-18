@@ -189,6 +189,49 @@ ul.importantQuote li{
   bottom:-5rem!important;
 }
 
+.skipBtns{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: fixed;
+  top: 27%;
+  right: 2rem;
+  align-items: center;
+}
+
+.skipBtns span{
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SkipIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--mainGrey);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  filter:drop-shadow(1px 1px 2px var(--darkGrey));
+  transition:all .3s ease;
+}
+
+.SkipIcon.active, .SkipIcon:hover{
+  border:2px solid var(--orange);
+  transform:scale(1.2);
+  background:var(--darkGrey)
+}
+
+.SkipIcon i {
+  font-size: 24px;
+  color: var(--white);
+}
+
 
 .youtube{
   width:60vw;
@@ -275,7 +318,26 @@ text-align:center;
         clear: both;
       }
   @media only screen and (max-width: 780px){
-  
+    .skipBtns{
+      display: flex;
+    background: var(--lightGrey);
+    width: 100vw;
+    flex-direction: row;
+    position: fixed;
+    top: 87%;
+    z-index: 1000;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+    .skipBtns p{
+      display:none;
+    }
+
+    .skipBtns span p{
+      display:block;
+    }
     
     html {
       scroll-snap-type: none;

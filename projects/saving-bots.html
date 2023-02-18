@@ -37,7 +37,22 @@
       </section>
 <section>
     <section class="firstSection">
-        <section class="projectIntro">
+        <div class="skipBtns">
+            <p>Jump To</p>
+            <span>
+                <p>Start</p>
+              <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+            <span>
+              <p>Research</p>
+            <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research" title="Scroll to Research Process"><i class="fas fa-lightbulb"></i></button></span>
+            <span>
+              <p>Design</p>
+            <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+            <span>
+              <p>Final</p>
+        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+          </div>
+        <section id="start" class="projectIntro">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -115,7 +130,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sectionHeading">
+            <section id="research" class="sectionHeading">
                 <div class="container">
                     <h2>Exploration and Discovery</h2>
                 </div>
@@ -233,7 +248,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="sectionHeading">
+                <section id="design" class="sectionHeading">
                     <div class="container">
                         <h2>User Experience Design</h2>
                     </div>
@@ -437,5 +452,73 @@
       }
     }
     </script>
+     <script>
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+        
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+        
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+        var lastScrollTop = 0;
+        window.onscroll = function(){
+          var st = window.pageYOffset || document.documentElement.scrollTop; 
+          if ($('#start').isInViewport()) {
+    
+    if (st > lastScrollTop) { //down
+      setActiveView('','start')
+     } else if (st < lastScrollTop) { //up
+      setActiveView('','')
+     } 
+  }
+      if ($('#research').isInViewport()) {
+    
+      if (st > lastScrollTop) { //down
+        setActiveView('','research')
+       } else if (st < lastScrollTop) { //up
+        setActiveView('','start')
+       } 
+    }
+        if ($('#design').isInViewport()) {
+        
+          if (st > lastScrollTop) { //down
+            setActiveView('','design')
+           } else if (st < lastScrollTop) { //up
+            setActiveView('','research')
+           } 
+        }
+        if ($('#final').isInViewport()) {
+        
+          if (st > lastScrollTop) { //down
+            setActiveView('','final')
+           } else if (st < lastScrollTop) { //up
+            setActiveView('','design')
+           } 
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+        }
+        
+              function setActiveView(button, string){
+                let currStage;
+                if(button === ''){
+                  currStage = string;
+                } else{
+                  currStage = button.classList[1];
+                }
+                let Stage = document.getElementsByClassName('SkipIcon');
+        
+                for(let i=0; i< Stage.length; i++){
+                  if(Stage[i].classList.contains(currStage)){
+                    Stage[i].classList.add('active')
+                  }else{
+                    Stage[i].classList.remove('active')
+                  }
+                }
+              }
+            </script>
   </body>
 </html>
