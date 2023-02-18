@@ -293,6 +293,11 @@ filter:drop-shadow(0 0 4px var(--orange));
     text-decoration: none;
   }
 
+  .linkBtn.secondary{
+    color: var(--white);
+    background: var(--mainGrey);
+  }
+
   .linkBtn:hover{
   background:var(--darkOrange);
   transform:scale(1.05);
@@ -473,6 +478,9 @@ color: var(--orange);
   }
   .firstSection{
     margin-top:7rem;
+  }
+  .Skills:nth-of-type(2){
+    margin-top:5rem;
   }
 }
 
