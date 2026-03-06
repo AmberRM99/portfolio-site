@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Client Reporting Case Study | Amber Miller</title>
+
+<meta name="description" content="UX case study by Amber Miller on designing a client reporting system that closed a market gap and achieved 250% adoption growth.">
+<meta name="keywords" content="UX Design, Product Design, Case Study, UX Research, Reporting UX, Data Visualisation, UX Portfolio">
+<meta name="author" content="Amber Miller">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/caseStudy.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="navbar-holder">
+<div class="topnav" id="myTopnav">
+<a class="logo" href="/"></a>
+<a href="/projects.html">Case Studies</a>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+</section>
+
+<section class="firstSection">
+
+<div class="skipBtns">
+<p>Jump To</p>
+
+<span>
+<p>Start</p>
+<button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})" class="SkipIcon start active">
+<i class="fas fa-arrow-up"></i>
+</button>
+</span>
+
+<span>
+<p>Research</p>
+<button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'})" class="SkipIcon research">
+<i class="fas fa-lightbulb"></i>
+</button>
+</span>
+
+<span>
+<p>Design</p>
+<button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'})" class="SkipIcon design">
+<i class="fa-solid fa-pencil"></i>
+</button>
+</span>
+
+<span>
+<p>Outcomes</p>
+<button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="SkipIcon final">
+<i class="fa-solid fa-forward"></i>
+</button>
+</span>
+
+</div>
+
+<section id="start" class="projectIntro">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-2">
+<img class="img-fluid landing-img" src="/images/decoration/chart.svg">
+</div>
+
+<div class="col-md-8">
+
+<h1>Client Reporting</h1>
+<h2>Designing a reporting system to close a market gap</h2>
+
+<p>
+Before this project, the platform did not provide a built-in way for teams to generate client reports. Users exported data and manually assembled reports using external tools, creating fragmented workflows and increasing the time required to prepare client updates.
+</p>
+
+<p>
+Competitors had already introduced integrated reporting capabilities, making this a key gap in the product offering.
+</p>
+
+<p>
+My role focused on researching reporting workflows and designing a scalable reporting experience that could deliver immediate value while working within technical constraints.
+</p>
+
+</div>
+
+<div class="col-md-2">
+<img class="img-fluid landing-img" src="/images/decoration/chart.svg">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>The Challenge</h2>
+
+<p>
+How can we introduce client reporting into an existing platform in a way that delivers immediate value while remaining scalable as the product evolves?
+</p>
+
+<p>
+Reporting touches multiple parts of a product ecosystem — data pipelines, visualisation, user workflows, and sharing capabilities. Designing the experience required balancing user expectations with the technical limitations of the underlying data infrastructure.
+</p>
+
+<p>
+The goal was not only to design the reporting interface, but also to help define how the feature should evolve over time.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Constraints</h2>
+
+<ul>
+
+<li>
+<strong>Existing data architecture</strong> — Reporting relied on complex data systems that limited which metrics could initially be surfaced.
+</li>
+
+<li>
+<strong>Technical prioritisation</strong> — Engineering resources required the feature to be delivered iteratively rather than as a single release.
+</li>
+
+<li>
+<strong>Varied reporting needs</strong> — Different teams required different reporting formats, making flexibility an important consideration.
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="sectionHeading">
+
+<h2>Project Overview</h2>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<h4>Role</h4>
+
+<p>
+UX Designer, Product Design Collaboration
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Team</h4>
+
+<ul>
+<li>Product Manager</li>
+<li>Engineering Team</li>
+<li>Data Team</li>
+<li>UX Designer</li>
+</ul>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Timeline</h4>
+
+<p>Iterative feature development</p>
+
+<ul>
+<li>Research and discovery</li>
+<li>Backlog refinement</li>
+<li>Phased feature releases</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="research" class="sectionHeading">
+
+<h2>Research</h2>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h3>Discovery</h3>
+
+<p>
+Research began with an analysis of existing customer feedback, internal requests, and product discussions related to reporting. These sources highlighted consistent friction around how teams prepared client updates.
+</p>
+
+<p>
+Users frequently exported raw data and assembled reports manually in spreadsheets or presentation software.
+</p>
+
+<h4>Key Insights</h4>
+
+<ul>
+
+<li>
+<strong>Reporting workflows were fragmented.</strong>
+Users relied on multiple tools to compile information before sharing insights with clients.
+</li>
+
+<li>
+<strong>Consistency was difficult.</strong>
+Teams created reports manually, leading to inconsistent formats and messaging.
+</li>
+
+<li>
+<strong>Clear visualisation mattered.</strong>
+Users needed visual summaries that communicated performance quickly.
+</li>
+
+<li>
+<strong>Reporting was a competitive expectation.</strong>
+Several competing platforms already offered integrated reporting tools.
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h3>Product Insight</h3>
+
+<p>
+One important discovery was that reporting requirements varied significantly between teams. While some users required detailed analytics, others primarily needed clear summaries for client communication.
+</p>
+
+<p>
+This insight reinforced the importance of starting with a focused set of high-value reporting features and expanding capabilities over time.
+</p>
+
+</div>
+
+</section>
+
+<section id="design" class="sectionHeading">
+
+<h2>Design</h2>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h3>Planning an iterative release</h3>
+
+<p>
+Because reporting relied heavily on underlying data infrastructure, feature development required close collaboration with engineering teams.
+</p>
+
+<p>
+Through backlog refinement sessions, we prioritised reporting capabilities based on both user value and technical feasibility.
+</p>
+
+<p>
+This process helped define a phased release strategy that allowed the product to introduce reporting quickly while expanding functionality in later iterations.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h3>Design exploration</h3>
+
+<p>
+Several interface concepts were explored to determine how reporting should fit within the existing platform.
+</p>
+
+<p>
+Design comparisons focused on discoverability, report creation workflows, and the clarity of data presentation.
+</p>
+
+<p>
+The final direction prioritised simple report generation, clear visual summaries, and reusable report structures that teams could use consistently across clients.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h3>Balancing flexibility and clarity</h3>
+
+<p>
+Rather than designing an overly complex reporting system, the initial release focused on delivering clear and reliable summaries of the most important metrics.
+</p>
+
+<p>
+This approach allowed users to quickly generate client-ready insights while establishing a strong foundation for future reporting capabilities.
+</p>
+
+</div>
+
+</section>
+
+<section id="final" class="sectionHeading">
+
+<h2>Outcomes</h2>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<p>
+The introduction of client reporting closed an important competitive gap and significantly improved the platform’s value for teams communicating results to clients.
+</p>
+
+<ul>
+
+<li>
+Reporting capabilities allowed users to generate client insights directly within the platform.
+</li>
+
+<li>
+Manual reporting workflows were reduced as teams began using integrated reports.
+</li>
+
+<li>
+Adoption of the reporting feature grew by <strong>250% within the first year</strong>.
+</li>
+
+<li>
+The iterative release strategy allowed reporting functionality to expand while continuing to support new use cases.
+</li>
+
+</ul>
+
+<p>
+This project demonstrated how aligning research, product strategy, and engineering constraints can deliver meaningful user value while supporting long-term platform growth.
+</p>
+
+</div>
+
+</section>
+
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <script>
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+var lastScrollTop = 0;
+window.onscroll = function(){
+  var st = window.pageYOffset || document.documentElement.scrollTop; 
+  if ($('#start').isInViewport()) {
+    
+    if (st > lastScrollTop) { //down
+      setActiveView('','start')
+     } else if (st < lastScrollTop) { //up
+      setActiveView('','')
+     } 
+  }
+      if ($('#research').isInViewport()) {
+    
+      if (st > lastScrollTop) { //down
+        setActiveView('','research')
+       } else if (st < lastScrollTop) { //up
+        setActiveView('','start')
+       } 
+    }
+if ($('#design').isInViewport()) {
+
+  if (st > lastScrollTop) { //down
+    setActiveView('','design')
+   } else if (st < lastScrollTop) { //up
+    setActiveView('','research')
+   } 
+}
+if ($('#final').isInViewport()) {
+
+  if (st > lastScrollTop) { //down
+    setActiveView('','final')
+   } else if (st < lastScrollTop) { //up
+    setActiveView('','design')
+   } 
+}
+lastScrollTop = st <= 0 ? 0 : st;
+}
+
+      function setActiveView(button, string){
+        let currStage;
+        if(button === ''){
+          currStage = string;
+        } else{
+          currStage = button.classList[1];
+        }
+        let Stage = document.getElementsByClassName('SkipIcon');
+
+        for(let i=0; i< Stage.length; i++){
+          if(Stage[i].classList.contains(currStage)){
+            Stage[i].classList.add('active')
+          }else{
+            Stage[i].classList.remove('active')
+          }
+        }
+      }
+    </script>
+</body>
+</html>
