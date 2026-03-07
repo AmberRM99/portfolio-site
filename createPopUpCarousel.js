@@ -1,103 +1,90 @@
-let dataVisualisation;
-console.log('ran')
-let popup = document.getElementById('carousel-popup');
+/* Shared carousel helper (uses jQuery for directory listing parsing) */
 
-let indicators = document.getElementById('carousel-indicators');
+(function () {
+  "use strict";
 
-let allItems = document.getElementById('itemHolder');
+  const popup = document.getElementById("carousel-popup");
+  const indicators = document.getElementById("carousel-indicators");
+  const itemHolder = document.getElementById("itemHolder");
 
+  function clearCarousel() {
+    if (!indicators || !itemHolder) return;
 
-
-function carouselMaker(source){
-
-Carousel(source.id)
-
-}
-
-let arr = []
-
-function Carousel(foldere){
-var folder = "/images/"+foldere;
-
-$.ajax({
-    url : folder,
-    
-    success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-
-            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-arr.push(val)
-            }
-        });
-        console.log(arr)
-         for(let items = 0; items < arr.length; items++){
-                let item = document.createElement('div');
-                item.classList.add('item')
-                
-                
-                
-                let img = document.createElement('img')
-                img.classList.add('img-fluid');
-                img.src=arr[items];
-              
-                if(items === 0){
-              
-                    item.classList.add('active');
-                }
-                item.append(img)
-         
-                allItems.append(item)
-             
-               
-             } 
-            for(let createLi = 0; createLi < arr.length; createLi++){
-                
-                let li = document.createElement('li');
-                li.setAttribute('data-target', 'carousel-popup');
-                li.setAttribute('data-slide-to', createLi);
-                if(li === 0){
-              
-                    li.classList.add('active');
-                }
-         
-                indicators.append(li)
-                
-            }
-
-            document.getElementById('popup').style.display = "block";
+    while (indicators.firstChild) {
+      indicators.removeChild(indicators.firstChild);
     }
-});
-}
 
-
-document.getElementById('popup').ondblclick = function(){
-    arr = []
-              
-            while(indicators.firstChild) {
-                indicators.removeChild(indicators.firstChild);
-            }
-
-        
-    while(allItems.firstChild) {
-        allItems.removeChild(allItems.firstChild);
+    while (itemHolder.firstChild) {
+      itemHolder.removeChild(itemHolder.firstChild);
     }
-   
+  }
 
-    document.getElementById('popup').style.display = "none";
-}
+  function buildCarousel(images) {
+    if (!images || !images.length || !indicators || !itemHolder) return;
 
-document.getElementById('close').onclick = function(){
-    arr = []
-              
-            while(indicators.firstChild) {
-                indicators.removeChild(indicators.firstChild);
+    images.forEach((src, index) => {
+      const item = document.createElement("div");
+      item.classList.add("item");
+      if (index === 0) item.classList.add("active");
+
+      const img = document.createElement("img");
+      img.classList.add("img-fluid");
+      img.src = src;
+      item.appendChild(img);
+
+      itemHolder.appendChild(item);
+
+      const li = document.createElement("li");
+      li.setAttribute("data-target", "carousel-popup");
+      li.setAttribute("data-slide-to", String(index));
+      if (index === 0) li.classList.add("active");
+      indicators.appendChild(li);
+    });
+  }
+
+  function createCarousel(folderId) {
+    if (!folderId) return;
+
+    const folderUrl = "/images/" + folderId;
+    const images = [];
+
+    $.ajax({
+      url: folderUrl,
+      success(data) {
+        $(data)
+          .find("a")
+          .attr("href", (i, val) => {
+            if (val && val.match(/\.(jpe?g|png|gif)$/i)) {
+              images.push(val);
             }
+          });
 
-        
-    while(allItems.firstChild) {
-        allItems.removeChild(allItems.firstChild);
-    }
-   
+        if (images.length) {
+          buildCarousel(images);
+          if (popup) popup.style.display = "block";
+        }
+      },
+    });
+  }
 
-    document.getElementById('popup').style.display = "none";
-}
+  window.carouselMaker = function (source) {
+    clearCarousel();
+    if (!source || !source.id) return;
+    createCarousel(source.id);
+  };
+
+  function hidePopup() {
+    clearCarousel();
+    if (popup) popup.style.display = "none";
+  }
+
+  if (popup) {
+    popup.ondblclick = hidePopup;
+  }
+
+  const closeButton = document.getElementById("close");
+  if (closeButton) {
+    closeButton.onclick = hidePopup;
+  }
+})();
+

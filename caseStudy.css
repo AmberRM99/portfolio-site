@@ -71,8 +71,9 @@ h4{
   font-weight:bold;
 }
 
-
-
+.projectSnapshot{
+  align-items:flex-start;
+}
 
 .projectIntro{
   text-align:center;

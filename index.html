@@ -15,12 +15,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
-<style>
-  .tagsHolder{
-    display:none;
-  }
-
-</style>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
@@ -39,20 +33,20 @@
     </div>
   
   </section>
-    <section class="landing" style="justify-content:center;">
+    <section class="landing">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <h1 style="font-weight:bold">Amber Miller</h1>
+            <h1>Amber Miller</h1>
             <h2>User Experience Designer</h2>
-            <a href="/contact.html" class="linkBtn headerBtn">CONTACT</a>
-            <a href="/Amber CV 2026.docx" class="linkBtn secondary headerBtn">CV</a>
+            <div class="heroActions">
+              <a href="/contact.html" class="linkBtn headerBtn">CONTACT</a>
+              <a href="/Amber CV 2026.docx" class="linkBtn secondary headerBtn">CV</a>
+            </div>
           </div>
           <div class="col-md-6">
-            <h3>Making technology work for people, not the other way around. </h3>
-            <br>
-          <h6><b>A designer who combines data, design and front-end development to transform complex systems into intuitive digital products. My work focuses on delivering ideas that don’t just look good in prototypes - they ship.</h6>
-              
+            <h3>Making technology work for people, not the other way around.</h3>
+            <p class="heroSubtitle"><strong>A designer who combines data, design and front-end development to transform complex systems into intuitive digital products. My work focuses on delivering ideas that don’t just look good in prototypes - they ship.</strong></p>
           </div>
         </div>
       </div>
@@ -65,8 +59,8 @@
 
             <div class="projectPreview">
             <a class="projectLink row " href="/projects/ClientReport.html">
-              <div class="col-md-6 " style="padding:2rem;">
-             <h3>Client Reporting </h3> <h6> Aegon </h6>
+              <div class="col-md-6 projectPreview__content">
+                <h3>Client Reporting </h3> <h6> Aegon </h6>
              <p>Excelling new product design from behind the market to leading it</p>
               <div class="tagsHolder">
                 <span>Responsibilites:</span>
@@ -82,10 +76,8 @@
           
           <div class=" projectPreview">
             <a class="projectLink row manualFlip" href="/projects/arctaurus.html">
-          <div class="col-md-6 " style="padding:2rem;">
-            
-           
-             <h3> ArcTaurus </h3> <h6> No-Code Automated Crypto Trading Bots</h6>
+              <div class="col-md-6 projectPreview__content">
+                <h3> ArcTaurus </h3> <h6> No-Code Automated Crypto Trading Bots</h6>
              <p>Redesign a no-code crypto trading platform to be as usable as possible for traders regardless of their coding knowledge</p>
              <div class="tagsHolder">
               <span>Responsibilites:</span>
@@ -105,10 +97,8 @@
       
         <div class="projectPreview">
           <a class="projectLink row" href="/projects/librate.html">
-            <div class="col-md-6 " style="padding:2rem;">
-           
-           
-            <h3> Librate </h3> <h6> Legal Document Automation </h6>
+            <div class="col-md-6 projectPreview__content">
+              <h3> Librate </h3> <h6> Legal Document Automation </h6>
            <p>Develop a series of microsoft add-ins and a dashboard to help simplify the digital workflow of lawyers</p>
             <div class="tagsHolder">
               <span>Responsibilites:</span>
@@ -163,15 +153,6 @@
         If you like my work, get in touch at
         <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    <script src="site.js" defer></script>
 </body>
 </html>
