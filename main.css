@@ -1,5 +1,5 @@
 :root {
-    --mainGrey: #656565;
+    --mainGrey: #2f2f2f;
     --orange: #F88B58;
     /* --darkOrange:#e15210; */
     --darkOrange:#C8490E;
@@ -173,7 +173,7 @@ footer .footer-social ul {
         margin:5rem auto ;
         /* color:var(--white); */
         text-align:center;
-        filter:drop-shadow(0 7px 4px var(--mainGrey));
+        filter:drop-shadow(0 2px 4px var(--darkGrey));
         transition:all .2s ease;
       }
       
