@@ -1,394 +1,453 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-<meta charset="UTF-8">
-<title>Client Reporting Case Study | Amber Miller</title>
+  <meta charset="UTF-8">
+  <title>ArcTaurus</title>
+  <meta name="description" content="Amber Miller User Experience Researcher, Designer and Developer Portfolio">
+  <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
+  <meta name="author" content="Amber Miller">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="UX case study by Amber Miller on designing a client reporting system that closed a market gap and achieved 250% adoption growth.">
-<meta name="keywords" content="UX Design, Product Design, Case Study, UX Research, Reporting UX, Data Visualisation, UX Portfolio">
-<meta name="author" content="Amber Miller">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
-<link rel="stylesheet" href="/main.css">
-<link rel="stylesheet" href="/caseStudy.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/v5-font-face.min.css" integrity="sha512-H2YXTLk5bs3DqvCfOEFsHmsjKW/qLp8SqsqVuPVwZzA5WFudPvPJisFKba2Km3sZNNBapYsZjSMTmRVcfxb5yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/caseStudy.css">
+<!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3408768,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
+  <body>
+    <section class="navbar-holder">
+        <div class="topnav" id="myTopnav">
+          <a title="logo" class="logo" href="/"></a>
+          <a title="case studies" href="/projects.html">Case Studies</a>
+          <a title="about" href="/about.html">About</a>
+          <a title="contact" href="/contact.html" >Contact</a>
+          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      
+      </section>
+<section>
+    <section class="firstSection">
+      <div class="skipBtns">
+        <p>Jump To</p>
+        <span>
+          <p>Start</p>
+        <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+      <span>
+          <p>Research</p>
+        <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research " title="Scroll to Research Process"><i class="fas fa-lightbulb"></i></button></span>
+        <span>
+          <p>Design</p>
+        <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+        <span>
+          <p>Outcomes</p>
+    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+      </div>
+    <!-- <section id="start" class="projectIntro">
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <img alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
+          </div>
+    <div class="col-md-8">
+      <span> <h1>Client Reporting </h1></span>
+    <h2>From behind the market to leading it</h2>
+    </div>
 
-<body>
-
-<section class="navbar-holder">
-<div class="topnav" id="myTopnav">
-<a class="logo" href="/"></a>
-<a href="/projects.html">Case Studies</a>
-<a href="/about.html">About</a>
-<a href="/contact.html">Contact</a>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i>
-</a>
+    <div class="col-md-2">
+<img alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
+    </div>
+  </div>
+  <div>
+    <p>No time to ready the whole case study and just want to cut to the chase?</p>
+<button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip"><i class="fa-solid fa-forward"></i>Skip To outcomes</button>
 </div>
-</section>
-
-<section class="firstSection">
-
-<div class="skipBtns">
-<p>Jump To</p>
-
-<span>
-<p>Start</p>
-<button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})" class="SkipIcon start active">
-<i class="fas fa-arrow-up"></i>
-</button>
-</span>
-
-<span>
-<p>Research</p>
-<button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'})" class="SkipIcon research">
-<i class="fas fa-lightbulb"></i>
-</button>
-</span>
-
-<span>
-<p>Design</p>
-<button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'})" class="SkipIcon design">
-<i class="fa-solid fa-pencil"></i>
-</button>
-</span>
-
-<span>
-<p>Outcomes</p>
-<button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="SkipIcon final">
-<i class="fa-solid fa-forward"></i>
-</button>
-</span>
-
-</div>
-
+   </div>
+</section> -->
 <section id="start" class="projectIntro">
-
 <div class="container">
 
-<div class="row">
+  <div class="row">
+    <div class="col-md-2">
+     <i style="font-size:9rem; color:rgb(8, 8, 92)" class="fa-solid fa-chart-area"></i>
+    </div>
 
-<div class="col-md-2">
-<img class="img-fluid landing-img" src="/images/decoration/chart.svg">
+    <div class="col-md-8 text-center">
+
+      <h1>Client Reporting Platform</h1>
+      <h2>Rebuilding a core adviser tool and transforming Aegon from behind the market to leading it</h2>
+
+      <p class="intro-summary">
+        Following a large scale platform migration, Aegon lost its client reporting capability — a critical
+        tool financial advisers rely on during annual performance reviews. Over 12 months I led the UX
+        research and design of a new reporting experience that helped advisers visualise investment
+        performance, track financial goals and generate client-ready reports.
+      </p>
+
+    </div>
+
+    <div class="col-md-2">
+      <i style="font-size:9rem; color:rgb(8, 8, 92)" class="fa-solid fa-chart-area"></i>
+    </div>
+  </div>
+
+
+  <!-- Project Snapshot -->
+  <div class="row projectSnapshot">
+
+    <div class="col-md-3">
+      <h4>My Role</h4>
+      <p>
+        Senior UX Designer<br>
+        UX Researcher<br>
+        Proxy Product Owner (report redesign)
+      </p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Team</h4>
+      <p>
+        Product Owner<br>
+        2 Business Analysts<br>
+        2 Full Stack Developers<br>
+        2 Testers
+      </p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Timeline</h4>
+      <p>
+        12 Month Programme<br>
+        MVP → Iterative Enhancements
+      </p>
+    </div>
+
+    <div class="col-md-3">
+      <h4>Impact</h4>
+      <p>
+        Monthly users grew<br>
+        <strong>328 → 1300 (+300%)</strong><br><br>
+        Reports exported increased<br>
+        <strong>XX%</strong>
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- Skip CTA -->
+  <div class="skipIntro">
+    <p>No time to read the full case study?</p>
+    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip">
+      <i class="fa-solid fa-forward"></i> Skip to outcomes
+    </button>
+  </div>
+
 </div>
-
-<div class="col-md-8">
-
-<h1>Client Reporting</h1>
-<h2>Designing a reporting system to close a market gap</h2>
-
-<p>
-Before this project, the platform did not provide a built-in way for teams to generate client reports. Users exported data and manually assembled reports using external tools, creating fragmented workflows and increasing the time required to prepare client updates.
-</p>
-
-<p>
-Competitors had already introduced integrated reporting capabilities, making this a key gap in the product offering.
-</p>
-
-<p>
-My role focused on researching reporting workflows and designing a scalable reporting experience that could deliver immediate value while working within technical constraints.
-</p>
-
-</div>
-
-<div class="col-md-2">
-<img class="img-fluid landing-img" src="/images/decoration/chart.svg">
-</div>
-
-</div>
-
-</div>
-
 </section>
-
 <section>
-
-<div class="container">
-
-<h2>The Challenge</h2>
-
-<p>
-How can we introduce client reporting into an existing platform in a way that delivers immediate value while remaining scalable as the product evolves?
-</p>
-
-<p>
-Reporting touches multiple parts of a product ecosystem — data pipelines, visualisation, user workflows, and sharing capabilities. Designing the experience required balancing user expectations with the technical limitations of the underlying data infrastructure.
-</p>
-
-<p>
-The goal was not only to design the reporting interface, but also to help define how the feature should evolve over time.
-</p>
-
+<div  class="container">
+    <h2>Problem Statement</h2>
+    <div class="row ">
+       <p> Aegon had no existing tools for financial advisers or there clients to visualise annual performance. This was missing a major offering that competitors delivered, as annual client reviews are a key part of consumer duty legislation</p>
+    </div>
 </div>
-
+</section>
+<section class="sectionHeading finalSections">
+    <div class="container">
+        <h2>Project Resources</h2>
+        <div class="resources-holder">
+        <div class="row niceHeaders">
+          <div class="col-md-4"> <h4 class="bigHeader">Team</h4></div>
+          <div class="col-md-4"><h4 class="bigHeader">Resources</h4></div>
+          <div class="col-md-4"> <h4 class="bigHeader">Time-frame: 12 months</h4></div>
+        </div>
+        <div class="row resources">
+            
+           <div class="col-md-4">
+            <h4 class="smallHeader">Lean sprint team</h4>
+            <ul>
+                <li>Myself, <span>Senior UX Designer, UX Researcher</span></li>
+                <li>Product Owner </li>
+                 <li>2x business analysts </li>
+                <li>2x full stack developers </li>
+                <li>2x testers</li>
+                <li>Other stakeholders <span>Risk, Legal, compliance, brand</span></li>
+            </ul>
+            </div>
+         </div>
+         </div>
+    </div>
 </section>
 
-<section>
+<section  style="padding-top:4rem;" class="endOfTopic">
+    <div class="container">
+        <h2>Backstory</h2>
+        <div class="row">
+            <p>Financial advisers rely on annual reviews to explain investment performance to their clients.
 
-<div class="container">
+Following a major platform migration, Aegon lost its reporting capability entirely, leaving advisers without a way to visualise performance during these meetings.
 
-<h2>Constraints</h2>
+<ul>This created three risks:</ul>
 
-<ul>
+<li></li>advisers reverting to competitor platforms</li>
 
-<li>
-<strong>Existing data architecture</strong> — Reporting relied on complex data systems that limited which metrics could initially be surfaced.
-</li>
+<li>reduced transparency for clients</li>
 
-<li>
-<strong>Technical prioritisation</strong> — Engineering resources required the feature to be delivered iteratively rather than as a single release.
-</li>
+<li>potential friction with Consumer Duty regulations</li>
 
-<li>
-<strong>Varied reporting needs</strong> — Different teams required different reporting formats, making flexibility an important consideration.
-</li>
-
-</ul>
-
-</div>
-
+The goal of this project was to rebuild reporting capabilities and position Aegon as a market leader in adviser reporting tools.</p> </div>
 </section>
 
-<section class="sectionHeading">
-
-<h2>Project Overview</h2>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-4">
-
-<h4>Role</h4>
-
-<p>
-UX Designer, Product Design Collaboration
-</p>
-
-</div>
-
-<div class="col-md-4">
-
-<h4>Team</h4>
-
-<ul>
-<li>Product Manager</li>
-<li>Engineering Team</li>
-<li>Data Team</li>
-<li>UX Designer</li>
-</ul>
-
-</div>
-
-<div class="col-md-4">
-
-<h4>Timeline</h4>
-
-<p>Iterative feature development</p>
-
-<ul>
-<li>Research and discovery</li>
-<li>Backlog refinement</li>
-<li>Phased feature releases</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <section id="research" class="sectionHeading">
 
-<h2>Research</h2>
+        <h2>Research</h2>
 
 </section>
+<section class=" startofTopic">
+  <div class="container">
+      <h2>Discovery</h2>
+      <div class="row">
+          <div class="discovery"> During phase 1, we launched multiple moderated and unmoderated feature preferencng studies to understand our users expectations. This taught us the following</div>
+          <ul class="importantQuote" style="margin:2rem">
+              <li>There are two types of financial adviser's looking to use our tool <span> Playful </span> and <span>productive</span></li>
+              <li> Playful advisers want raw data and the power to play with it, expecting strong visuals, customisation opportunities and the ability to see the different stories data can tell</li>
+              <li> Productive advisers (and there accompanying paraplanner staff) benefited from a new reporting tool, but wanted to get in, find or export the data they needed, and get out as fast as possible </li> 
+          </ul>
+         
+      </div>
+  </div>
+</section>
+<section class="standAlone ">
+    <div class="container">
+        <div class="importantQuote">
+            <h3>“*insert user research findings”</h3> <em>-Summary of initial user interviews with beta testers</em>
+        </div>
+  
+</div>
+</section>
+
 
 <section>
-
-<div class="container">
-
-<h3>Discovery</h3>
-
-<p>
-Research began with an analysis of existing customer feedback, internal requests, and product discussions related to reporting. These sources highlighted consistent friction around how teams prepared client updates.
-</p>
-
-<p>
-Users frequently exported raw data and assembled reports manually in spreadsheets or presentation software.
-</p>
-
-<h4>Key Insights</h4>
-
-<ul>
-
-<li>
-<strong>Reporting workflows were fragmented.</strong>
-Users relied on multiple tools to compile information before sharing insights with clients.
-</li>
-
-<li>
-<strong>Consistency was difficult.</strong>
-Teams created reports manually, leading to inconsistent formats and messaging.
-</li>
-
-<li>
-<strong>Clear visualisation mattered.</strong>
-Users needed visual summaries that communicated performance quickly.
-</li>
-
-<li>
-<strong>Reporting was a competitive expectation.</strong>
-Several competing platforms already offered integrated reporting tools.
-</li>
-
-</ul>
-
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="importantQuote">
+                <h3>“Users need onboarding, but they like to assume they don’t”</h3> <em>-Key finding through observational studies</em>
+            </div>
+        </div>
+        <div class="col-md-6">
+        Later as onboarding designs progressed we brought in a mix of technical and non-technical users to test the platform for the first time in a series of think aloud studies. They’d each be asked questions about their familiarity with different code and logic concepts, and there knowledge of crypto, to get a baseline of what was a usability issue and remove bias of people who likely would not use the service. This particular methodology was used to track the KPI Time til Value
+    </div>
+    
+    </div>
 </div>
-
 </section>
-
-<section>
-
-<div class="container">
-
-<h3>Product Insight</h3>
-
-<p>
-One important discovery was that reporting requirements varied significantly between teams. While some users required detailed analytics, others primarily needed clear summaries for client communication.
-</p>
-
-<p>
-This insight reinforced the importance of starting with a focused set of high-value reporting features and expanding capabilities over time.
-</p>
-
+<!-- <section class="endOfTopic">
+    <div class="container">
+    <div class="row manualFlip">
+        <div class="col-md-6">
+            <div class="importantQuote">
+                <a target="_blank" href="/images/arcTaurus/cardsort.png">
+                <img alt="Image of card sorting task, dividing all proposed blocks into what become the final categories, Setup, Logic, Loops, Maths, Social Media, Market Events, Market Information, Technical Indicators, My Information, Assets, Order Types" class="img-fluid" src="/images/arcTaurus/cardsort.png">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Card Sorting</h4>
+       Because of the complex nature of reducing programming terms to blocks, card sorting was used to help link similar terms and build a foundation for categorisation. This was performed both internally with other developers, to ensure the coding aspects were correct, as well as with non-technical users to ensure they could find items during task walkthroughs.
+    </div>
+    
+    </div>
 </div>
-
-</section>
+</section> -->
 
 <section id="design" class="sectionHeading">
-
-<h2>Design</h2>
-
+        <h2>UX Design</h2>
 </section>
-
+<section class="startofTopic">
+    <div class="container">
+            <div class="row">
+               <div class="col-md-5"> <h4>Phase 1 - get an MVP live</h4> <p> Based on our research findings and available technology we delivered a lean MVP focused on the most important data.</p><p>The biggest learning of the MVP was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessbility guidelines. Luckily after some testing we landed on HighCharts, which could be configured to our design system, and offered excellent baked in accessibility such as sonification (turning data into audio), raw data exports and screenreader configurations.</p></div>
+        <div class="col-md-7">
+            <!-- <img height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
+            <a target="_blank" href="/images/arcTaurus/Frame 8.png">
+            <img alt="Screenshot of Figma, showing new interface which is dark blue with bright blue glow around all blocks" class="img-fluid" src="/images/arcTaurus/Frame 8.png">
+            </a>
+        </div>
+            </div> 
+    </div>
+</section>
 <section>
-
+    <div class="container">
+            <div class="row manualFlip">
+                <div class="col-md-6">
+                    <h4>Improved navigation</h4>
+                <p>
+                As a key finding during discovery was the diverse user personas, but there shared need to get to what they're looking for fast, I introduced a "sticky nav", a fixed menu detailing all the categories in the tool. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impaire accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
+            </p><p>This relatively simple user experience enhancement saw a reduction in user intent, user's previously took up to 1 minute to find the data section they logged in to view, but this was reduced to approximately 5-10 seconds.</p></div>
+            <div class="col-md-6">
+                <P>Pop Up Ideas for tutorial system</P>
+                <div id="carousel-onboarding" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-onboarding" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-onboarding" data-slide-to="1"></li>
+                      <li data-target="#carousel-onboarding" data-slide-to="2"></li>
+                      <li data-target="#carousel-onboarding" data-slide-to="3"></li>
+                      <li data-target="#carousel-onboarding" data-slide-to="4"></li>
+                    </ol>
+                  
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 4onboard.png"><img alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/arcTaurus/Onboarding/Frame 4onboard.png" /></a>
+                       
+                      </div>
+                      <div class="item">
+                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 5onboard.png"><img alt="Dark Blue round rectangle with yellow border on left side" src="/images/arcTaurus/Onboarding/Frame 5onboard.png" /></a>
+                      </div>
+                      <div class="item">
+                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 6onboard.png"><img alt="Dark Blue round rectangle with yellow border across top and icons of the logo characters a Bull and a Bear" src="/images/arcTaurus/Onboarding/Frame 6onboard.png" /></a>
+                      </div>
+                      <div class="item">
+                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 8onboard.png"><img alt="Blue round rectangle with second jigsaw like block connected underneath, which is darker and has a box for holding an image" src="/images/arcTaurus/Onboarding/Frame 8onboard.png" /></a>
+                      </div>
+                      <div class="item">
+                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 7onboard.png"><img alt="Dark Blue slanted rectangle with yellow border. Text reads: The Set-Up block is what will hold all your bot’s code! Simply pick how often your bot will run, the crypto you’re working with, and then drag a few blocks inside it, and your strategy will start to come to life." src="/images/arcTaurus/Onboarding/Frame 7onboard.png" /></a>
+                      </div>
+                      
+                      <a target="_blank" class="left carousel-control" href="#carousel-onboarding" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a target="_blank" class="right carousel-control" href="#carousel-onboarding" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+            </div>
+            </div>
+</div>
+</section>
+<section>
 <div class="container">
 
-<h3>Planning an iterative release</h3>
-
-<p>
-Because reporting relied heavily on underlying data infrastructure, feature development required close collaboration with engineering teams.
-</p>
-
-<p>
-Through backlog refinement sessions, we prioritised reporting capabilities based on both user value and technical feasibility.
-</p>
-
-<p>
-This process helped define a phased release strategy that allowed the product to introduce reporting quickly while expanding functionality in later iterations.
-</p>
-
-</div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>Exported report</h4>
+                <p> A consequency of the lean MVP was we had to launch with our most basic report design. Immediatly via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
+                <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liase closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF softwares limitations</p>
+                <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it icrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liased with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
+                <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
+              </div>
+        <div class="col-md-7 ">
+                <!-- <ul class="importantQuote"><h4>"I know theres a tutorial, but I'm sure I don't need it</h4><span> - Summary of users in onboarding studies, who ignored the tutorial but did in fact need help to figure out the platform</span></ul> -->
+        </div>
+            </div>
+    </div>
 
 </section>
+<!-- <section>
+    <div class="container">
+     
+            <div class="row manualFlip">
+                <div class="col-md-5">
+                    <h4>Onboarding - problem solving</h4>
+                <p>
+                Hidden Onboarding relied on delivering the most critical skills and knowledge for the product in a simple quick way that didn't feel like learning. A smaller version of the blockly window was implemented in a pop up with some simple blocks that users were asked to assemble. This was shown when users local storage indicated it was their first time visiting the platform.
+            </p>
+            </div>
+            <div class="col-md-7">
+                <a target="_blank" href="/images/arcTaurus/onboarding.gif">
+                <img alt="Gif of popup. Left side has animation of two blocks connecting, and right side features a workspace with interactive blocks for the user to copy the gif." class="img-fluid" src="/images/arcTaurus/onboarding.gif">
+                </a>
+            </div>
+            </div> 
+    </div>
+</section> -->
 
 <section>
-
-<div class="container">
-
-<h3>Design exploration</h3>
-
-<p>
-Several interface concepts were explored to determine how reporting should fit within the existing platform.
-</p>
-
-<p>
-Design comparisons focused on discoverability, report creation workflows, and the clarity of data presentation.
-</p>
-
-<p>
-The final direction prioritised simple report generation, clear visual summaries, and reusable report structures that teams could use consistently across clients.
-</p>
-
-</div>
-
+    <div class="container">
+      
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>New Feature - Target growth</h4>
+                <p> Originally, we had benchmarking on our roadmap, relying on a 3rd party data provider. This initiative had to be dropped as costs proved prohibitive</p>
+            <p style="font-size:1.3rem;"> Rather than admit defeat and tell our users we couldn't deliver this feature, I revisted research and noticed an expression of interest in a "Personal benchmarking idea"</p>
+            <p>To validate this, I ran a series of moderated and unmoderated tests with users, understanding why they would want to benchmark in general, what sort of financial goals clients most often held, and how this fit into the reporting ecosystem</p>
+            <p>It became clear that users had clear financial goals i.e. Ourperform a standard savings account in 1 year, Reach a pension pot of £100,000 by age 35. Financial targets often feel speculative, untangible, so if we could visualise these and include in annual reports it would be a benefit to clients, but also financial advisers.</p>
+            </div>
+            <div class="col-md-7">
+                <p>This project took a fair few iterations to get right and get a business case approved, and required working closely with leadership to sell them on the value of this new enhancement</p>
+                <p>Eventually we were able to compromise and land on a new section allowing advisers to enter a £ or % target for there clients investment product. They could set a target for each product the user held. They could then see every time they logged in how the clients current product value or growth compared with this target, and ammend if required. This compromise met the research need of visually tracking performance against a personal benchmark, whilst limiting it to a smaller MVP type delivery to ensure market receptiveness before investing further</p>
+                <p>AI was intstrumental in getting this project off the ground, as this feature was so interactive I overcame the limits of figma prototypes by utilising Figma Make to create real coded prototypes that could be rapidly edited for use in user testing as well as for internal demonstrations.</p>
+              </div>
+            </div>
+    </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h3>Balancing flexibility and clarity</h3>
-
-<p>
-Rather than designing an overly complex reporting system, the initial release focused on delivering clear and reliable summaries of the most important metrics.
-</p>
-
-<p>
-This approach allowed users to quickly generate client-ready insights while establishing a strong foundation for future reporting capabilities.
-</p>
-
-</div>
-
-</section>
-
-<section id="final" class="sectionHeading">
-
-<h2>Outcomes</h2>
+<section id="final" class="sectionHeading finalSections">
+    <div class="container">
+        <h2>Final Design</h2>
+        </div>
+        <div class="row" style="flex-direction:column;justify-content: center;text-align: center;">
+            <!-- <video width="70%" style="margin:auto" controls>
+                <source src="/images/arcTaurus/finals/arctaurus-howitworks-test.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video> -->
+              <iframe style="display:block" class="finalArcVid" src="https://www.youtube.com/embed//r_snApEUflY">
+              
+              </iframe>
+              
+              <p>I created this video for some promotional work the company was undertaking</p>
+        </div>
 
 </section>
-
-<section>
-
-<div class="container">
-
-<p>
-The introduction of client reporting closed an important competitive gap and significantly improved the platform’s value for teams communicating results to clients.
-</p>
-
-<ul>
-
-<li>
-Reporting capabilities allowed users to generate client insights directly within the platform.
-</li>
-
-<li>
-Manual reporting workflows were reduced as teams began using integrated reports.
-</li>
-
-<li>
-Adoption of the reporting feature grew by <strong>250% within the first year</strong>.
-</li>
-
-<li>
-The iterative release strategy allowed reporting functionality to expand while continuing to support new use cases.
-</li>
-
-</ul>
-
-<p>
-This project demonstrated how aligning research, product strategy, and engineering constraints can deliver meaningful user value while supporting long-term platform growth.
-</p>
-
-</div>
-
+<section class="sectionHeading finalSections">
+    <div class="container">
+        <h2>Insights</h2>
+        <div class="row">
+           <ul  class="importantQuote">
+            <li><i class="fas fa-clock"></i> Following 1 year of iterative development, we grew from an average of 328 monthly users to just show of 1300 (approximate 300% user growth in one year)</li>
+            <li><i class="fas fa-hourglass-half"></i>The number of reports exported increased by XX%</li>
+            <li><i class="fas fa-code"></i>We built a loyal user base of advisers switching entirely to our reporting services. Advisers started comparing our original competitors to us, where before they were our goal and now they felt competitors should look to us</li>
+            <!-- <li><i class="fas fa-thumbs-up"></i></li> -->
+           </ul> 
+        </div>
+    </div>
 </section>
-
+<section class="sectionHeading finalSections">
+    <div class="container">
+        <h2>What I learned</h2>
+        <div class="row importantQuote">
+            <p> </p>
+        </div>
+    </div>
 </section>
+</section>
+</section>
+<footer>
+  <p>Website designed, created and maintained by Amber Miller<br>
+    If you like my work, get in touch at
+    <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
 <script>
@@ -469,5 +528,5 @@ lastScrollTop = st <= 0 ? 0 : st;
         }
       }
     </script>
-</body>
+  </body>
 </html>
