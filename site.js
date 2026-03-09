@@ -96,3 +96,13 @@ function initComparisons() {
     }
   }
 }
+
+// Auto-initialize comparison sliders once the DOM is ready.
+// This ensures pages that call initComparisons() in the <head> won't fail.
+if (typeof window !== 'undefined') {
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initComparisons();
+  } else {
+    document.addEventListener('DOMContentLoaded', initComparisons);
+  }
+}

@@ -21,9 +21,6 @@
 <link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="/caseStudy.css">
 <script>
-initComparisons();
-</script>
-<script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -58,6 +55,7 @@ initComparisons();
           <p>Results</p>
     <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
       </div>
+     
 <section id="start" class="projectIntro">
 <div class="container">
 
@@ -136,7 +134,7 @@ initComparisons();
 </div>
 </section>
 
-<section  style="padding-top:4rem;" class="endOfTopic">
+<section>
     <div class="container">
         <h2>Backstory</h2>
         <div class="row">
@@ -155,7 +153,10 @@ Following a major platform migration, Aegon lost its reporting capability entire
 The goal of this project was to rebuild reporting capabilities and long term position Aegon as a market leader in adviser reporting tools.</p> </div>
 </section>
 
-<section> Delivery timeframe *insert here*</section>
+ <section style="padding-top:4rem;" class="endOfTopic">
+  <h3>Project roadmap</h3>
+        <img style="width: 70%;" src="/images/Aegon/Timeline.png">
+      </section>
 
 <section id="research" class="sectionHeading">
 
@@ -221,38 +222,52 @@ The goal of this project was to rebuild reporting capabilities and long term pos
 <section>
     <div class="container">
             <div class="row manualFlip">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <h4>Improved navigation</h4>
                 <p>
                 As a key finding during discovery was the diverse user personas, but there shared need to get to what they're looking for fast, I introduced a "sticky nav", a fixed menu detailing all the categories in the tool. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impaire accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
             </p><p>This relatively simple user experience enhancement saw a reduction in user intent, user's previously took up to 1 minute to find the data section they logged in to view, but this was reduced to approximately 5-10 seconds.</p></div>
-            <div class="col-md-6">
-                <P>Pop Up Ideas for tutorial system</P>
+            <div class="col-md-4"> </div>
+</div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-7">
+          <h4>Exported report</h4>
+          <p> A consequency of the lean MVP was we had to launch with our most basic report design. Immediatly via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
+          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liase closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF softwares limitations</p>
+          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it icrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liased with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
+          <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
+        </div>
+        <!-- <div class="col-md-3 ">
+            <div class="img-comp-container">
+              <div class="img-comp-img">
+                  <img src="img_snow.jpg" width="300" height="200">
+              </div>
+              <div class="img-comp-img img-comp-overlay">
+                  <img src="img_forest.jpg" width="300" height="200">
+              </div>
+            </div>
+        </div> -->
+         <div class="col-md-4">
+                <P>Report design over time </P>
                 <div id="carousel-onboarding" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-onboarding" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="1"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="2"></li>
-                      <li data-target="#carousel-onboarding" data-slide-to="3"></li>
-                      <li data-target="#carousel-onboarding" data-slide-to="4"></li>
                     </ol>
                   
                     <div class="carousel-inner">
                       <div class="item active">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 4onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/arcTaurus/Onboarding/Frame 4onboard.png" /></a>
+                        <a target="_blank" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report older.png" /></a>
                        
                       </div>
                       <div class="item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 5onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border on left side" src="/images/arcTaurus/Onboarding/Frame 5onboard.png" /></a>
-                      </div>
+                        <a target="_blank" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report old.png" /></a>  </div>
                       <div class="item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 6onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top and icons of the logo characters a Bull and a Bear" src="/images/arcTaurus/Onboarding/Frame 6onboard.png" /></a>
-                      </div>
-                      <div class="item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 8onboard.png"><img loading="lazy" alt="Blue round rectangle with second jigsaw like block connected underneath, which is darker and has a box for holding an image" src="/images/arcTaurus/Onboarding/Frame 8onboard.png" /></a>
-                      </div>
-                      <div class="item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 7onboard.png"><img loading="lazy" alt="Dark Blue slanted rectangle with yellow border. Text reads: The Set-Up block is what will hold all your bot’s code! Simply pick how often your bot will run, the crypto you’re working with, and then drag a few blocks inside it, and your strategy will start to come to life." src="/images/arcTaurus/Onboarding/Frame 7onboard.png" /></a>
+                         <a target="_blank" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report new.png" /></a>
                       </div>
                       
                       <a target="_blank" class="left carousel-control" href="#carousel-onboarding" data-slide="prev">
@@ -264,28 +279,6 @@ The goal of this project was to rebuild reporting capabilities and long term pos
                     </div>
             </div>
             </div>
-</div>
-</section>
-<section>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-          <h4>Exported report</h4>
-          <p> A consequency of the lean MVP was we had to launch with our most basic report design. Immediatly via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
-          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liase closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF softwares limitations</p>
-          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it icrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liased with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
-          <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
-        </div>
-        <div class="col-md-3 ">
-            <div class="img-comp-container">
-              <div class="img-comp-img">
-                  <img src="img_snow.jpg" width="300" height="200">
-              </div>
-              <div class="img-comp-img img-comp-overlay">
-                  <img src="img_forest.jpg" width="300" height="200">
-              </div>
-            </div>
-        </div>
       </div>
     </div>
 
@@ -331,18 +324,13 @@ The goal of this project was to rebuild reporting capabilities and long term pos
 
 <section id="final" class="sectionHeading finalSections">
     <div class="container">
-        <h2>Final Design</h2>
+        <h3>Target Growth AI powered demo</h3>
         </div>
         <div class="row" style="flex-direction:column;justify-content: center;text-align: center;">
-            <!-- <video width="70%" style="margin:auto" controls>
-                <source src="/images/arcTaurus/finals/arctaurus-howitworks-test.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video> -->
-              <iframe style="display:block" class="finalArcVid" src="https://www.youtube.com/embed//r_snApEUflY">
-              
+              <iframe style="display:block" class="finalArcVid" src="https://select-waltz-64556150.figma.site">
               </iframe>
               
-              <p>I created this video for some promotional work the company was undertaking</p>
+              <p>Figma make prototypes like this were a great tool for working with senior stakeholders on scope defining, as I could quickly turn on and off functionality to see how it affected the overall experience</p>
         </div>
 
 </section>
