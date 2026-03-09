@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
   }
 
+  p{
+    text-align:left;
+  }
+
   .container{
     min-height:100%;
     display: flex;
@@ -71,8 +75,49 @@ h4{
   font-weight:bold;
 }
 
-.projectSnapshot{
-  align-items:flex-start;
+.projectSnapshot{ 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.projectSnapshot>div{
+  background: rgba(248, 196, 172, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  /* Ensure all cards stretch to match the tallest card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align heading at top, push excess space to bottom */
+  min-height: 12rem;
+}
+
+.projectSnapshot>div:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.14);
+}
+
+.projectSnapshot>div h4{
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.projectSnapshot>div p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+  .projectSnapshot {
+    flex-wrap: nowrap;
+  }
 }
 
 .projectIntro{
@@ -103,15 +148,33 @@ footer{
 
 
 
-/* .standAlone{
-  display: flex;
-  margin: auto;
-  justify-content: center;
-} */
-/* .sectionHeading, .standAlone{
-display:flex;
-justify-content: center;
-} */
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
 
 .landing-img{
   width:60%;
