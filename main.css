@@ -24,32 +24,27 @@ body {
   background: var(--bg);
   color: var(--darkGrey);
 }
-
+/* 
 h1 {
-  font-size: 35px;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 24px;
-}
+  font-size: 1.4rem;
+} */
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter", sans-serif;
-}
-
-.projectIntro h2,
-.projectIntro h3 {
   font-family: "Inter", sans-serif;
 }
 
@@ -88,7 +83,7 @@ h4 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.3rem;
   transition: all 0.5s ease;
 }
 
