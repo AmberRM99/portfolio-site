@@ -23,7 +23,7 @@
 
   .firstSection [class*="col"]{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -65,6 +65,10 @@ section:not(.navbar-holder) {
   min-height: calc(100vh - 4rem);
   display:block;
   scroll-snap-align: start;
+}
+
+section:not(.navbar-holder):first-of-type {
+Padding:0;
 }
 
 .caseStudyHero {
@@ -313,7 +317,7 @@ footer{
 }
 
 .sectionHeading h2 {
-  margin: 0 auto;
+  margin: auto;
   max-width: 900px;
   background: none;
   color: var(--white);
