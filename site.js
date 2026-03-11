@@ -31,19 +31,35 @@ function initComparisons() {
   }
   function compareImages(img) {
     var slider, img, clicked = 0, w, h;
-    /* Get the width and height of the img element */
-    w = img.offsetWidth;
-    h = img.offsetHeight;
-    /* Set the width of the img element to 50%: */
-    img.style.width = (w / 2) + "px";
+
+    function updateDimensions() {
+      /* Get the width and height of the img element */
+      w = img.offsetWidth;
+      h = img.offsetHeight;
+      /* Set the width of the img element to 50%: */
+      img.style.width = (w / 2) + "px";
+      /* Position the slider in the middle: */
+      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    }
+
     /* Create slider: */
     slider = document.createElement("DIV");
     slider.setAttribute("class", "img-comp-slider");
+
     /* Insert slider */
     img.parentElement.insertBefore(slider, img);
-    /* Position the slider in the middle: */
-    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+
+    /* Ensure dimensions are set once the image has loaded */
+    if (img.complete) {
+      updateDimensions();
+    } else {
+      img.addEventListener('load', updateDimensions);
+    }
+
+    /* Update on window resize */
+    window.addEventListener('resize', updateDimensions);
+
     /* Execute a function when the mouse button is pressed: */
     slider.addEventListener("mousedown", slideReady);
     /* And another function when the mouse button is released: */

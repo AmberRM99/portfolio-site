@@ -144,7 +144,7 @@
               <p>This created three risks:</p>
               <ul>
                 <li>Advisers moving to competitor platforms</li>
-                <li>Reduced transparency for clients and, by extension, Aegon customers</li>
+                <li>Reduced transparency for advisers clients, who are also Aegon customers</li>
                 <li>Potential friction with Consumer Duty regulations</li>
               </ul>
 
@@ -154,7 +154,7 @@
 
  <section style="padding-top:4rem;" class="endOfTopic">
   <h3>Project roadmap</h3>
-        <img style="width: 70%;" src="/images/Aegon/Timeline.png" alt="Project timeline showing key milestones for the reporting platform redesign">
+        <img class="img-fluid" src="/images/Aegon/Timeline.png" alt="Project timeline showing key milestones for the reporting platform redesign">
   </section>
   <section id="research" class="sectionHeading">
     <h2>Discovery</h2>
@@ -163,13 +163,20 @@
   <div class="container">
       <h2>Early insights</h2>
       <div class="row">
-          <div class="discovery">During phase 1, we launched multiple moderated and unmoderated feature preference studies to understand our users’ expectations. This taught us the following:</div>
-          <ul class="importantQuote" style="margin:2rem">
-              <li>There are two types of financial advisers looking to use our tool: <em>playful</em> and <em>productive</em>.</li>
-              <li><em>Playful</em> advisers want raw data and the power to play with it, expecting strong visuals, customisation opportunities, and the ability to see the different stories data can tell.</li>
-              <li><em>Productive</em> advisers (and their accompanying paraplanner staff) benefited from a new reporting tool but wanted to get in, find or export the data they needed, and get out as fast as possible.</li> 
-          </ul>
-         
+          <p>During phase 1, we launched multiple moderated and unmoderated feature preference studies to understand our users’ expectations.</p>
+              <p>Our key discovery was there are two types of financial advisers looking to use our tool: <b>explorers</b> and <b>finders</b>.</li>
+              <div class="projectSnapshot">
+                <div class="snapshotCard">
+                 <i class="fa fa-rocket"></i>
+                <p class="Snapshotheader">Explorers</p>
+                <p>Explorers want raw data and the power to play with it, expecting strong visuals, customisation opportunities, and the ability to see the different stories data can tell. They're more likely to spend longer on the page and make use of the full tool suite.</p>
+              </div>
+              <div class="snapshotCard">
+                 <i class="fa fa-magnifying-glass"></i>
+                <p class="Snapshotheader">Finders</p>
+                <p>Finders are advisers and their accompanying ParaPlanner staff who will benefit from a new reporting tool but want to use it for immediate fact finding and data exports. Even in a positive experience there goal is getting in and getting out as fast as possible.</p>
+              </div>
+              </div>
       </div>
   </div>
 </section>
@@ -201,17 +208,17 @@
 </section>
 
 <section id="design" class="sectionHeading">
-        <h2>UX Design</h2>
+        <h2>Design process</h2>
 </section>
 
 <section class="startofTopic">
     <div class="container">
             <div class="row">
                <div class="col-md-5 ExtraContent">
-  <h4>Phase 1 – get an MVP live</h4>
-  <p>Based on our research findings and available technology, we delivered a lean MVP focused on the most important data.</p>
-  <p>The biggest learning of the MVP was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessibility guidelines.</p>
-  <p>After some robust internal testing and more user research, we landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank"> HighCharts </a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screenreader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
+  <h3>Phase 1 – get an MVP live</h3>
+  <p>Based on our research findings and available technology, we delivered a lean MVP to address the immediate need for basic reporting functionality.</p>
+  <p>The biggest learning of getting the MVP live was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessibility guidelines.</p>
+  <p>After some robust internal testing and more user research, we landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank"> HighCharts </a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
 </div>
         <div class="col-md-7">
             <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
@@ -227,53 +234,56 @@
     <div class="container">
             <div class="row manualFlip">
                 <div class="col-md-8 ExtraContent">
-                    <h4>Improved navigation</h4>
+                    <h3>Improved navigation</h3>
                 <p>
-                As a key finding during discovery was the diverse user personas, but there shared need to get to what they're looking for fast, I introduced a "sticky nav", a fixed menu detailing all the categories in the tool. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impaire accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
+                As a key finding during discovery was the diverse user personas, but there shared need to get to what they're looking for fast, I introduced a "sticky nav", a fixed menu detailing all the categories in the tool. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impair accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
             </p><p>This relatively simple user experience enhancement saw a reduction in user intent, user's previously took <b>up to 1 minute</b> to find the data section they logged in to view, but this was reduced to approximately <b>5-10 seconds</b>.</p></div>
             <div class="col-md-4"> </div>
 </div>
 </section>
 
-<section style="display:none">
+<section>
   <div class="container">
     <div class="row">
         <div class="col-md-7">
-          <h4>Exported report</h4>
-          <p> A consequency of the lean MVP was we had to launch with our most basic report design. Immediatly via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
-          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liase closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF softwares limitations</p>
-          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it icrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liased with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
+          <h3>Exported report</h3>
+          <p> A consequence of the lean MVP was we had to launch with our most basic report design. Immediately via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
+          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liaise closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF software limitations</p>
+          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it incrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liaised with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
           <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
         </div>
         
          <div class="col-md-4">
-                <P>Report design over time </P>
+                <h4>Report design over time</h4>
                 <div id="carousel-onboarding" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-onboarding" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="1"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="2"></li>
                     </ol>
-                  
                     <div class="carousel-inner">
-                      <div class="item active">
-                        <a target="_blank" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report older.png" /></a>
-                       
+                      <div class="carousel-item active">
+                        <p>Original report</p>
+                        <a target="_blank" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report older.png" /></a>
                       </div>
-                      <div class="item">
-                        <a target="_blank" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report old.png" /></a>  </div>
-                      <div class="item">
-                         <a target="_blank" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" src="/images/Aegon/Report new.png" /></a>
+                      <div class="carousel-item">
+                        <p>Hybrid design</p>
+                        <a target="_blank" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report old.png" /></a>
                       </div>
-                      
-                      <a target="_blank" class="left carousel-control" href="#carousel-onboarding" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                      </a>
-                      <a target="_blank" class="right carousel-control" href="#carousel-onboarding" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                      </a>
+                      <div class="carousel-item">
+                         <p>Full rebrand</p>
+                        <a target="_blank" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Aegon/Report new.png" /></a>
+                      </div>
                     </div>
-            </div>
+                    <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-onboarding" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
       </div>
     </div>
@@ -284,10 +294,10 @@
     <div class="container">
       
             <div class="ExtraContent">
-              <h4>New Feature - Target growth</h4>
+              <h3>New Feature - Target growth</h3>
               <div class="row">
                 <div class="col-md-6">
-                <p> Originally, we had benchmarking on our roadmap, relying on a 3rd party data provider. This initiative had to be dropped as costs proved prohibitive. Rather than admit defeat and tell our users we couldn't deliver this feature, I revisted research and noticed an expression of interest in a "Personal benchmarking idea". <br><br>
+                <p> Originally, we had <b>benchmarking</b> on our roadmap, which was reliant on a 3rd party data provider. This initiative had to be dropped as costs proved prohibitive. Rather than admit defeat and tell our users we couldn't deliver this feature, I revisited research and noticed an expression of interest in a "Personal benchmarking idea". <br><br>
                    To validate this, I ran a series of moderated and unmoderated tests with users, understanding why they would want to benchmark in general, what sort of financial goals clients most often held, and how this fit into the reporting ecosystem
               <br><br> It became clear that users often had measurable financial goals such as <b> prove benefit of a strategy by growing 3.5% in one year </b> or <b> reach a pension pot of £100,000 by age 35 </b>. <br> <br> 
               Financial targets often feel <b>speculative </b> and <b>intangible</b>, so if we could visualise these and include them in annual reports it would be a big benefit to clients and financial advisers.</p>
@@ -321,7 +331,7 @@
             <li><i class="fas fa-clock"></i> Following 1 year of iterative development, we grew from an average of 328 monthly users to just show of 1300 (approximate <b>300% user growth in one year </b>)</li>
             <li><i class="fas fa-hourglass-half"></i>The number of reports exported increased by <strong>[METRIC TO BE ADDED]</strong></li>
             <li><i class="fas fa-code"></i>The ability to break enhancements into a clear, iterative backlog allowed us to release a total of <b>17 enhancements</b> to the tool since the original go live early 2025</li>
-            <li><i class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandonding there own in-house or competitor owned solutions.</li>
+            <li><i class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandoning there own in-house or competitor owned solutions.</li>
            </ul> 
         </div>
     </div>
@@ -331,7 +341,7 @@
     <div class="container">
         <h2>What I learned</h2>
         <div class="row importantQuote">
-            <p> This was a good project for developing as a designer, and learning to think not only about the user but the overall busines picture. Over the year I was able to work with two talented product owner's who taught me the importance of evidence based decission making, and encouraged me to push back if I could justify it. </p></p>I also recemented the power of befriending your developers as a designer, as I could quickly get validation on approaches and complexity long before it had the chance to become an issue.</p><br><br> <p>This is a project I'm incredibly proud of, as the user value is clear, and it's been a pleasure helping it evolve.  </p>
+            <p> This was a good project for developing as a designer, and learning to think not only about the user but the overall business picture. Over the year I was able to work with two talented product owner's who taught me the importance of evidence based decision making, and encouraged me to push back if I could justify it. </p></p>I once again unlocked the power of befriending your developers as a designer, as I could quickly get validation on approaches and complexity long before it had the chance to become an issue.</p><br><br> <p>This is a project I'm incredibly proud of, as the user value is clear, and it's been a pleasure helping it evolve.  </p>
         </div>
     </div>
 </section>
