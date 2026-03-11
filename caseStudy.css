@@ -359,7 +359,7 @@ footer{
 .sectionHeading {
   width: 100%;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, rgba(248, 139, 88, 0.92), rgba(248, 139, 88, 0.75));
+  background: var(--orange);
   text-align: center;
 }
 

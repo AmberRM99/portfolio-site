@@ -495,10 +495,12 @@ background: rgba(255, 141, 86, 0.14);
 }
 
   
+  /* Keep anchors inline so they flow within text (prevents unexpected block layout). */
   a {
-    display: block;
-    padding: 8px;
-    /* background-color: #dddddd; */
+    display: inline;
+    padding: 0;
+    color: var(--orange);
+    text-decoration: underline;
   }
 
   .manualFlip{
