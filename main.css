@@ -538,6 +538,7 @@ background: rgba(255, 141, 86, 0.14);
     font-weight: bolder;
     transition:all .2s ease;
     text-decoration: none;
+    padding: 0.7rem;
   }
 
   .linkBtn.secondary{

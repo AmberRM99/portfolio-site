@@ -33,20 +33,19 @@ function initComparisons() {
     var slider, img, clicked = 0, w, h;
 
     function updateDimensions() {
-      /* Get the width and height of the img element */
-      w = img.offsetWidth;
-      h = img.offsetHeight;
-      /* Set the width of the img element to 50%: */
+      /* Get the width and height of the parent container (the comparison frame) */
+      var container = img.parentElement;
+      w = container.offsetWidth;
+      h = container.offsetHeight;
+      /* Set the overlay image width to 50% (half of the container): */
       img.style.width = (w / 2) + "px";
-      /* Position the slider in the middle: */
-      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      /* Position the slider in the middle horizontally: */
       slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
     }
 
     /* Create slider: */
     slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");
-
+    slider.setAttribute("class", "img-comp-slider");    slider.innerHTML = '<i class="fas fa-arrows-left-right" aria-hidden="true"></i>';
     /* Insert slider */
     img.parentElement.insertBefore(slider, img);
 

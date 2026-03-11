@@ -251,6 +251,31 @@ footer{
   box-shadow: 0 14px 30px rgba(31, 41, 55, 0.14);
 }
 
+/* Labels for the comparison slider (before/after) */
+.img-comp-container::before,
+.img-comp-container::after {
+  position: absolute;
+  top: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.img-comp-container::before {
+  content: "Before";
+  left: 1.25rem;
+}
+
+.img-comp-container::after {
+  content: "After";
+  right: 1.25rem;
+}
+
 /* Ensure the comparison container stays large enough to show both images and the slider.
    The JS handles the 50/50 split by resizing the overlay image width to 50%. */
 .img-comp-container .img-comp-img {
@@ -258,6 +283,27 @@ footer{
   height: 100%;
 }
 
+.img-comp-overlay {
+  /* Start in the middle by default (50/50). JS will keep it synced on resize. */
+  width: 50%;
+  /* Ensure the overlay can be used as a reference for the divider line. */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Divider line that stays aligned with the handle as the overlay width changes */
+.img-comp-overlay::after {
+  content: "";
+  position: absolute;
+   top: 0;
+  right:0;
+  width: 2px;
+  stroke-dasharray: 8;
+  height: 100%;
+  background: var(--darkOrange);
+  pointer-events: none;
+}
 .img-comp-img {
   position: absolute;
   top: 0;
@@ -268,9 +314,12 @@ footer{
 }
 
 .img-comp-img img {
-  width: 100%;
+  /* Keep the image at full height and prevent it from scaling down when the overlay is resized.
+     The overlay container is clipped to create the swipe effect. */
   height: 100%;
-  object-fit: contain;
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
   background: var(--white);
   display: block;
 }
@@ -284,16 +333,28 @@ footer{
 
 .img-comp-slider {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 56px;
   height: 56px;
-  background-color: rgba(33, 150, 243, 0.85);
+  background-color: #f88b58bf;
   border: 3px solid rgba(255, 255, 255, 0.85);
   opacity: 1;
   border-radius: 50%;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+}
+
+.img-comp-slider i {
+  pointer-events: none;
 }
 
 .landing-img{
