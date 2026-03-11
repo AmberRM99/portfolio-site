@@ -52,6 +52,10 @@ h4 {
   display: none;
 }
 
+/* .projectCards{
+  Background:#9a4016;
+} */
+
 .topnav {
   background: var(--mainGrey);
   display: flex;
@@ -177,6 +181,68 @@ a:hover {
   border-bottom: 2px solid var(--orange);
 }
 
+.cuteDecor{
+  position: relative;
+}
+
+.cuteDecor::after,
+.cuteDecor::before {
+  content: "";
+  position: absolute;
+   right: -17px;
+    width: 12px;
+    height: 3px;
+    background: #f28c38;
+    border-radius: 4px;
+}
+
+.cuteDecor::after {
+  top: 6px;
+  transform: rotate(345deg);
+}
+
+.cuteDecor::before {
+  top: 14px;
+  transform: rotate(15deg);
+}
+
+/* bulb container */
+.projectBulb {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #fff4e9;
+
+  border: 1px solid rgba(242,140,56,0.25);
+
+  color: #f28c38;
+  font-size: 18px;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+
+  z-index: 3;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleBulb {
+  color: #f28c38;
+  font-size: 20px;
+}
+
 .projectPreview {
   background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(242,244,246,0.85));
   border: 1px solid rgba(27, 31, 35, 0.12);
@@ -193,6 +259,7 @@ a:hover {
 .projectPreview:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(31, 41, 55, 0.2);
+  text-decoration: underline;
 }
 
 .projectPreview__content {
@@ -205,7 +272,10 @@ a:hover {
 .projectPreview h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: var(--darkOrange)
 }
+
+
 
 .projectPreview h6 {
   font-weight: 700;
@@ -225,8 +295,8 @@ a:hover {
   gap: 0.4rem;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
-  background: rgba(255, 141, 86, 0.14);
-  color: #a64d2b;
+  background: rgba(58, 32, 19, 0.14);
+  color: var(--darkGrey);
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -234,6 +304,11 @@ a:hover {
 .projectPreview .tag.result {
   background: rgba(76, 175, 80, 0.15);
   color: rgba(26, 115, 11, 0.9);
+}
+
+.projectPreview .tag.time {
+background: rgba(255, 141, 86, 0.14);
+  color: #a64d2b;
 }
 
 .projectMeta {
@@ -249,7 +324,6 @@ a:hover {
 .projectMeta__text {
   flex: 1 1 100%;
   min-width: 180px;
-  line-height: 1.4;
   color: rgba(31, 41, 55, 0.78);
 }
 
