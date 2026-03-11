@@ -545,19 +545,58 @@ text-align:center;
         clear: both;
       }
   @media only screen and (max-width: 780px){
-    .skipBtns{
-      display: flex;
-    background: var(--lightGrey);
-    width: 100vw;
-    flex-direction: row;
-    position: fixed;
-    top: 87%;
-    z-index: 1000;
-    right: 0;
-    align-items: center;
-    justify-content: space-around;
+    /* Remove the desktop "sidebar" container gap on mobile */
+    .container {
+      max-width: 100vw;
+      padding: 2rem 1rem;
     }
 
+    /* Keep scroll snapping off on mobile for a smoother feel */
+    html {
+      scroll-snap-type: none;
+      overflow-x: hidden;
+    }
+
+    /* Stack snapshot cards full-width on narrower screens */
+    .projectSnapshot {
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .projectSnapshot .snapshotCard {
+      width: 100%;
+    }
+
+    /* Ensure images and intro cards don’t overflow */
+    .projectIntro img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Center the skip nav at the bottom of the viewport */
+    .skipBtns{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      max-width: 92vw;
+      min-width: 260px;
+      padding: calc(0.5rem + env(safe-area-inset-bottom, 0px)) 0.75rem 0.5rem;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 999px;
+      box-shadow: 0 10px 26px rgba(31, 41, 55, 0.16);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    /* Keep the icon-only layout on mobile */
     .skipBtns p{
       display:none;
     }
@@ -565,10 +604,7 @@ text-align:center;
     .skipBtns span p{
       display:block;
     }
-    
-    html {
-      scroll-snap-type: none;
-    }
+
     .landing-img{
       width:20%;
     }
