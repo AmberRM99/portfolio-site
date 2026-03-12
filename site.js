@@ -30,85 +30,51 @@ function initComparisons() {
     compareImages(x[i]);
   }
   function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
+    var range, container, w, h;
+
+    function updateOverlay(percent) {
+      var val = Number(percent);
+      if (Number.isNaN(val)) val = 50;
+      if (val < 0) val = 0;
+      if (val > 100) val = 100;
+      img.style.width = (w * (val / 100)) + "px";
+    }
 
     function updateDimensions() {
       /* Get the width and height of the parent container (the comparison frame) */
-      var container = img.parentElement;
+      container = img.parentElement;
       w = container.offsetWidth;
       h = container.offsetHeight;
-      /* Set the overlay image width to 50% (half of the container): */
-      img.style.width = (w / 2) + "px";
-      /* Position the slider in the middle horizontally: */
-      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+      /* Keep the overlay width in sync with the range input */
+      updateOverlay(range.value);
     }
 
-    /* Create slider: */
-    slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");    slider.innerHTML = '<i class="fas fa-arrows-left-right" aria-hidden="true"></i>';
-    /* Insert slider */
-    img.parentElement.insertBefore(slider, img);
+    /* Create a range input to control the comparison */
+    range = document.createElement("input");
+    range.type = "range";
+    range.min = "0";
+    range.max = "100";
+    range.value = "50";
+    range.className = "img-comp-range";
+    range.setAttribute("aria-label", "Compare before and after");
+    range.addEventListener("input", function (e) {
+      updateOverlay(e.target.value);
+    });
 
-    /* Ensure dimensions are set once the image has loaded */
-    if (img.complete) {
-      updateDimensions();
-    } else {
+    /* Insert the range control below the container */
+    container = img.parentElement;
+    if (container && container.parentNode) {
+      container.parentNode.insertBefore(range, container.nextSibling);
+    }
+
+    /* Ensure dimensions are set immediately and once the image has loaded */
+    updateDimensions();
+    if (!img.complete) {
       img.addEventListener('load', updateDimensions);
     }
 
     /* Update on window resize */
     window.addEventListener('resize', updateDimensions);
-
-    /* Execute a function when the mouse button is pressed: */
-    slider.addEventListener("mousedown", slideReady);
-    /* And another function when the mouse button is released: */
-    window.addEventListener("mouseup", slideFinish);
-    /* Or touched (for touch screens: */
-    slider.addEventListener("touchstart", slideReady);
-     /* And released (for touch screens: */
-    window.addEventListener("touchend", slideFinish);
-    function slideReady(e) {
-      /* Prevent any other actions that may occur when moving over the image: */
-      e.preventDefault();
-      /* The slider is now clicked and ready to move: */
-      clicked = 1;
-      /* Execute a function when the slider is moved: */
-      window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
-    }
-    function slideFinish() {
-      /* The slider is no longer clicked: */
-      clicked = 0;
-    }
-    function slideMove(e) {
-      var pos;
-      /* If the slider is no longer clicked, exit this function: */
-      if (clicked == 0) return false;
-      /* Get the cursor's x position: */
-      pos = getCursorPos(e)
-      /* Prevent the slider from being positioned outside the image: */
-      if (pos < 0) pos = 0;
-      if (pos > w) pos = w;
-      /* Execute a function that will resize the overlay image according to the cursor: */
-      slide(pos);
-    }
-    function getCursorPos(e) {
-      var a, x = 0;
-      e = (e.changedTouches) ? e.changedTouches[0] : e;
-      /* Get the x positions of the image: */
-      a = img.getBoundingClientRect();
-      /* Calculate the cursor's x coordinate, relative to the image: */
-      x = e.pageX - a.left;
-      /* Consider any page scrolling: */
-      x = x - window.pageXOffset;
-      return x;
-    }
-    function slide(x) {
-      /* Resize the image: */
-      img.style.width = x + "px";
-      /* Position the slider: */
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-    }
   }
 }
 
