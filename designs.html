@@ -7,10 +7,10 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   
   <link rel="stylesheet" href="/main.css">
@@ -46,20 +46,22 @@
   </style>
   </head>
 <body>
-  <section class="navbar-holder">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <nav class="navbar-holder" role="navigation" aria-label="Primary">
     <div class="topnav" id="myTopnav">
-      <a class="logo" href="/"></a>
+      <a class="logo" href="/" aria-label="Home"></a>
       <a href="/projects.html">Case Studies</a>
       <a href="/designs.html">Designs</a>
       <a href="/about.html">About</a>
       <a href="/contact.html" >Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa fa-bars" aria-hidden="true"></i>
       </a>
     </div>
   
-  </section>
+  </nav>
 
+<main id="main-content">
 <section class="firstSection">
   <!-- <h1> Miscellaneous Designs</h1>
   <p>Extra content I wanted to include, but that didn't really fit in any particular case study</p>
@@ -139,6 +141,7 @@
     <h3>In the meantime, why not check out some bonus designs I'm sure you'll like on my <a target="_blank" href="https://www.behance.net/amberrmiller">behance</a></h3>
    
 </section>
+</main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at

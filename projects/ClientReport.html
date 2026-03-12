@@ -7,6 +7,7 @@
   <meta name="keywords" content="User Experience, UX Design, Client Reporting, Financial Advisers, Research, Accessibility">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,18 +22,20 @@
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a title="logo" class="logo" href="/"></a>
+          <a title="logo" class="logo" href="/" aria-label="Home"></a>
           <a title="case studies" href="/projects.html">Case Studies</a>
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+    <main id="main-content">
     <section class="firstSection caseStudyHero">
       <div class="skipBtns">
         <p>Jump To</p>
@@ -62,7 +65,7 @@
 
           <div class="text-center">
             <h1>Client Reporting</h1>
-            <img src="/images/Aegon/Product Report.png">
+            <img src="/images/Aegon/Product Report.png" alt="Example of a client report interface showing investment data">
             <br>
 
             <p class="intro-summary">
@@ -218,10 +221,10 @@
   <h3>Phase 1 – get an MVP live</h3>
   <p>Based on our research findings and available technology, we delivered a lean MVP to address the immediate need for basic reporting functionality.</p>
   <p>The biggest learning of getting the MVP live was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessibility guidelines.</p>
-  <p >After some robust internal testing and more user research, we landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank"> HighCharts</a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
+  <p >After some robust internal testing and more user research, we landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank" rel="noopener noreferrer"> HighCharts</a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
 </div>
         <div class="col-md-7">
-            <a target="_blank" href="https://www.highcharts.com/demo/highcharts/accessible-line">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.highcharts.com/demo/highcharts/accessible-line">
             <img loading="lazy" alt="Photo of figma detailing showing the amount of detail that goes into documenting one chart, including tooltips and accessibility considerations" class="img-fluid" src="/images/Aegon/Chart Spec.jpg">
             </a>
         </div>
@@ -244,7 +247,7 @@
 <section>
   <div class="container">
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 extraContent">
           <h3>Exported report</h3>
           <p> A consequence of the lean MVP was we had to launch with our most basic report design. Immediately via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
           <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liaise closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF software limitations</p>
@@ -263,15 +266,15 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <p>Original report</p>
-                        <a target="_blank" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report older.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report older.png" /></a>
                       </div>
                       <div class="carousel-item">
                         <p>Hybrid design</p>
-                        <a target="_blank" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report old.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report old.png" /></a>
                       </div>
                       <div class="carousel-item">
                          <p>Full rebrand</p>
-                        <a target="_blank" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Aegon/Report new.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Aegon/Report new.png" /></a>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
@@ -329,10 +332,10 @@
         <div class="row">
               <div class="img-comp-container">
               <div class="img-comp-img">
-                  <img src="/images/Aegon/MVP.png" alt="Old indexation question layout, showing more technical language.">
+                  <img src="/images/Aegon/Product Report.png" alt="Old indexation question layout, showing more technical language.">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                  <img src="/images/Aegon/Product Report.png" alt="New indexation question layout, showing simplified wording and examples.">
+                  <img src="/images/Aegon/MVP.png" alt="New indexation question layout, showing simplified wording and examples.">
               </div>
             </div>
          </div>
@@ -343,10 +346,10 @@
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-clock"></i> Following 1 year of iterative development, we grew from an average of 328 monthly users to just show of 1300 (approximate <strong>300% user growth in one year </strong>)</li>
-            <li><i class="fas fa-file"></i>Number of reports produced using the tool <strong>7,255+</strong></li>
-            <li><i class="fas fa-code"></i>The ability to break enhancements into a clear, iterative backlog allowed us to release a total of <strong>17 enhancements</strong> to the tool since the original go live early 2025</li>
-            <li><i class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandoning there own in-house or competitor owned solutions.</li>
+            <li><i class="fas fa-clock"></i> Following 1 year of iterative development, we grew from an average of 328 monthly users to just show of 1300 (approximate <strong>300% user growth in one year </strong>)</li><hr>
+            <li><i class="fas fa-file"></i>Number of reports produced using the tool <strong>7,255+</strong></li><hr>
+            <li><i class="fas fa-code"></i>The ability to break enhancements into a clear, iterative backlog allowed us to release a total of <strong>17 enhancements</strong> to the tool since the original go live early 2025</li><hr>
+            <li><i class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandoning their own in-house or competitor-owned solutions.</li>
            </ul> 
         </div>
     </div>
@@ -362,6 +365,7 @@
 </section>
 </section>
 </section>
+</main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at

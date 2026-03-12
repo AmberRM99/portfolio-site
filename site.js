@@ -10,10 +10,20 @@
     var nav = document.getElementById("myTopnav");
     if (!nav) return;
 
-    if (nav.className === "topnav") {
-      nav.className = "topnav responsive";
-    } else {
+    var toggle = nav.querySelector('.icon');
+    var isOpen = nav.className !== "topnav";
+
+    if (isOpen) {
       nav.className = "topnav";
+      isOpen = false;
+    } else {
+      nav.className = "topnav responsive";
+      isOpen = true;
+    }
+
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
     }
   }
 

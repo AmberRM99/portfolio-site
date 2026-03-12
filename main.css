@@ -24,6 +24,29 @@ body {
   background: var(--bg);
   color: var(--darkGrey);
 }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1rem;
+  background: var(--darkGrey);
+  color: var(--white);
+  border-radius: 8px;
+  z-index: 1000;
+  text-decoration: none;
+}
 /* 
 h1 {
   font-size: 3rem;
@@ -46,10 +69,6 @@ h2,
 h3,
 h4 {
   font-family: "Inter", sans-serif;
-}
-
-.tagsHolder {
-  display: none;
 }
 
 /* .projectCards{
@@ -140,6 +159,16 @@ a:hover {
   color: var(--darkOrange);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.icon:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
 .footer-social ul {
   display: flex;
   justify-content: flex-start;
@@ -155,24 +184,6 @@ a:hover {
   filter: drop-shadow(0 2px 2px var(--darkGrey));
 }
 
-.mynavbar {
-  background: var(--mainGrey);
-  font-size: 1.2rem;
-  height: 4rem;
-  list-style-type: none;
-  margin: 0;
-  padding: 0 8px 0 0;
-  position: fixed;
-  width: 100%;
-}
-
-.mynavbar a {
-  color: var(--white);
-}
-
-.logoHolder {
-  width: 50%;
-}
 
 .h2-title {
   text-align: center;
@@ -207,40 +218,10 @@ a:hover {
 }
 
 /* bulb container */
-.projectBulb {
-  position: absolute;
-  top: -12px;
-  left: -12px;
-
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  background: #fff4e9;
-
-  border: 1px solid rgba(242,140,56,0.25);
-
-  color: #f28c38;
-  font-size: 18px;
-
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-
-  z-index: 3;
-}
-
 .projectTitle {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.titleBulb {
-  color: #f28c38;
-  font-size: 20px;
 }
 
 .projectPreview {
@@ -267,6 +248,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-align:left;
 }
 
 .projectPreview h3 {
@@ -441,20 +423,6 @@ background: rgba(255, 141, 86, 0.14);
   }
 }
 
-.btnOutline {
-  border: 2px solid var(--orange);
-  border-radius: 5px;
-  color: var(--orange);
-  font-weight: bolder;
-  transition: all 0.5s ease;
-}
-
-.note {
-  margin: 0 auto;
-  width: 60%;
-  font-family: 'Indie Flower', cursive;
-}
-
 .manualFlip {
   flex-direction: row-reverse;
 }
@@ -501,10 +469,6 @@ background: rgba(255, 141, 86, 0.14);
     padding: 0;
     color: var(--orange);
     text-decoration: underline;
-  }
-
-  .manualFlip{
-    flex-direction: row-reverse;
   }
 
   /* .projectLink h3{
@@ -624,7 +588,7 @@ background: rgba(255, 141, 86, 0.14);
     transform: translate(-50%,0);
   }
 
-  .Skills, .Achivements{
+  .Skills, .Achievements{
     background: var(--lightGrey);
     /* background:white; */
     /* border:2px solid var(--orange); */
@@ -634,26 +598,26 @@ background: rgba(255, 141, 86, 0.14);
     font-weight:bold;
   }
 
-  .Skills li, .Achivements li{
+  .Skills li, .Achievements li{
 margin: 1rem 0;
 list-style: none;
   }
 
-  .Skills li i, .Achivements li i{
+  .Skills li i, .Achievements li i{
 font-size:1.5rem;
 margin: 1rem;
 
 color: var(--orange);
   }
 
-  .Skills ul, .Achivements ul{
+  .Skills ul, .Achievements ul{
     padding: 0;
     min-width: 30vw;
   }
 
   
 
-  .Skills h3, .Achivements h3{
+  .Skills h3, .Achievements h3{
     text-align:center
   }
   
@@ -661,7 +625,7 @@ color: var(--orange);
     height:100%;
   }
   
-  .Achivements{
+  .Achievements{
     margin:auto auto 2rem auto;
   }
   
@@ -674,28 +638,9 @@ color: var(--orange);
        font-weight:600;
   }
 
-  .tagsHolder{
-    padding:5px;
-    font-size: 0.8em;
-  }
-  
-  
-  
-  .research{
-    background:#f85858;
-    /* color:white; */
-  }
-  
-  .development{
-    background:#f8bb58;
-  }
 
   @media screen and (max-width:768px){
   
-
-    .logoHolder{
-      width:34%;
-    }
 
     .landing{
       background-image: none;
@@ -703,19 +648,6 @@ color: var(--orange);
     .landing .col-md-6{
       margin-bottom: 3rem;
       text-align: center;
-    }
-      .tagsHolder{
-    display:none
-  }
-  }
-
-  @media screen and (max-width:555px){
- .mynavbar li{
-      width:min-content;
-    }
-    .mynavbar a:not(.linkBtn){
-      font-size:0.9em;
-      padding:0;
     }
   }
 

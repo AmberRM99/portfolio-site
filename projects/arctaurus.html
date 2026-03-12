@@ -7,6 +7,7 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +22,21 @@
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a title="logo" class="logo" href="/"></a>
+          <a title="logo" class="logo" href="/" aria-label="Home"></a>
           <a title="case studies" href="/projects.html">Case Studies</a>
           <!-- <a title="designs" href="/designs.html">Designs</a> -->
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+<main id="main-content">
 <section>
     <section class="firstSection caseStudyHero">
       <div class="skipBtns">
@@ -63,10 +66,8 @@
 
           <div class="text-center">
             <h1>ArcTaurus Bot Builder</h1>
-            <div class="portal-icons" style="display:flex;justify-content:center;gap:2rem;margin:2rem 0;">
-              <i style="font-size:9rem; color:rgb(8, 8, 92)" class="fa-solid fa-chart-area"></i>
-              <i style="font-size:9rem; color:rgb(8, 8, 92)" class="fa-solid fa-chart-area"></i>
-            </div>
+            <img src="/images/arcTaurus/Arctaurus_Cover.png" alt="Example of a user building a no-code bot">
+            <br>
 
             <p class="intro-summary">
               Redesign a no-code automated trading platform to be as usable as possible for traders regardless of their coding knowledge
@@ -209,29 +210,29 @@
                 <div class="row">
                     <div class="col-md-3 blocktypes">
                       <b>Set Up - </b>
-                      <a target="_blank" href="/images/arcTaurus/blocks/allblocks.png">
+                      <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/blocks/allblocks.png">
                         
                          <img loading="lazy" alt="Tall jigsaw block, C shapes with extra inputs in the inner hole" class="img-fluid blocks" src="/images/arcTaurus/blocks/setup.svg" style="width:50%" >
                     </a>
                       </div>
                     <div class="col-md-3 blocktypes">
                       <b>Logic -</b>
-                      <a target="_blank" href="/images/arcTaurus/blocks/allblocks.png">
+                      <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/blocks/allblocks.png">
                          <img loading="lazy" alt="Rectangular jigsaw block, with a connection on top and bottom" class="img-fluid blocks" src="/images/arcTaurus/blocks/thicker-web-blue.png" >
                     </a>
                       </div>
                     <!-- <div class="col-md-2 blocktypes">
-                      <b>alternative logic view</b> - <img loading="lazy" class="img-fluid blocks"  src="/images/arcTaurus/blocks/holder-yellow.png" >
+                      <b>alternative logic view</b> - <img loading="lazy" class="img-fluid blocks" src="/images/arcTaurus/blocks/holder-yellow.png" alt="Screenshot placeholder showing alternative logic view layout">
                   </div> -->
                     <div class="col-md-3 blocktypes">
                       <b>Boolean - </b>
-                      <a target="_blank" href="/images/arcTaurus/blocks/allblocks.png">
+                      <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/blocks/allblocks.png">
                           <img loading="lazy" alt="pointy jigsaw block, no connection points but instead the left and right each come to a point like a diamond" class="img-fluid blocks" src="/images/arcTaurus/blocks/boolean.svg" >
                     </a>
                       </div>
                     <div class="col-md-3 blocktypes">
                       <b>Number - </b>
-                      <a target="_blank" href="/images/arcTaurus/blocks/allblocks.png">
+                      <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/blocks/allblocks.png">
                           <img loading="lazy" alt="round jigsaw block, rectangle with rounded ends" class="img-fluid blocks" src="/images/arcTaurus/blocks/long-circle-black.png" >
                     </a>
                       </div>
@@ -257,13 +258,13 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a target="_blank" href="/images/arcTaurus/old-uii/old-ui.png"><img loading="lazy" alt="Screenshot of ArcTaurus.Dark, low contrast version of interface" class="d-block w-100" src="/images/arcTaurus/old-uii/old-ui.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/old-uii/old-ui.png"><img loading="lazy" alt="Screenshot of ArcTaurus.Dark, low contrast version of interface" class="d-block w-100" src="/images/arcTaurus/old-uii/old-ui.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/old-uii/old-ui2.png"><img loading="lazy" alt="Screenshot of ArcTaurus. Dark, low contrast version of interface" class="d-block w-100" src="/images/arcTaurus/old-uii/old-ui2.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/old-uii/old-ui2.png"><img loading="lazy" alt="Screenshot of ArcTaurus. Dark, low contrast version of interface" class="d-block w-100" src="/images/arcTaurus/old-uii/old-ui2.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/old-uii/default-blockly.png"><img loading="lazy" alt="Screenshot of Blockly. Low saturated, very basic looking interface" class="d-block w-100" src="/images/arcTaurus/old-uii/default-blockly.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/old-uii/default-blockly.png"><img loading="lazy" alt="Screenshot of Blockly. Low saturated, very basic looking interface" class="d-block w-100" src="/images/arcTaurus/old-uii/default-blockly.png"></a>
                         <div class="carousel-caption d-none d-md-block">
                           <p>Default Blockly</p>
                         </div>
@@ -341,7 +342,7 @@
     <div class="row manualFlip">
         <div class="col-md-6">
             <div class="importantQuote">
-                <a target="_blank" href="/images/arcTaurus/cardsort.png">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/cardsort.png">
                 <img loading="lazy" alt="Image of card sorting task, dividing all proposed blocks into what become the final categories, Setup, Logic, Loops, Maths, Social Media, Market Events, Market Information, Technical Indicators, My Information, Assets, Order Types" class="img-fluid" src="/images/arcTaurus/cardsort.png">
                 </a>
             </div>
@@ -366,7 +367,7 @@
         </p></div>
         <div class="col-md-7">
             <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
-            <a target="_blank" href="/images/arcTaurus/Frame 8.png">
+            <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Frame 8.png">
             <img loading="lazy" alt="Screenshot of Figma, showing new interface which is dark blue with bright blue glow around all blocks" class="img-fluid" src="/images/arcTaurus/Frame 8.png">
             </a>
         </div>
@@ -393,19 +394,19 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 4onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 4onboard.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Onboarding/Frame 4onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top reading 'Welcome To ArcTaurus'" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 4onboard.png" /></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 5onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border on left side" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 5onboard.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Onboarding/Frame 5onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border on left side" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 5onboard.png" /></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 6onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top and icons of the logo characters a Bull and a Bear" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 6onboard.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Onboarding/Frame 6onboard.png"><img loading="lazy" alt="Dark Blue round rectangle with yellow border across top and icons of the logo characters a Bull and a Bear" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 6onboard.png" /></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 8onboard.png"><img loading="lazy" alt="Blue round rectangle with second jigsaw like block connected underneath, which is darker and has a box for holding an image" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 8onboard.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Onboarding/Frame 8onboard.png"><img loading="lazy" alt="Blue round rectangle with second jigsaw like block connected underneath, which is darker and has a box for holding an image" class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 8onboard.png" /></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/Onboarding/Frame 7onboard.png"><img loading="lazy" alt="Dark Blue slanted rectangle with yellow border. Text reads: The Set-Up block is what will hold all your bot’s code! Simply pick how often your bot will run, the crypto you’re working with, and then drag a few blocks inside it, and your strategy will start to come to life." class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 7onboard.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/Onboarding/Frame 7onboard.png"><img loading="lazy" alt="Dark Blue slanted rectangle with yellow border. Text reads: The Set-Up block is what will hold all your bot’s code! Simply pick how often your bot will run, the crypto you’re working with, and then drag a few blocks inside it, and your strategy will start to come to life." class="d-block w-100" src="/images/arcTaurus/Onboarding/Frame 7onboard.png" /></a>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
@@ -449,7 +450,7 @@
             </p>
             </div>
             <div class="col-md-7">
-                <a target="_blank" href="/images/arcTaurus/onboarding.gif">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/onboarding.gif">
                 <img loading="lazy" alt="Gif of popup. Left side has animation of two blocks connecting, and right side features a workspace with interactive blocks for the user to copy the gif." class="img-fluid" src="/images/arcTaurus/onboarding.gif">
                 </a>
             </div>
@@ -469,7 +470,7 @@
             <p style="font-size:1.3rem;"> This design required unearthing the no longer supported Blockly core commenting system, and updating it to be functional and improving the aesthetics. As a result, it may later become part of Blockly as a plugin.</p>
             </div>
             <div class="col-md-7">
-                <a target="_blank" href="/images/arcTaurus/stickies.png">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/stickies.png">
                 <img loading="lazy" alt="Webpage with blocks covering in digital sticky notes in blue, green, pink and purple hues" class="img-fluid" src="/images/arcTaurus/stickies.png">
                 </a>
             </div>
@@ -489,7 +490,7 @@
             
             </div>
             <div class="col-md-6">
-                <a target="_blank" href="/images/arcTaurus/New ui/botwikipage.png">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/botwikipage.png">
                 <img loading="lazy" alt="Wikipedia style page, with list of categories down left hand side, and sections containing images of each block, their name, and a description of them" class="img-fluid" src="/images/arcTaurus/New ui/botwikipage.png">
                 </a>
             </div>
@@ -524,37 +525,37 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a target="_blank" href="/images/arcTaurus/New ui/splitscreen.png"><img loading="lazy" alt="Screenshot of split screen, showing 2 options. Each option contains a title, and an image of what this option will look like. The options shown are Bot Wiki and Notes" class="d-block w-100" src="/images/arcTaurus/New ui/splitscreen.png"></a>
+                            <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/splitscreen.png"><img loading="lazy" alt="Screenshot of split screen, showing 2 options. Each option contains a title, and an image of what this option will look like. The options shown are Bot Wiki and Notes" class="d-block w-100" src="/images/arcTaurus/New ui/splitscreen.png"></a>
                           </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/notes.png"><img loading="lazy" alt="User Interface with a large white text field where users store notes. Note shown contains Buy Price: 0.06998, Optimal Price: 0.07599" class="d-block w-100" src="/images/arcTaurus/New ui/notes.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/notes.png"><img loading="lazy" alt="User Interface with a large white text field where users store notes. Note shown contains Buy Price: 0.06998, Optimal Price: 0.07599" class="d-block w-100" src="/images/arcTaurus/New ui/notes.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/mirror-blockly.png"><img loading="lazy" alt="Blocks shown, but each one ends with :true or :false depending on if the code was executed would it currently run or not" class="d-block w-100" src="/images/arcTaurus/New ui/mirror-blockly.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/mirror-blockly.png"><img loading="lazy" alt="Blocks shown, but each one ends with :true or :false depending on if the code was executed would it currently run or not" class="d-block w-100" src="/images/arcTaurus/New ui/mirror-blockly.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/bot wiki.png"><img loading="lazy" alt="Wikipedia style page, with list of categories down left hand side, and sections containing images of each block, their name, and a description of them" class="d-block w-100" src="/images/arcTaurus/New ui/bot wiki.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/bot wiki.png"><img loading="lazy" alt="Wikipedia style page, with list of categories down left hand side, and sections containing images of each block, their name, and a description of them" class="d-block w-100" src="/images/arcTaurus/New ui/bot wiki.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/englishcode.png"><img loading="lazy" alt="Text passage showing the code in the most basic english possible. Reads: " class="d-block w-100" src="/images/arcTaurus/New ui/englishcode.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/englishcode.png"><img loading="lazy" alt="Text passage showing the code in the most basic english possible. Reads: " class="d-block w-100" src="/images/arcTaurus/New ui/englishcode.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/tradingview.png"><img loading="lazy" alt="Screenshot of large candlestick chart and interface of trading site 'TradingView'" class="d-block w-100" src="/images/ArcTaurus/New ui/tradingview.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/tradingview.png"><img loading="lazy" alt="Screenshot of large candlestick chart and interface of trading site 'TradingView'" class="d-block w-100" src="/images/ArcTaurus/New ui/tradingview.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/backtestt.png"><img loading="lazy" alt="Screenshot integrating dashboard with candlestick financial chart" class="d-block w-100" src="/images/arcTaurus/New ui/backtestt.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/backtestt.png"><img loading="lazy" alt="Screenshot integrating dashboard with candlestick financial chart" class="d-block w-100" src="/images/arcTaurus/New ui/backtestt.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/backtest2.png"><img loading="lazy" alt="Screenshot integrating dashboard with small boxes showing names of various technical performance indicators such as 'Number of trades', 'Profit if Held' etc and their value" class="d-block w-100" src="/images/arcTaurus/New ui/backtest2.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/backtest2.png"><img loading="lazy" alt="Screenshot integrating dashboard with small boxes showing names of various technical performance indicators such as 'Number of trades', 'Profit if Held' etc and their value" class="d-block w-100" src="/images/arcTaurus/New ui/backtest2.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/block to code.png"><img loading="lazy" alt="" class="d-block w-100" src="/images/arcTaurus/New ui/block to code.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/block to code.png"><img loading="lazy" alt="" class="d-block w-100" src="/images/arcTaurus/New ui/block to code.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/error.png"><img loading="lazy" alt="List of bullet pointed errors" class="d-block w-100" src="/images/arcTaurus/New ui/error.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/error.png"><img loading="lazy" alt="List of bullet pointed errors" class="d-block w-100" src="/images/arcTaurus/New ui/error.png"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" href="/images/arcTaurus/New ui/flowchart.png"><img loading="lazy" alt="flow chart showing the logic and decisions a bot would follow" class="d-block w-100" src="/images/arcTaurus/New ui/flowchart.png"></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/New ui/flowchart.png"><img loading="lazy" alt="flow chart showing the logic and decisions a bot would follow" class="d-block w-100" src="/images/arcTaurus/New ui/flowchart.png"></a>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-splitScreen" role="button" data-slide="prev">
@@ -580,7 +581,7 @@
             </p>
             </div>
             <div class="col-md-7">
-                <a target="_blank" href="/images/arcTaurus/splitscreen.png">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/splitscreen.png">
                 <img loading="lazy" alt="" class="img-fluid" src="/images/arcTaurus/splitscreen.png">
                 </a>
             </div>
@@ -622,7 +623,7 @@
             </p>
             </div>
             <div class="col-md-7">
-                <a target="_blank" href="/images/arcTaurus/click-and-place.gif">
+                <a target="_blank" rel="noopener noreferrer" href="/images/arcTaurus/click-and-place.gif">
                     <img loading="lazy" alt="Gif of block with yellow tick icon. When clicked a list of blocks are opened, and when one is selected it is automatically added to the original block, replacing the yellow icon." class="img-fluid" src="/images/arcTaurus/click-and-place.gif">
                 </a>
             </div>
@@ -652,9 +653,9 @@
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-clock"></i> Time til Value reduced by 92% (approx 25minutes to 2minutes)</li>
-            <li><i class="fas fa-hourglass-half"></i>Reduced average bot build time from 15minutes to 1 minute</li>
-            <li><i class="fas fa-code"></i>Designs presented alongside talk at the Blockly Developer Summit as an example for accessibility in no-code</li>
+            <li><i class="fas fa-clock"></i> Time til Value reduced by 92% (approx 25minutes to 2minutes)</li><hr>
+            <li><i class="fas fa-hourglass-half"></i>Reduced average bot build time from 15minutes to 1 minute</li><hr>
+            <li><i class="fas fa-code"></i>Designs presented alongside talk at the Blockly Developer Summit as an example for accessibility in no-code</li><hr>
             <li><i class="fas fa-thumbs-up"></i>Improved confidence and promoted upskilling amongst users through non-invasive education tools</li>
            </ul> 
         </div>
@@ -672,6 +673,7 @@
 </section>
 </section>
 </section>
+</main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at

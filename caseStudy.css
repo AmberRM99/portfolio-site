@@ -131,6 +131,10 @@ h4{
   font-weight:bold;
 }
 
+hr{
+  background:var(--orange)
+}
+
 .projectSnapshot {
   display: flex;
   flex-wrap: wrap;
@@ -284,6 +288,32 @@ footer{
   margin: 1rem auto 0;
   cursor: pointer;
   background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.img-comp-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #ff7a00;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px; /* aligns thumb with track */
+}
+
+.img-comp-range::-webkit-slider-runnable-track {
+  height: 4px;
+  background: var(--darkOrange); /* your orange accent */
+  border-radius: 4px;
+}
+
+.finalSections .img-comp-range::-webkit-slider-runnable-track {
+  background: var(--lightGrey)
+}
+
+.finalSections .img-comp-range::-webkit-slider-thumb {
+  background: var(--mainGrey);
 }
 
 /* Ensure the comparison container stays large enough to show both images.
@@ -462,7 +492,11 @@ ul.importantQuote{
   padding: 1rem 7rem;
   font-weight:bold;
   list-style-type: none;
-  
+}
+
+.importantQuote li{
+  text-align:left;
+  font-weight:normal;
 }
 
 li i{

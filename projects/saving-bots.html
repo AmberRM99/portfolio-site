@@ -7,13 +7,13 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 <!-- Hotjar Tracking Code for my site -->
@@ -36,19 +36,21 @@
 
 </head>
 <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a class="logo" href="/"></a>
+          <a class="logo" href="/" aria-label="Home"></a>
           <a href="/projects.html">Case Studies</a>
           <!-- <a href="/designs.html">Designs</a> -->
           <a href="/about.html">About</a>
           <a href="/contact.html" >Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+<main id="main-content">
 <section>
     <section class="firstSection">
         <div class="skipBtns">
@@ -157,7 +159,7 @@
                            <p> Exploration began with small informal research meetings with a broad range of online banking users. <br><br> Each user was asked if they benefit from the existing round up system as well as their opinion surrounding it, as well as questions surrounding their personal saving and spending habits, and financial challenges they felt were unique to themselves.</p>
                            </div>
                            <div class="col-md-8">
-                            <a target="_blank" href="/images/Savings/Untitled.jpg">
+                            <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
                             <img loading="lazy" alt="mind map of users opinions on round ups and savings tools" class="img-fluid" src="/images/Savings/Untitled.jpg">
                             </a>
                            </div>
@@ -172,7 +174,7 @@
                             <p>Inspired by the initial research, a series of base blocks were designed in the system, with some initial research participants asked to use this service, with think aloud studies carried out to see how accessible the language felt, to determine if the product should be targeted at customers or as an in-branch experience. They were also asked about other blocks they felt they needed.</p>
                             </div>
                             <div class="col-md-5">
-                                <a target="_blank" href="/images/Savings/early-strat.png">
+                                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/early-strat.png">
                                 <img loading="lazy" alt="Bot made of jigsaw like blocks. The strategy is titled Dry January Forfeit and uses blocks to create the logic that if the user buys a deliveroo on any day between the 1st and 31st of january, they will transfer £5 to another account immediatly" class="img-fluid" src="/images/Savings/early-strat.png">
                                 </a>
                                 <p>An early example of a user created saving strategy</p>
@@ -201,49 +203,49 @@
                                   
                                     <div class="carousel-inner">
                                       <div class="item active">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (1).png"><img loading="lazy" alt="User persona for Andy Mcneil, a freelance graphic designer looking for more control despite irregular pay days" src="/images/Savings/personas/financial personas (1).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (1).png"><img loading="lazy" alt="User persona for Andy Mcneil, a freelance graphic designer looking for more control despite irregular pay days" src="/images/Savings/personas/financial personas (1).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (2).png"><img loading="lazy" alt="User persona for Terry Gordons, a devoted father who wants money set aside for each of his childrens birthdays as well as christmas " src="/images/Savings/personas/financial personas (2).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (2).png"><img loading="lazy" alt="User persona for Terry Gordons, a devoted father who wants money set aside for each of his childrens birthdays as well as christmas " src="/images/Savings/personas/financial personas (2).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (3).png"><img loading="lazy" alt="User persona for Kieran Liedl, an university fresher who needs help learning how to manage his money " src="/images/Savings/personas/financial personas (3).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (3).png"><img loading="lazy" alt="User persona for Kieran Liedl, an university fresher who needs help learning how to manage his money " src="/images/Savings/personas/financial personas (3).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (4).png"><img loading="lazy" alt="User persona for Anya Liedl, Kierans mother who wants to help her son save and put money aside to help him " src="/images/Savings/personas/financial personas (4).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (4).png"><img loading="lazy" alt="User persona for Anya Liedl, Kierans mother who wants to help her son save and put money aside to help him " src="/images/Savings/personas/financial personas (4).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (6).png"><img loading="lazy" alt="User persona for Daniella and Emma Reids, newly weds looking to buy their first home " src="/images/Savings/personas/financial personas (6).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (6).png"><img loading="lazy" alt="User persona for Daniella and Emma Reids, newly weds looking to buy their first home " src="/images/Savings/personas/financial personas (6).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (7).png"><img loading="lazy" alt="User persona for Henry Thomas, looking to make more progress in clearing a debt and rebuilding his savings " src="/images/Savings/personas/financial personas (7).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (7).png"><img loading="lazy" alt="User persona for Henry Thomas, looking to make more progress in clearing a debt and rebuilding his savings " src="/images/Savings/personas/financial personas (7).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
                                         </div> -->
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/Savings/personas/financial personas (8).png"><img loading="lazy" alt="User persona for Angela Short, who's looking to maximise her income and savings through interest " src="/images/Savings/personas/financial personas (8).png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/personas/financial personas (8).png"><img loading="lazy" alt="User persona for Angela Short, who's looking to maximise her income and savings through interest " src="/images/Savings/personas/financial personas (8).png" /></a>
                                         <!-- <div class="carousel-caption">
                                           <h3>Meow</h3>
                                           <p>Just Kitten Around</p>
@@ -284,7 +286,7 @@
                            <p> As this product was based on the original ArcTaurus interface using the same tools, a lot of the UX improvements had already been built in. My role became looking at how to deliver the product to service users.                        </p>
                            </div>
                            <div class="col-md-6">
-                            <a target="_blank" href="/images/ArcTaurus/arc-nice.png">
+                            <a target="_blank" rel="noopener noreferrer" href="/images/ArcTaurus/arc-nice.png">
                             <img loading="lazy" alt="Screenshot of the Arctaurus interface, with categories down the left side and a bot made of jigsaw like pieces in the center" class="img-fluid" src="/images/ArcTaurus/arc-nice.png">
                             </a>
                             <a href="/projects/arctaurus.html">Check out the full ArcTaurus case study for how the UI got to here</a>
@@ -301,7 +303,7 @@
                                 <p> As the product was in discussion with natwest, the design was tailored to suit their branding. This also suited the colour psychology required, of making the design bright and eye catching to help make it less intimidating for a financial service</p>
                             </div>
                             <div class="col-md-8">
-                                <a target="_blank" href="/images/Savings/Screenshot 2022-09-23 at 12.30 1.png">
+                                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Screenshot 2022-09-23 at 12.30 1.png">
                                     <img loading="lazy" alt="Two examples of a bot in different colour palletes, the first is a pale pastel blue and cool toned bot, the second is made up of lots of vivid reds and warm colours. This second colour pallete is close to the final one." class="img-fluid" src="/images/Savings/Screenshot 2022-09-23 at 12.30 1.png">
                                 </a>
                                 <p> Example Colour Schemes</p>
@@ -385,28 +387,28 @@
                                 </ol>
                                 <div class="carousel-inner">
                                   <div class="item active" style="text-align: center;height:50vh;">
-                                    <a target="_blank" href="/images/Savings/4 final.png">
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/Savings/4 final.png">
                                         <img loading="lazy" alt="Screenshot of workspace showing 4 different bots, titled Amsterdam Cash, Monthly Rollover, Dry January Forfeit and 1p saving challenge" style="height:50vh;" class="img-fluid" src="/images/Savings/4 final.png">
                                     </a>
                                   </div>
                                  
                                   <div class="item"  style="text-align: center;height:50vh;">
-                                    <a target="_blank" href="/images/Savings/realBot.png">
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/Savings/realBot.png">
                                         <img loading="lazy" alt="Screenshot of untitled bot, which firstly checks if the current account has at least the value of rent when rent is due, and if not finds an account to move the money over from. Next it checks if the user received more than £250 in a day, if so it moves money to savings. Lastly if the user received less than £250 in the space of a week, it will transfer money from savings into their current account. " class="img-fluid" src="/images/Savings/realBot.png">
                                     </a>
                                     </div>
                                     <div class="item"  style="text-align: center;height:50vh;">
-                                        <a target="_blank" href="/images/Savings/Linda.png">
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Linda.png">
                                             <img loading="lazy" alt="Screenshot of bot named Linda, firstly it checks if it is a specific date, and if so sends authorisation to the users banking account to transfer money to a user named Sarah, wishing them a happy birthday. It also checks if todays date is close to christmas, if so it moves moeny out of savings and sends the user a reminder to start christmas shopping" style="height:50vh;" class="img-fluid" src="/images/Savings/Linda.png">
                                         </a>
                                         </div>
                                         <div class="item"  style="text-align: center;height:50vh;">
-                                            <a target="_blank" href="/images/Savings/checks-balance-final.png">
+                                            <a target="_blank" rel="noopener noreferrer" href="/images/Savings/checks-balance-final.png">
                                                 <img loading="lazy" alt="Screenshot of bot named Pay Day Round Up, which is triggered when the user receives money on pay day. It checks if their current account has more than £200, in which case it moves £20 to savings. If the user has more than £300, it moves an extra $100 to their help to buy isa. If the users account actually had more than £500, it triggers a banking app alert to say they still have money left, would they like to move some to their emergency fund?" style="height:50vh;" class="img-fluid" src="/images/Savings/checks-balance-final.png">
                                             </a>
                                             </div>
                                             <div class="item"  style="text-align: center;height:50vh;">
-                                                <a target="_blank" href="/images/Savings/big-final.png">
+                                                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/big-final.png">
                                                     <img loading="lazy" alt="Screenshot of bot named Save For Holiday Goal. This checks if their saving account has less than a value called 'holiday fund'. If so, when they cut back and buy less than 3 deliveroos in a month, they automatically move 10% of the holiday fund goal to savings. If the value of their acccount decreases on a weekend, they also will move an extra £10 to the holiday fund. Once the fund is met, they receive a notification congratulating them and wishing them a happy holiday" style="height:50vh;" class="img-fluid" src="/images/Savings/big-final.png">
                                                 </a>
                                                 </div>
@@ -449,6 +451,7 @@
                 </section>
             </section>  
             </section> 
+          </main>
             <footer>
                 <p>Website designed, created and maintained by Amber Miller<br>
                   If you like my work, get in touch at

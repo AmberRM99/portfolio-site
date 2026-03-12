@@ -7,6 +7,7 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,18 +22,20 @@
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a title="logo" class="logo" href="/"></a>
+          <a title="logo" class="logo" href="/" aria-label="Home"></a>
           <a title="case studies" href="/projects.html">Case Studies</a>
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+<main id="main-content">
 <section>
     <section class="firstSection caseStudyHero">
       <div class="skipBtns">
@@ -63,7 +66,7 @@
 
           <div class="text-center">
             <h1>Simplifying our customer portal</h1>
-             <img src="/images/Aegon/FlatLay_Assets.jpg">
+             <img src="/images/Aegon/FlatLay_Assets.jpg" alt="Flat lay image of annotated wireframes and paper sketching for customer portal redesign">
              <br>
 
             <p class="intro-summary">
@@ -195,15 +198,16 @@
 </section>
 <section class="startofTopic">
     <div class="container">
-            <div class="row">
-               <div class="col-md-5 ExtraContent"> 
+            <div class="row manualFlip">
+               <div class="col-md-7 ExtraContent"> 
                 <h4>Money in journeys</h4>
                  <p>The number one starting point was addressing the expectation mismatch in the steps to add money to a product.</p>
-                 <p>Building three new journeys presented maintenance challenges and technical resistance, especially as we couldn't rely solely on web components. Negotiations with the technology team were key.</p>
-                 <p>Eventually we struck a balance that suited our technical needs, timeframe, budget and, most importantly, the users. We built it as one journey, as so many assets were shared, but linked it in a way that users would always perceive it as three separate journeys.</p>
+                 <p> Our current experience was a Top Up experience, combining one time, recurring, or transfer in into one journey. This worked great for advisers as they're often doing multiple payment types at once, but for customers we found less than 1% of the time they were doing multiple types at once. The natural next move was to split the one journey into 3 seperate journeys, one per action.</p>
+                 <p>Building three new journeys while the clear best case for the user, presented significant maintenance challenges and technical resistance, especially as we couldn't rely solely on web components. Negotiations with the technology team were key for finding a solution.</p>
+                 <p>Eventually we struck a balance that suited our technical needs, timeframe, budget and, most importantly, the users. We designed and built the experience as one journey, as so many assets were shared, but linked it in a way that users would always perceive it as three separate journeys.</p>
                  <p>This took the technical benefits of our original journey and married them with the users' needs, resulting in a seamless experience shift.</p>
                 </div>
-        <div class="col-md-7">
+        <div class="col-md-5">
             <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
             <a target="_blank" rel="noopener" href="/images/Aegon/Comparison.jpg">
             <img loading="lazy" alt="Comparison between old and new UI designs for the client reporting platform" class="img-fluid" src="/images/Aegon/Comparison.jpg">
@@ -223,14 +227,14 @@
                 </div>
         <div class="col-md-7">
             <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Component1.png">
-            <br> <img height="70%>" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Component2.png">
+            <br> <img height="60%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Component2.png">
            
         </div>
             </div> 
     </div>
 </section>
   <div class="container">
-    <div class="row">
+    <div class="row manualFlip">
         <div class="col-md-6 ExtraContent">
           <h4>Simplified content</h4>
           <p>One of the big learnings from user testing was that there was a lot of jargon in our current journeys, and users didn't feel confident risking making a decision, so they would rather abandon the process than guess wrong.</p>
@@ -275,19 +279,19 @@
 
 <section class="endOfTopic">
     <div class="container">
-            <div class="row">
-                <div class="col-md-5 ExtraContent">
+            <div class="row manualFlip">
+                <div class="col-md-8 ExtraContent">
                     <h4>Core page transformations</h4>
                     <p>In research, our users reacted with horror to our current dashboard designs. They were too technical-looking, too stark, too serious.</p>
                     <p>Fixing this came in two parts: making the actions easier to understand, and bringing more tools and features into the experience to feel less stark.</p>
                 </div>
-            <div class="col-md-7">
-            <div class="img-comp-container">
+            <div class="col-md-4">
+            <div class="img-comp-container" style="aspect-ratio:1/3;">
               <div class="img-comp-img">
-                  <img src="/images/Aegon/Before.png" alt="Redesigned dashboard with softer visual language and clearer actions.">
+                  <img src="/images/Aegon/After.png" alt="Redesigned dashboard with softer visual language and clearer actions.">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                  <img src="/images/Aegon/After.png" alt="Original dashboard with technical UI and stark layout." >
+                  <img src="/images/Aegon/Before.png" alt="Original dashboard with technical UI and stark layout." >
               </div>
             </div>
         </div>
@@ -327,7 +331,7 @@
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-arrow-down"></i> Simplified key transaction (money in) journeys <b>25 steps</b> and roughly <b>2-3 pages</b> to increase money in volumes</li>
+            <li><i class="fas fa-arrow-down"></i> Simplified key transaction (money in) journeys <b>25 steps</b> and roughly <b>2-3 pages</b> to increase money in volumes</li><hr>
             <li><i class="fas fa-heart"></i>Drastically decreased user concerns about not belonging into an experience they'd be enthusiastic to use</li>
            </ul> 
         </div>
@@ -344,6 +348,7 @@
 </section>
 </section>
 </section>
+</main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at

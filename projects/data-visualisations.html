@@ -6,6 +6,7 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,19 +28,21 @@
 <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a class="logo" href="/"></a>
+          <a class="logo" href="/" aria-label="Home"></a>
           <a href="/projects.html">Case Studies</a>
           <a href="/designs.html">Designs</a>
           <a href="/about.html">About</a>
           <a href="/contact.html" >Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+    <main id="main-content">
     <section class="firstSection">
 <div class="container">
     <div class="row landingRow">
@@ -76,6 +79,7 @@
     </div>
 </div>
 </section>
+</main>
 <script src="../site.js" defer></script>
   </body>
 </html>

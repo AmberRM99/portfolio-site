@@ -7,6 +7,7 @@
   <meta name="keywords" content="Contact, Get In Touch, User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
   <!-- Hotjar Tracking Code for my site -->
 <script>
   (function(h,o,t,j,a,r){
@@ -37,24 +38,27 @@
 
 </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
         <div class="topnav" id="myTopnav">
-          <a class="logo" href="/"></a>
+          <a class="logo" href="/" aria-label="Home"></a>
           <a href="/projects.html">Case Studies</a>
           <!-- <a href="/designs.html">Designs</a> -->
           <a href="/about.html">About</a>
           <a href="/contact.html" >Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </a>
         </div>
       
-      </section>
+      </nav>
+    <main id="main-content">
     <section class="firstSection">
       
 <!-- form.123formbuilder.com script begins here --><iframe allowTransparency="true" style=" height:100vh; overflow:auto;" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="https://form.123formbuilder.com/my-contact-form-6367266.html"><p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p></iframe><!-- form.123formbuilder.com script ends here -->
           
     </section>
+  </main>
     <footer>
       <p>Website designed, created and maintained by Amber Miller<br>
         If you like my work, get in touch at

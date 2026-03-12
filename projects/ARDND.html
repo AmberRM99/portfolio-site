@@ -7,6 +7,7 @@
   <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
 <!-- Hotjar Tracking Code for my site -->
 <script>
   (function(h,o,t,j,a,r){
@@ -54,7 +55,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 <link rel="stylesheet" href="/main.css">
@@ -62,19 +62,21 @@
  
 </head>
   <body>
-    <section class="navbar-holder">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar-holder" role="navigation" aria-label="Primary">
       <div class="topnav" id="myTopnav">
-        <a class="logo" href="/"></a>
+        <a class="logo" href="/" aria-label="Home"></a>
         <a href="/projects.html">Case Studies</a>
         <!-- <a href="/designs.html">Designs</a> -->
         <a href="/about.html">About</a>
         <a href="/contact.html" >Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
       </div>
     
-    </section>
+    </nav>
+    <main id="main-content">
         <section class="firstSection">
           <div class="skipBtns">
             <p>Jump To</p>
@@ -341,31 +343,31 @@
                                   
                                     <div class="carousel-inner">
                                       <div class="item active">
-                                         <a target="_blank" href="/images/ARDND/Sign In.png"><img loading="lazy" alt="Screenshot of mobile UI, showing sign in page with name and password input fields and a log in button" src="/images/ARDND/Sign In.png" /></a>
+                                         <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Sign In.png"><img loading="lazy" alt="Screenshot of mobile UI, showing sign in page with name and password input fields and a log in button" src="/images/ARDND/Sign In.png" /></a>
                                        
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/Home.png"><img loading="lazy" alt="Screenshot of mobile UI, showing buttons for 4 options, ARDND, Character Sheets, Players Handbook and Chat" src="/images/ARDND/Home.png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Home.png"><img loading="lazy" alt="Screenshot of mobile UI, showing buttons for 4 options, ARDND, Character Sheets, Players Handbook and Chat" src="/images/ARDND/Home.png" /></a>
                                     
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/Character Sheet.png"><img loading="lazy" alt="Screenshot of mobile UI, large filled out form with options surrounding characters name, stat points, race features and inventory, spell lists etc" src="/images/ARDND/Character Sheet.png" style="max-height:44rem;" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Character Sheet.png"><img loading="lazy" alt="Screenshot of mobile UI, large filled out form with options surrounding characters name, stat points, race features and inventory, spell lists etc" src="/images/ARDND/Character Sheet.png" style="max-height:44rem;" /></a>
                                     
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/Chat.png"><img loading="lazy" alt="Screenshot of mobile UI, showing left and right sided speech bubbles" src="/images/ARDND/Chat.png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Chat.png"><img loading="lazy" alt="Screenshot of mobile UI, showing left and right sided speech bubbles" src="/images/ARDND/Chat.png" /></a>
                                       
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/AR - Roll.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon fire sitting on top of it" src="/images/ARDND/AR - Roll.png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/AR - Roll.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon fire sitting on top of it" src="/images/ARDND/AR - Roll.png" /></a>
                                       
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/AR - Encounter.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon person on top of it" src="/images/ARDND/AR - Encounter.png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/AR - Encounter.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon person on top of it" src="/images/ARDND/AR - Encounter.png" /></a>
                                       
                                       </div>
                                       <div class="item">
-                                        <a target="_blank" href="/images/ARDND/AR - Investigate.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon house on top of it" src="/images/ARDND/AR - Investigate.png" /></a>
+                                        <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/AR - Investigate.png"><img loading="lazy" alt="Screenshot of mobile UI, photo of dice with a cartoon house on top of it" src="/images/ARDND/AR - Investigate.png" /></a>
                                       
                                       </div>
                                       <a class="left carousel-control" href="#carousel-example" data-slide="prev">
@@ -409,23 +411,23 @@
                               
                                 <div class="carousel-inner">
                                   <div class="item active">
-                                     <a target="_blank" href="/images/ARDND/Sign In.png"><img loading="lazy" alt="Mobile UI, parchment paper scroll background with text 'Welcome' and input fields for signing in" src="/images/ARDND/Screenshot_20210502-162002_ARDND.jpg" /></a>
+                                     <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Sign In.png"><img loading="lazy" alt="Mobile UI, parchment paper scroll background with text 'Welcome' and input fields for signing in" src="/images/ARDND/Screenshot_20210502-162002_ARDND.jpg" /></a>
                                    
                                   </div>
                                   <div class="item">
-                                    <a target="_blank" href="/images/ARDND/Character Sheet.png"><img loading="lazy" alt="Mobile UI, parchment paper scroll background with heading Lobby and body text with list Player and Dungeon Master. Buttons Leave Room and Start Game" src="/images/ARDND/Screenshot_20210502-170815_ARDND.jpg"  /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Character Sheet.png"><img loading="lazy" alt="Mobile UI, parchment paper scroll background with heading Lobby and body text with list Player and Dungeon Master. Buttons Leave Room and Start Game" src="/images/ARDND/Screenshot_20210502-170815_ARDND.jpg"  /></a>
                                 
                                   </div>
                                   <div class="item">
-                                    <a target="_blank" href="/images/ARDND/Chat.png"><img loading="lazy" alt="Photograph of dice with 3d model of fire projected to the top of it. UI shows enlarged centre circle button with a dice icon, and two smaller circle buttons with icons of armor and a castle" src="/images/ARDND/Screenshot_20210502-172456_ARDND.jpg" /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/Chat.png"><img loading="lazy" alt="Photograph of dice with 3d model of fire projected to the top of it. UI shows enlarged centre circle button with a dice icon, and two smaller circle buttons with icons of armor and a castle" src="/images/ARDND/Screenshot_20210502-172456_ARDND.jpg" /></a>
                                   
                                   </div>
                                   <div class="item">
-                                    <a target="_blank" href="/images/ARDND/AR - Roll.png"><img loading="lazy" alt="Photograph of dice with 3d model of dragon projected to the top of it. UI shows enlarged centre circle button with an armor icon, and two smaller circle buttons with icons of dice and a castle" src="/images/ARDND/Screenshot_20210502-172533_ARDND.jpg" /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/AR - Roll.png"><img loading="lazy" alt="Photograph of dice with 3d model of dragon projected to the top of it. UI shows enlarged centre circle button with an armor icon, and two smaller circle buttons with icons of dice and a castle" src="/images/ARDND/Screenshot_20210502-172533_ARDND.jpg" /></a>
                                   
                                   </div>
                                   <div class="item">
-                                    <a target="_blank" href="/images/ARDND/AR - Encounter.png"><img loading="lazy" alt="Photograph of dice with 3d model of a house projected to the top of it. UI shows enlarged centre circle button with a castle icon, and two smaller circle buttons with icons of armor and a dice. Dropdown shows parchment scroll with options House and Blacksmith" src="/images/ARDND/Screenshot_20210502-172547_ARDND.jpg" /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/AR - Encounter.png"><img loading="lazy" alt="Photograph of dice with 3d model of a house projected to the top of it. UI shows enlarged centre circle button with a castle icon, and two smaller circle buttons with icons of armor and a dice. Dropdown shows parchment scroll with options House and Blacksmith" src="/images/ARDND/Screenshot_20210502-172547_ARDND.jpg" /></a>
                                   
                                   </div>
                                   
@@ -449,7 +451,7 @@
                           <div class="col-md-4">
                             <h3>Dice Design</h3>
                             <p> Fiducial markers, similar to qr codes, were settled on as a simple and visually appealing means of easily triggering computer-based vision for AR. The dice prototypes went through several iterations to determine size and design complexity to be suitable for reliable camera detection.</p>
-                            <a target="_blank" href="/images/ARDND/dice/20210331_131022.jpg"><img loading="lazy" alt="Photograph of multiple iterations of a dice prototype, starting with plastic real d&d dice, then a paper black and white dice, a broken cardboard version, a poorly printed light grey dice and finally a small sturdy black and white dice reinforced with cardboard" class="img-fluid" src="/images/ARDND/dice/20210331_131022.jpg"  /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/20210331_131022.jpg"><img loading="lazy" alt="Photograph of multiple iterations of a dice prototype, starting with plastic real d&d dice, then a paper black and white dice, a broken cardboard version, a poorly printed light grey dice and finally a small sturdy black and white dice reinforced with cardboard" class="img-fluid" src="/images/ARDND/dice/20210331_131022.jpg"  /></a>
                           </div>
                            <div class="col-md-8">
                             <div id="carousel-dice" class="carousel slide" data-ride="carousel" style="width:50%; margin:auto;">
@@ -466,24 +468,24 @@
                             
                               <div class="carousel-inner">
                                 <div class="item active">
-                                  <a target="_blank" href="/images/ARDND/dice/20210331_220849.jpg"><img loading="lazy" alt="Instagram screenshot of messy desk featuring paper dice, scissors and a glue stick" src="/images/ARDND/dice/instagram.jpg"  /></a>
+                                  <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/20210331_220849.jpg"><img loading="lazy" alt="Instagram screenshot of messy desk featuring paper dice, scissors and a glue stick" src="/images/ARDND/dice/instagram.jpg"  /></a>
                               
                                 </div>
                                
                                 <div class="item">
-                                  <a target="_blank" href="/images/ARDND/dice/OldFiducialDiceObjectTarget.png"><img loading="lazy" alt="Screenshot of dice template, showing a flat overlay of a 6 sided dice with numbers and a bold black and white abstract pattern" src="/images/ARDND/dice/OldFiducialDiceObjectTarget.png" /></a>
+                                  <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/OldFiducialDiceObjectTarget.png"><img loading="lazy" alt="Screenshot of dice template, showing a flat overlay of a 6 sided dice with numbers and a bold black and white abstract pattern" src="/images/ARDND/dice/OldFiducialDiceObjectTarget.png" /></a>
                                 
                                 </div>
                                 <div class="item">
-                                  <a target="_blank" href="/images/ARDND/dice/20210421_174942.jpg"><img loading="lazy" alt="Small dice prototype with rough edges, with abstract black and white design and numbers stylised in a script font" src="/images/ARDND/dice/20210421_174942.jpg"  /></a>
+                                  <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/20210421_174942.jpg"><img loading="lazy" alt="Small dice prototype with rough edges, with abstract black and white design and numbers stylised in a script font" src="/images/ARDND/dice/20210421_174942.jpg"  /></a>
                               
                                 </div>
                                 <div class="item">
-                                  <a target="_blank" href="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg"><img loading="lazy" alt="Photograph of dice being mapped for AR, a green mesh overlay depicts all unqiue points the computer vision recognised" src="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg" /></a>
+                                  <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg"><img loading="lazy" alt="Photograph of dice being mapped for AR, a green mesh overlay depicts all unqiue points the computer vision recognised" src="/images/ARDND/dice/Screenshot_20210409-152519_Scanner.jpg" /></a>
                                 
                                 </div>
                                 <div class="item">
-                                  <a target="_blank" href="/images/ARDND/dice/FiducialDiceTemplate-WithInstructions.png">
+                                  <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/dice/FiducialDiceTemplate-WithInstructions.png">
                                     <img loading="lazy" class="img-fluid"  alt="Final Document showing the dice template and a series of instructions for how to cut and glue the template to make a dice"  src="/images/ARDND/dice/FiducialDiceTemplate-WithInstructions.png">
                                     </a>
                                 
@@ -520,7 +522,7 @@
                             <p>The working experience was presened to the same research participans in a focus group setting. They were highly impressed with how many of their pain points were addressed in a singular design. They found the dice fun, and quickly understood without help how the experience worked.</p>
                         </div>
                         <div class="col-md-4">
-                              <a target="_blank" href="/images/ARDND/done.jpg"><img loading="lazy" alt="Photograph of Mobile phone held up showing ARDND. Screen is open to camera showing a dice with 3d fire mapped to it. In the background of the photo their is a laptop open with a dissertation entitled Dungeons and Dragons and Discord. Exploring the use of Mixed Reality to increase immersion over video-call tabletop roleplay games" height="50%" class="img-fluid" src="/images/ARDND/done.jpg"> </a>
+                              <a target="_blank" rel="noopener noreferrer" href="/images/ARDND/done.jpg"><img loading="lazy" alt="Photograph of Mobile phone held up showing ARDND. Screen is open to camera showing a dice with 3d fire mapped to it. In the background of the photo their is a laptop open with a dissertation entitled Dungeons and Dragons and Discord. Exploring the use of Mixed Reality to increase immersion over video-call tabletop roleplay games" height="50%" class="img-fluid" src="/images/ARDND/done.jpg"> </a>
                         </div>
                     </div>
                     </div>
@@ -586,7 +588,7 @@
                     </div>
                 </section>
             </section>   
-            
+            </main>
             <footer>
               <p>Website designed, created and maintained by Amber Miller<br>
                 If you like my work, get in touch at
