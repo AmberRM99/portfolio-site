@@ -42,13 +42,18 @@ function initComparisons() {
   function compareImages(img) {
     var range, container, w, h;
 
-    function updateOverlay(percent) {
-      var val = Number(percent);
-      if (Number.isNaN(val)) val = 50;
-      if (val < 0) val = 0;
-      if (val > 100) val = 100;
-      img.style.width = (w * (val / 100)) + "px";
-    }
+   function updateOverlay(percent) {
+  var val = Number(percent);
+  if (Number.isNaN(val)) val = 50;
+  if (val < 0) val = 0;
+  if (val > 100) val = 100;
+
+  if (container.classList.contains("img-comp-container--dashboard")) {
+    container.style.setProperty("--split", val + "%");
+  } else {
+    img.style.width = (w * (val / 100)) + "px";
+  }
+}
 
     function updateDimensions() {
       /* Get the width and height of the parent container (the comparison frame) */

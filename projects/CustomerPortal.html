@@ -112,7 +112,7 @@
           <i class="fa fa-clock"></i>
           <p class="Snapshotheader">Timeline</p>
           <p>
-            3 Month Programme
+            3 Month Programme (originally sized at 10months, but paused due to restructuring).
           </p>
         </div>
 
@@ -133,7 +133,7 @@
   </div>
 </section>
 
-<section class="endOfTopic">
+<section>
   <div class="container ExtraContent">
       <h2>Context and constraints</h2>
 
@@ -159,10 +159,11 @@
 </section>
 <section class=" startofTopic">
   <div class="container">
-      <h3>Early insights</h3>
-      <div class="row">
-          <div class="discovery">Researching how to move users from one platform to another required a range of methods and approaches. Splitting the workload between myself and a UX researcher colleague, we conducted the following studies over the course of the project:</div>
-          <ul class="importantQuote" style="margin:2rem">
+      <div class="row" style="display:flex; flex-direction:column;">
+           <h3>Early insights</h3>
+           <div class="importantQuote">
+          <div >Researching how to move users from one platform to another required a range of methods and approaches. Splitting the workload between myself and a UX researcher colleague, we conducted the following studies over the course of the project:</div>
+          <ul class="" style="margin:2rem">
               <li>6x unmoderated usability studies benchmarking current journeys' performance</li>
               <li>8x user interviews with current users</li>
               <li>2x moderated "consumer understanding" studies aimed at identifying key language barriers</li>
@@ -171,7 +172,7 @@
               <li>1x internal interview with a customer care SME to understand call volumes</li>
               <li>1x review of existing data around call volumes and complaint drivers</li>
           </ul>
-         
+         </div>
       </div>
   </div>
 </section>
@@ -202,7 +203,7 @@
                <div class="col-md-7 ExtraContent"> 
                 <h4>Money in journeys</h4>
                  <p>The number one starting point was addressing the expectation mismatch in the steps to add money to a product.</p>
-                 <p> Our current experience was a Top Up experience, combining one time, recurring, or transfer in into one journey. This worked great for advisers as they're often doing multiple payment types at once, but for customers we found less than 1% of the time they were doing multiple types at once. The natural next move was to split the one journey into 3 seperate journeys, one per action.</p>
+                 <p> Our current experience was a combined "Top Up" process, allowing users to set up one time, recurring, or transfers all in one journey. This worked <strong>great for advisers </strong> as they're often doing multiple payment types at once, but for <strong> customers less than 1% were doing multiple processes at once </strong>. The natural next move was to split the one journey into <strong> 3 seperate journeys, one per user intention</strong> .</p>
                  <p>Building three new journeys while the clear best case for the user, presented significant maintenance challenges and technical resistance, especially as we couldn't rely solely on web components. Negotiations with the technology team were key for finding a solution.</p>
                  <p>Eventually we struck a balance that suited our technical needs, timeframe, budget and, most importantly, the users. We designed and built the experience as one journey, as so many assets were shared, but linked it in a way that users would always perceive it as three separate journeys.</p>
                  <p>This took the technical benefits of our original journey and married them with the users' needs, resulting in a seamless experience shift.</p>
@@ -210,7 +211,7 @@
         <div class="col-md-5">
             <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
             <a target="_blank" rel="noopener" href="/images/Aegon/Comparison.jpg">
-            <img loading="lazy" alt="Comparison between old and new UI designs for the client reporting platform" class="img-fluid" src="/images/Aegon/Comparison.jpg">
+            <img loading="lazy" alt="Journey maps detailing the previous, combined journey, and our new streamlined, relevant only content journey." class="img-fluid" src="/images/Aegon/Comparison.jpg">
             </a>
         </div>
             </div> 
@@ -237,8 +238,8 @@
     <div class="row manualFlip">
         <div class="col-md-6 ExtraContent">
           <h4>Simplified content</h4>
-          <p>One of the big learnings from user testing was that there was a lot of jargon in our current journeys, and users didn't feel confident risking making a decision, so they would rather abandon the process than guess wrong.</p>
-          <p>We cut out as many unnecessary technical questions as possible, but some remained and required simplifying.</p>
+          <p>One of the big learnings from user testing was that there was <strong> a lot of jargon </strong> in our current journeys, and users didn't feel confident risking making a decision, so <strong> users would abandon the process rather than guess wrong </strong>.</p>
+          <p>We cut out as many unnecessary technical questions and unnecessary disclaimers as possible, but some remained and required simplifying.</p>
           <p>Indexation proved a particularly difficult point; in lay terms it means increasing a payment each year to align with inflation/the Retail Price Index, but the concept was completely new to our users. By making the question more wordy and explaining and highlighting an example of how it works, we were able to bypass one of our toughest dropout points.</p>
         </div>
         <div class="col-md-6">
@@ -260,7 +261,7 @@
     <div class="container">
             <div class="row">
                 <div class="col-md-5 ExtraContent">
-                    <h4>Fighting Legalese</h4>
+                    <h4>Fighting Legal-ese</h4>
                 <p>As a regulated industry, it's natural that there are lots of technical terms to contend with. Wherever possible we tried to strip out unnecessary user choices, like checking "yes" to having done their fund research even if paying into their existing funds. Other times, we found compromises to simplify questions we couldn't remove and make them less intimidating to our users.</p>
             </div>
             <div class="col-md-7">
@@ -283,15 +284,15 @@
                 <div class="col-md-8 ExtraContent">
                     <h4>Core page transformations</h4>
                     <p>In research, our users reacted with horror to our current dashboard designs. They were too technical-looking, too stark, too serious.</p>
-                    <p>Fixing this came in two parts: making the actions easier to understand, and bringing more tools and features into the experience to feel less stark.</p>
+                    <p>Fixing this came in two parts: making the actions easier to understand, and bringing more tools and features into the experience to feel more welcoming, tailored to customer needs.</p>
                 </div>
             <div class="col-md-4">
-            <div class="img-comp-container" style="aspect-ratio:1/3;">
+              <div class="img-comp-container img-comp-container--dashboard" style="aspect-ratio:1/3;">
               <div class="img-comp-img">
-                  <img src="/images/Aegon/After.png" alt="Redesigned dashboard with softer visual language and clearer actions.">
+                <img src="/images/Aegon/After.png" alt="Redesigned dashboard with softer visual language and clearer actions.">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                  <img src="/images/Aegon/Before.png" alt="Original dashboard with technical UI and stark layout." >
+                <img src="/images/Aegon/Before.png" alt="Original dashboard with technical UI and stark layout.">
               </div>
             </div>
         </div>
@@ -300,10 +301,15 @@
 </section>
 <section id="final" class="sectionHeading finalSections">
     <div class="container">
-        <h2>Outcome</h2>
-    <div class="row" style="flex-direction:column;justify-content: center;text-align: center; color:#ffffff;">
-          <p>Unfortunately, our work had to be paused due to large-scale organisation restructuring. While we can't currently deliver the value as planned, there is a clear, well-documented series of design files and business artifacts awaiting a future team to pick up the work if desired.</p>
+    <div class="row" style="text-align: center;">
+          <div class="col-md-7 ExtraContent">
+             <h2 style="color:var(--darkGrey)">Outcome</h2>
+             <p>Unfortunately, our work had to be paused due to large-scale organisation restructuring. While we can't currently deliver the value as planned, there is a clear, well-documented series of design files and business artifacts awaiting a future team to pick up the work if desired.</p>
           <p>Pausing the project, while disappointing, allowed me to refine my UI spec work, as I had to ensure the new component designs could be picked up and shipped even if no one attached without relying on current stakeholders. The Specs (formerly EightShapes) were a great tool for accomplishing this, as when I had clean components I could automate some of the more repetitive documentation, allowing me to spend my time on detailed work like accessibility tagging.</p>
+        </div>
+          <div class="col-md-5">
+            <img width="80%" loading="lazy" alt="Example of UI spec sticker sheet for new button holder and promotional panel components" src="/images/Aegon/UIspec.png">
+          </div>
     </div>
     </div>
 </section>

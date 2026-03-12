@@ -397,6 +397,32 @@ footer{
   pointer-events: none;
 }
 
+/* Dashboard-specific comparison mode */
+.img-comp-container--dashboard {
+  --split: 50%;
+}
+
+.img-comp-container--dashboard .img-comp-overlay {
+  width: 100% !important;
+  clip-path: inset(0 calc(100% - var(--split)) 0 0);
+}
+
+.img-comp-container--dashboard .img-comp-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* good for full dashboard screenshots */
+  object-position: top center;
+  display: block;
+}
+
+.img-comp-container--dashboard .img-comp-overlay::after {
+  left: var(--split);
+  right: auto;
+  transform: translateX(-1px);
+}
+
 .landing-img{
   width:60%;
   margin:auto;
