@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Accessibility and inclusive design | Amber Miller Portfolio</title>
-  <meta name="description" content="Case study: rebuilding Aegon's client reporting capability to support advisers with clear, compliant reporting in a post-migration landscape.">
-  <meta name="keywords" content="User Experience, UX Design, Client Reporting, Financial Advisers, Research, Accessibility">
+  <meta name="description" content="Case study: auditing a legacy service for accessibility issues and turning the findings into wider inclusive design learning across the organisation.">
+  <meta name="keywords" content="User Experience, UX Design, Accessibility, Legacy technology, workshops">
   <meta name="author" content="Amber Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.ico">
@@ -53,58 +53,73 @@
     <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
       </div>
      
-<section id="start" >
+<section id="start">
   <div class="container">
 
     <div class="row">
 
       <!-- LEFT SIDE -->
       <div class="col-md-7 projectIntro">
-            <div class="text-center">
 
-<h1>Accessibility and Inclusive Design</h1>
+        <div>
 
-<p class="heroTagline">
-Turning a neglected legacy service into an accessibility learning opportunity.
-</p>
+          <div class="text-center">
+            <h1>Accessibility and Inclusive Design</h1>
+            <img src="/Personas/AccessibilityCover.png" loading="lazy" class="img-fluid heroImage"alt="Accessibility audit slides, inclusive persona cards, and workshop artefacts used to identify barriers and educate teams">
+             <br>
 
-<!-- Evidence chips -->
-<div class="heroMetrics">
-  <span class="metricChip"><i class="fas fa-bug"></i> 90+ issues identified</span>
-  <span class="metricChip"><i class="fas fa-bullhorn"></i> 100+ internal requests</span>
-  <span class="metricChip"><i class="fas fa-users"></i> Workshop for 30 colleagues</span>
-</div>
+            <p class="intro-summary">
+             Turning low-priority legacy digital experiences into a catalyst for inclusive design change.
+            </p>
+          </div>
+        </div>
 
-<img src="/images/Accessibility/AccessibilityHeroCollage.png"
-alt="Accessibility audit slides, inclusive persona cards, and workshop artefacts used to identify barriers and educate teams">
+        <!-- Skip CTA -->
+        <div class="skipIntro Micro">
+          <p>No time to read the full case study?</p>
+          <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip">
+            <i class="fa-solid fa-forward"></i> Skip to outcomes
+          </button>
+        </div>
 
-<p class="intro-summary">
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="projectSnapshot col-md-5 accessibility">
+
+        <div class="snapshotCard">
+          <i class="fa fa-circle-info"></i>
+          <p class="intro-summary">
 I conducted an accessibility audit of a legacy service, using inclusive personas and assistive technology testing to uncover usability barriers.  
 By translating WCAG issues into human stories, I helped stakeholders understand the impact and sparked wider internal conversations about accessibility.
-</p>
-
+</p>  
+        </div>  
+        <div class="snapshotCard">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <!-- <p class="Snapshotheader">Impact</p> -->
+          <div class="heroMetrics">
+  <span class="metricChip"><i class="fas fa-bug"></i> 90+ issues identified</span><br>
+  <span class="metricChip"><i class="fas fa-bullhorn"></i> 100+ internal requests</span><br>
+  <span class="metricChip"><i class="fas fa-users"></i> Workshop for 30 colleagues</span><br>
 </div>
-
-  <!-- </div> -->
         </div>
+ 
+      </div>
 
     </div>
   </div>
 </section>
 
-<section>
+<section class="endOfTopic">
     <div class="container ExtraContent">
         <h2>Backstory</h2>
         <div>
-              <p>During a quiet period at work, my manager instructed me to investigate one of our legacy services, and identify areas of opportunity for improvements.</p>
-              <p>This technology was a contact form attached to our public website. It was aimed at user's of our legacy software, and had very low traffic rates, so appetite for improvements was low.</p>
-              <p>I had no specific brief to work to, simply familiarise myself with the program and develop a proposal of what I would tackle first if given the chance</p>
+              <p>During a quieter period at work, my manager asked me to investigate one of our legacy services and identify opportunities for improvement.</p>
+              <p>The service was a contact form attached to our public website. It was aimed at users of our legacy software and had very low traffic, so appetite for improvement was low.</p>
+              <p>I had no specific brief to work to, simply familiarise myself with the service and develop a proposal of what I would tackle first if given the chance.</p>
+              <br>
+              <p> I chose to make personas a central theme of this project so I could stay accountable to a broad range of user needs.</p>
           </div>
-
-          <!-- {REPLACE ME: Add a simple contextual visual here, not a UI screenshot.
-          Best option: small timeline/diagram showing:
-          quiet period -> explore legacy service -> audit findings -> leadership traction -> workshop
-          } -->
 </section>
 
   <section id="research" class="sectionHeading">
@@ -113,21 +128,27 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 
 <section class=" startofTopic">
   <div class="container">
-      <h2>Generating personas</h2>
+      <h2>Testing plan</h2>
       <div class="row">
-          <p>To avoid any biases or assumptions from the start, I wanted to map out some key person'a representing our vulnerable customers who may be using the platform. </p>
-          <p>These personas were simplistic, but covered a core basis of user types - including physical disabilities, neurodiversity, situational impairments as well as our "assumed" user with no additional needs as a control group for identifying general issues.</p>
               <div class="projectSnapshot">
                 <div class="snapshotCard">
-                 <i class="fa fa-rocket"></i>
-                <p class="Snapshotheader">Explorers</p>
-                <p>Explorers want raw data and the power to play with it, expecting strong visuals, customisation opportunities, and the ability to see the different stories data can tell. They're more likely to spend longer on the page and make use of the full tool suite.</p>
-                <!-- {REPLACE ME: Replace this whole card with actual persona card image or HTML card for one of your workshop personas} -->
+                 <i class="fa fa-flask"></i>
+                <p class="Snapshotheader">Methods</p>
+                <ul>
+                  <li> Heuristic evaluation to get a baseline of the experience </li>
+                   <li> screen reader testing </li>
+                    <li> "No mouse" keyboard testing </li>
+                    <li> Mobile phone testing</li>
+                </ul>
               </div>
               <div class="snapshotCard">
-                 <i class="fa fa-magnifying-glass"></i>
-                <p class="Snapshotheader">Finders</p>
-                <img src="" loading="lazy" alt="">
+                 <i class="fa fa-bullseye"></i>
+                <p class="Snapshotheader">Testing goals</p>
+                <ul>
+                  <li> Understand what support topics are available </li>
+                   <li> Complete a "Change my personal details" request</li>
+                    <li> Complete a "Nomination of beneficiaries" request</li>
+                </ul>
 
               </div>
               </div>
@@ -160,7 +181,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <h4 class="personaPanel__title">Assumed Sam</h4>
 
                 <p class="personaPanel__summary">
-                  Sam has no perceived accessibility needs, and accesses the platform from her home computer, equipped with a keyboard, mouse and high-speed reliable internet connection.
+                  Sam has no perceived accessibility needs, and accesses the platform from her home computer, equipped with a keyboard, mouse and high-speed internet connection.
                 </p>
 
                 <div class="personaPanel__imageWrap">
@@ -172,14 +193,14 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding our assumed user</h5>
                   <p>
-                   Our assumed user is thought to face no limitations or handicaps to how they access our products. They are thought to be in good health, neurotypical, able-bodied, and have access to a good-quality computer and high- speed internet. We also assume they have set aside time to complete their tasks and will not face any external disturbances. These assumptions allow them the use of a mouse and keyboard
+                  Our assumed user is thought to face no barriers in how they access our products. They are thought to be in good health, neurotypical, able-bodied, and have access to a good-quality computer and high-speed internet. We also assume they have set aside time to complete their tasks and will not face any external disturbances. These assumptions allow them the use of a mouse and keyboard.
                   </p>
                 </div>
 
                 <div class="personaPanel__contentBlock">
                   <h5>Key needs</h5>
                   <ul class="personaPanel__list">
-                    <li>An intuitive, well designed user experience Logical instructions and forms to complete desired actions quickly and efficiently </li>
+                    <li>An intuitive, well-designed user experience Logical instructions and forms to complete desired actions quickly and efficiently </li>
                     <li>Signposting to any further actions required</li>
                   </ul>
                 </div>
@@ -200,22 +221,22 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 2.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 3.png" alt="Illustration of example user" class="personaPanel__image">
                 </div>
               </div>
 
               <div class="col-md-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
-                  <h5>Understanding visual impaired users</h5>
+                  <h5>Understanding visually impaired users</h5>
                   <p>
-                    Visual impaired users are individuals who have difficulty seeing or are completely blind. There is more to vision impairment than the amount visible, users may have a form of colour blindness, lose their glasses, or be in an environment with harsh lighting conditions causing screen glare. Depending on the severity of the impairment, various assistive technologies can be employed such as screen readers, magnifiers, and braille displays. </p>
+                    Visually impaired users are individuals who have difficulty seeing or are completely blind. There is more to vision impairment than the amount visible, users may have a form of colour blindness, lose their glasses, or be in an environment with harsh lighting conditions causing screen glare. Depending on the severity of the impairment, various assistive technologies can be employed such as screen readers, magnifiers, and braille displays. </p>
                 </div>
 
                 <div class="personaPanel__contentBlock">
                   <h5>Key needs</h5>
                   <ul class="personaPanel__list">
                     <li>Scalable content that works with magnification</li>
-                    <li>Alternative text to audibly capture the on screen experience</li>
+                    <li>Alternative text to audibly capture the on-screen experience</li>
                     <li>Access to skip links to quickly complete web actions</li>
                   </ul>
                 </div>
@@ -232,11 +253,11 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <h4 class="personaPanel__title">Motor Impaired Sam</h4>
 
                 <p class="personaPanel__summary">
-                  Sam was recently diagnosed with Parkinson's disease after noticing persistent tremors, especially in her hands. She has been trialling navigating the web using her keyboard as she finds a mouse too tricky to use precisely.
+                  Sam was recently diagnosed with Parkinson's disease after noticing persistent tremors, especially in her hands. She has been trying navigating the web using her keyboard as she finds a mouse too tricky to use precisely.
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 3.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 2.png" alt="Illustration of example user" class="personaPanel__image">
                 </div>
               </div>
 
@@ -244,16 +265,16 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding motor impaired users</h5>
                   <p>
-                    Users can have a varying degree of limited mobility, which may cause issues typing, scrolling, clicking buttons, or using a mouse. Motor impairments can stem from chronic conditions or disability such as paralysis or tremor disorders, as well as temporary restrictions such as a fractured wrist or multitasking. Assistive technologies allowing alternative inputs, such as speech recognition software, specialized keyboards, or eye- tracking devices, can be used.
+                    Users can have a varying degree of mobility, which may cause issues typing, scrolling, clicking, or aiming a mouse. Motor impairments can stem from chronic conditions or disability such as paralysis or tremor disorders, as well as temporary restrictions such as a fractured wrist or multitasking. Assistive technologies that allow alternative inputs include speech recognition software, specialised keyboards, and eye-tracking devices.
                   </p>
                 </div>
 
                 <div class="personaPanel__contentBlock">
                   <h5>Key needs</h5>
                   <ul class="personaPanel__list">
-                    <li>Visible, obvious focus states highlighting where user is within page</li>
-                    <li>Forgiveness and ability to correct mis-clicks</li>
-                    <li>Interactive content must accept input from mouse alternatives including keyboard navigation and voice inputs</li>
+                    <li>Visible, obvious focus states highlighting where the user is within the page</li>
+                    <li>Forgiveness and ability to correct mis-clicks</li> 
+                    <li>Interactive content must accept input from alternatives input devices</li>
                   </ul>
                 </div>
               </div>
@@ -289,7 +310,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                   <h5>Key needs</h5>
                   <ul class="personaPanel__list">
                     <li>Clear, easy to understand instructions</li>
-                    <li>Simple interface with well labelled CTAs and minimal clutter</li>
+                    <li>Simple interface with well-labeled CTAs and minimal clutter</li>
                     <li>Support on how to independently complete tasks and correct any errors that occur</li>
                   </ul>
                 </div>
@@ -306,7 +327,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <h3 class="personaPanel__title">Mobile Phone Sam</h3>
 
                 <p class="personaPanel__summary">
-                  Sam spilled water on his computer a few months ago and hasn't been able to afford a replacement, so has been getting by using just his phone.
+                  Sam spilled water on her computer a few months ago and hasn't been able to afford a replacement, so has been getting by using just her phone.
                 </p>
 
                 <div class="personaPanel__imageWrap">
@@ -325,7 +346,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 <div class="personaPanel__contentBlock">
                   <h4>Key needs</h4>
                   <ul class="personaPanel__list">
-                    <li>Content needs to be designed with responsiveness in mind to suit smaller screen</li>
+                    <li>Content needs to be designed with responsiveness in mind to suit smaller screens</li>
                     <li> Interactive content needs to be scaled so it can be clicked by clumsy fingers </li>
                   </ul>
                 </div>
@@ -349,8 +370,6 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
   </div>
   </div>
 </section>
-
-<!-- <section class="standAlone ">
     <div class="container importantQuote">
       <div class="row">
         <div class="col-md-6 ">
@@ -377,18 +396,18 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 </section>
 
 <section class="startofTopic">
-    <div class="container">
-            <div class="row">
-               <div class="col-md-5 ExtraContent">
+    <div class="container ExtraContent">
+            <div class="row ">
+               <div class="col-md-6">
   <h3>How to present an accessibility audit?</h3>
   <p>In my week of exploration, I uncovered around 90 different issues with the portal.</p>
-  <p>Issue findings varied drastically; from buttons with no visible focus state, page title's simply named container, all the way through to misleading language where even I, an employee of the company, couldn't work out what we were asking the user for.</p>
+  <p>The findings varied widely, from buttons with no visible focus state and page titles labelled simply as "container" to misleading language</p>
   <p>This was far too much to take to the stakeholders in charge of this service. I also had to be mindful I was not dealing with technical stakeholders, but business leaders focused on return on investment into their propositions.</p>
 </div>
-        <div class="col-md-7">
-           <p>As personas had been so helpful for me in uncovering issues and creating a story to the metrics, I chose to weave my personas throughout the presentation.</p>
-           <p>I was no longer telling them for example that because the page title was wrong it <strong> failed WCAG 2.4.2 at A level </strong>, but instead weaving a tale about Sam who opened a new tab to find their plan number and <strong>can no longer spot which of there 10 tabs open contains the form </strong> they were completing.</p>
-           <p> I got the biggest impact when presenting as I screen-recorded a demo of a page of the current experience, which included over 1 minute of the screen-reader announcing the existing alternative text of an asterisk denoting a mandatory field.</p>
+        <div class="col-md-6">
+           <p>Because the personas had been so useful in uncovering issues and adding human context to the metrics, I chose to weave them throughout the presentation.</p>
+           <p>I was no longer telling them, for example, that an incorrect page title failed <strong> WCAG 2.4.2 at A level </strong>, but instead weaving a tale about Sam who opened a new tab to find their plan number and <strong>can no longer spot which of their 10 tabs open contains the form </strong> they were completing.</p>
+           <p> I got the biggest impact when presenting as I screen recording of the current experience, which included over 1 minute of the screen reader announcing the existing alternative text of an asterisk denoting a mandatory field.</p>
         </div>
             </div> 
     </div>
@@ -440,24 +459,225 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 </section>
 
 <section id="final" class="sectionHeading finalSections">
-    <div class="container">
-        <h3>Post-audit activities</h3>
+    <div class="container importantQuote">
         <div class="row">
-             <p>The slide deck containing my audit, while originally intended for a small group of immediate stakeholders, gained traction internally as an example of how we should be addressing accessibility concerns and why it matters. To date, I've received over 100 access requests from senior leaders throughout the business to help them understand our issues and empathise with them, including members of the C-suite</p>
-             <p>I've also shared this presentation with other departments including technology and product management to help them better understand some of the accessibility concerns, and prevent them being repeated in the future</p>
+          <div class="col-md-6">
+                   <h3>Post-audit activities</h3>
+             <p>The slide deck containing my audit, while originally intended for a small group of immediate stakeholders, gained traction internally as an example of how we should be addressing accessibility concerns and why it matters. To date, I've received over 100 access requests from senior leaders throughout the business to help them understand our issues and empathise with them, including members of the C-suite.</p>
+             <p>I've also shared this presentation with other departments including technology and product management to help them better understand some of the accessibility concerns, and prevent them from being repeated in the future</p>
              <br>
-            <p> During other work on the legacy platform, myself (or delegating to other UX designers when necessary) were invited to be part of the conversation much earlier than previously. Technology and business owners had really heard our</p>
+            <p> Since presenting my audit, we've seen much earlier UX involvement in initiatives, as we've proven the value of our input early on for preventing rework like this.</p>
         </div>
+           <div class="col-md-6">
+            <h4> Next steps</h4>
+             <p> To keep momentum going, I took the personas, the most requested part of my audit, and turned them into easily shareable flashcards highlighting different users and their needs. I was able to collaborate with our vulnerable customers lead to understand some more niche vulnerability scenarios affecting our contact strategy, to build a more robust persona list. </p>
+             <p>The idea behind the cards was simple and functioned a bit like a Top Trumps, allowing anyone interested to pick a card at random and learn a bit more about a vulnerability they might not have thought about before.</p>
+             <p>The cards were designed to work both as a standalone learning activity, but also to be incorporated into some accessibility and inclusive design training planned.</p>
+            </div>
+             </div>
         </div>
 </section>
 
 <section class="sectionHeading finalSections">
     <div class="container">
-        <h3>Accessibility toolkit</h3>
+        <h3>Accessibility flashcards</h3>
+            <div class="container personaCards">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <article class="personaCard" data-persona-card>
+        <div class="personaCard__inner">
+          
+          <!-- Front -->
+          <section class="personaCard__face personaCard__face--front" id="persona-nyla-front">
+            <div class="personaCard__imageWrap">
+              <img
+                src="/Personas/Persona 2.png"
+                alt="Illustrated portrait of Nyla"
+                class="personaCard__image"
+              >
+            </div>
+
+            <div class="personaCard__content">
+              <h4 class="personaCard__name">Nyla</h4>
+              <p class="personaCard__meta">Illustrator, 32</p>
+
+              <p>
+                Nyla is a freelance illustrator based in Leeds. She has Ehlers-Danlos syndrome, a connective tissue disorder which affects her joints, skin
+                and energy levels.
+              </p>
+
+              <p>
+                Some days her condition is well managed, and can live her life to the
+                full without thinking about it.
+              </p>
+            </div>
+
+            <div class="personaCard__actions">
+              <button
+                type="button"
+                class="personaCard__button"
+                aria-expanded="false"
+                aria-controls="persona-nyla-back"
+                data-persona-toggle
+              >
+                Read more
+                <span class="sr-only"> about Nyla</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- Back -->
+          <section
+            class="personaCard__face personaCard__face--back"
+            id="persona-nyla-back"
+            aria-hidden="true"
+          >
+            <div class="personaCard__content personaCard__content--back">
+              <p>
+                On other days she can manage fairly independently with the help of pain
+                medication and mobility aids, like splints for dislocating joints or a cane
+                for walking.
+              </p>
+
+              <p>
+                Sometimes the brain fog and pain can be too much and she has no choice
+                but to rest. She has no control or influence over what level her illness
+                will be any given day.
+              </p>
+
+              <div class="personaCard__highlight">
+                <h4>Chronic illness</h4>
+                <p>
+                  Chronic illnesses come in all shapes and sizes, and no two days can
+                  look the same. It’s important users have the flexibility to be able to
+                  access a service when they need it, not when their condition allows.
+                </p>
+              </div>
+            </div>
+
+            <div class="personaCard__actions">
+              <button
+                type="button"
+                class="personaCard__button personaCard__button--secondary"
+                aria-expanded="true"
+                aria-controls="persona-nyla-front"
+                data-persona-toggle
+              >
+                Back to summary
+                <span class="sr-only"> for Nyla</span>
+              </button>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <article class="personaCard" data-persona-card>
+        <div class="personaCard__inner">
+          <section class="personaCard__face personaCard__face--front" id="persona-2-front">
+            <div class="personaCard__imageWrap">
+              <img src="/Personas/Persona 5.png" alt="Illustrated portrait of Maya" class="personaCard__image">
+            </div>
+
+            <div class="personaCard__content">
+              <h4 class="personaCard__name">Marcia</h4>
+              <p class="personaCard__meta">Teacher, 54</p>
+              <p>Marcia is a teacher in Greater Manchester, where she lives with her husband and teenage sons.
+                She fell victim to an online scam last year, which saw her lose over two thousand pounds.
+              </p>
+              <p>She has struggled with a great deal of shame after the scam, and feels very foolish.  </p>
+            </div>
+
+            <div class="personaCard__actions">
+              <button type="button" class="personaCard__button" aria-expanded="false" aria-controls="persona-2-back" data-persona-toggle>
+                Read more
+              </button>
+            </div>
+          </section>
+
+          <section class="personaCard__face personaCard__face--back" id="persona-2-back" aria-hidden="true">
+            <div class="personaCard__content personaCard__content--back">
+              <p>She particularly feels that due to her work as a teacher, where she teaches
+                her children not only English and maths, but life skills like critical thinking, she should have seen through the scam.
+              </p>
+              <p>She has a lot of anxiety now from unexpected phone calls, and finds herself triple-checking any forms or agreements before sending them. She's also quick to abandon a task if she can't guarantee the security of it.</p>
+              <div class="personaCard__highlight">
+                <h4>Trauma informed</h4>
+                <p>Service users can need reassurance they can trust you, especially if they've been stung before. This reassurance can be built through words, imagery or actions.</p>
+              </div>
+            </div>
+
+            <div class="personaCard__actions">
+              <button type="button" class="personaCard__button personaCard__button--secondary" aria-expanded="true" aria-controls="persona-2-front" data-persona-toggle>
+                Back to summary
+              </button>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-lg-4">
+      <article class="personaCard" data-persona-card>
+        <div class="personaCard__inner">
+          <section class="personaCard__face personaCard__face--front" id="persona-3-front">
+            <div class="personaCard__imageWrap">
+              <img src="/Personas/Persona 4.png" alt="Illustrated portrait of Daniel" class="personaCard__image">
+            </div>
+
+            <div class="personaCard__content">
+              <h4 class="personaCard__name">Pierre</h4>
+              <p class="personaCard__meta">Gardener, 39</p>
+              <p>Pierre moved to Edinburgh from Lyon, France with his wife and children three years ago when his wife received a promotion.</p>
+              <p>He speaks conversational English, but struggles with the written language. He particularly struggles with formal language on official documents, and gets easily frustrated trying to use websites with too many words.</p>
+            </div>
+
+            <div class="personaCard__actions">
+              <button type="button" class="personaCard__button" aria-expanded="false" aria-controls="persona-3-back" data-persona-toggle>
+                Read more
+              </button>
+            </div>
+          </section>
+
+          <section class="personaCard__face personaCard__face--back" id="persona-3-back" aria-hidden="true">
+            <div class="personaCard__content personaCard__content--back">
+              <p>His daughter, Michelle, 12, often helps as Pierres unofficial translator, helping with forms or complicated processes over the phone.</p>
+              <p>Sometimes he gets even more frustrated as he knows the right words, but his accent gets in the way of people understanding him.</p>
+              <div class="personaCard__highlight">
+                <h4>Language barriers</h4>
+                <p>There are a lot of reasons a user could struggle to understand written or spoken language. Simplify where you can, or add imagery and alternative media to aid their understanding.</p>
+              </div>
+            </div>
+
+            <div class="personaCard__actions">
+              <button type="button" class="personaCard__button personaCard__button--secondary" aria-expanded="true" aria-controls="persona-3-front" data-persona-toggle>
+                Back to summary
+              </button>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</div>
+         </div>
+
+</section>
+
+<section class="sectionHeading finalSections">
+    <div class="container">
         <div class="row">
-            <div class="col-md-5">
-             <p> Inclusive design and accessibility has also become a professional specialty to me, and at our most recent team day, featuring 30 participants from designers, researchers and management, I took the opportunity to run an Inclusive Design workshop.</p>
-             <p>I designed a hands-on accessibility training workshop to help teams experience barriers different users face, building skills from empathy rather than from textbooks.</p>
+            <div class="col-md-6 ExtraContent">
+               <h3>Inclusive design workshop</h3><br>
+             <p> At our most recent team day, featuring 30 participants across design, research and management, I took the opportunity to run an inclusive design training workshop inspired by my findings.</p>
+             <p>I designed a hands-on accessibility training workshop to help teams experience the barriers different users face, building skills from empathy rather than from textbooks.</p>
              <p> This workshop involved splitting into teams and receiving two persona cards, detailing realistic and relatable barriers like language, chronic health or money worries, and a common situation they had to design for. </p>
              </div>
             <div class="col-md-3">
@@ -477,8 +697,8 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-bug"></i> <strong>90+</strong>accessibility and usability issues found in production legacy code<hr>
-            <li><i class="fas fa-bullhorn"></i><strong>100 access requests</strong>from across the organisation for my audit findings </li><hr>
+            <li><i class="fas fa-bug"></i> <strong>90+ </strong>accessibility and usability issues found in production legacy code<hr>
+            <li><i class="fas fa-bullhorn"></i><strong>100 access requests </strong>from across the organisation for my audit findings </li><hr>
              <li><i class="fas fa-id-card"></i>Learnings transformed into a workshop for <strong>30 UX researchers, designers, managers and senior leadership</strong></li>
            </ul> 
         </div>
@@ -489,7 +709,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
     <div class="container">
         <h2>What I learned</h2>
         <div class="row importantQuote">
-            <p> While a side of desk task, this was a great learning and development opportunity. It proved that there is always more to learn on accessibility and inclusive technology. It also helped me understand some organisational resistance to accessibility enhancements - it's less about not seeing value and more about not fully understanding the scope, impact and benefits of it.   </p>
+            <p> Although this began as a side-of-desk task, it became a valuable learning and development opportunity. It proved that there is always more to learn about accessibility and inclusive technology. It also helped me understand some organisational resistance to accessibility enhancements; it's less about not seeing value and more about not fully understanding the scope, impact and benefits of it.   </p>
         </div>
     </div>
 </section>
@@ -572,5 +792,29 @@ lastScrollTop = st <= 0 ? 0 : st;
         }
       }
     </script>
+
+      <script>
+  document.querySelectorAll("[data-persona-card]").forEach((card) => {
+    const buttons = card.querySelectorAll("[data-persona-toggle]");
+    const front = card.querySelector(".personaCard__face--front");
+    const back = card.querySelector(".personaCard__face--back");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const isFlipped = card.classList.toggle("is-flipped");
+
+        buttons.forEach((btn) => {
+          btn.setAttribute("aria-expanded", String(isFlipped));
+        });
+
+        if (front && back) {
+          front.setAttribute("aria-hidden", String(isFlipped));
+          back.setAttribute("aria-hidden", String(!isFlipped));
+        }
+      });
+    });
+  });
+</script>
+        </script>
   </body>
 </html>
