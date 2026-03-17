@@ -183,13 +183,60 @@
       </div>
   </div>
 </section>
+<section>
+  <div class="container">
+    <h3>Early insights</h3>
+
+    <div class="row earlyInsightsGrid">
+      <div class="col-md-6">
+        <div class="importantQuote researchSummaryCard">
+          <h4 class="sectionEyebrow">Research inputs</h4>
+          <p class="researchIntro">
+           As a new product, research was critical for gaining market appetite and prioriting where to start.
+          </p>
+
+          <ul class="researchMethodList">
+            <li><strong>6</strong> rounds of user interviews at various design stages</li>
+            <li><strong>4</strong> unmoderated usability studies</li>
+            <li><strong>2</strong> comprehension studies on language barriers</li>
+            <li><strong>2</strong> accessibility-focused usability study</li>
+            <li><strong>1</strong> card sort for feature prioritisation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="importantQuote insightCard">
+          <h4 class="sectionEyebrow">What this revealed</h4>
+
+          <div class="insightList">
+            <div class="insightItem">
+              <h5><i class="fa-solid fa-people-pulling"></i>We have two distinct user types</h5>
+              <p>Our explorers and finders were equally prominent, but had different needs, behaviours and expectations.</p>
+            </div>
+
+            <div class="insightItem">
+              <h5><i class="fa-solid fa-box-open"></i>I needed to get out the design box</h5>
+              <p>All our testing with existing design system components paled in comparison to bespoke builds. Our reporting tool needed to look, feel and behave differently</p>
+            </div>
+
+            <div class="insightItem">
+              <h5><i class="fa-solid fa-map-location"></i>More data, more problems</h5>
+              <p>Users wanted everything at there fingertips, but were concerned how they would then navigate all the data they desired</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="standAlone ">
     <div class="container">
       <div class="row">
         <div class="col-md-6 importantQuote">
             <h3>Building a backlog</h3> 
-            <p>With building a tool from scratch, there's an unlimited number of feature combinations we could have delivered. To determine what was essential to an MVP, and then where we wanted to take the project long term, we needed data</p>
-            <p>I created a very low fidelity design showing the majority of features we could think of. This was then taken to the user panel for surveys and card sorts where users selected what there ideal reporting tool would contain. I then aggregated this data into a visual guide, showing what we had to have, what was nice to have, and what was low return for effort</p>
+            <p>With building a tool from scratch, there's an unlimited number of feature combinations we could have delivered. To determine what was essential to an MVP, and then where I wanted to take the project long term, I needed data</p>
+            <p>I created a very low fidelity design showing the majority of features we could possibly deliver. This was then taken to the user panel for surveys and card sorts where users selected what there ideal reporting tool would contain. I then aggregated this data into a visual guide, showing what we had to have, what was nice to have, and what was low return for effort</p>
         </div>
         <div class="col-md-6">
              <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Research example.png">
@@ -227,9 +274,9 @@
             <div class="row">
                <div class="col-md-5 ExtraContent">
   <h3>Phase 1 – get an MVP live</h3>
-  <p>Based on our research findings and available technology, we delivered a lean MVP to address the immediate need for basic reporting functionality.</p>
+  <p>Based on our research findings and available technology, I delivered a lean MVP to address the immediate need for basic reporting functionality.</p>
   <p>The biggest learning of getting the MVP live was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessibility guidelines.</p>
-  <p >After some robust internal testing and more user research, we landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank" rel="noopener noreferrer"> HighCharts</a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
+  <p >After some robust internal testing and more user research, I landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank" rel="noopener noreferrer"> HighCharts</a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
 </div>
         <div class="col-md-7">
             <a target="_blank" rel="noopener noreferrer" href="https://www.highcharts.com/demo/highcharts/accessible-line">
@@ -246,7 +293,7 @@
                 <div class="col-md-8 ExtraContent">
                     <h3>Improved navigation</h3>
                 <p>
-                With the ambitions of our project, we knew the contents of the page would grow and grow, making it a taller, denser experience to navigate. To combat this, and to satisfy our "Finder" user's need of getting straight to the information they're looking for, I implemented a "sticky nav". This is a fixed menu detailing all the categories in the tool, taking affordance from the contents page of the report to closer align the experiences. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impair accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
+                With the ambitions of our project, I knew the contents of the page would grow and grow, making it a taller, denser experience to navigate. To combat this, and to satisfy our "Finder" user's need of getting straight to the information they're looking for, I implemented a "sticky nav". This is a fixed menu detailing all the categories in the tool, taking affordance from the contents page of the report to closer align the experiences. This feature was robustly tested and redesigned to ensure it was responsive to all device sizes, and did not impair accessibility by logically fitting the reading order and appropriately scaling with screen magnification.
             </p><p>This relatively simple user experience enhancement saw a reduction in user intent, user's previously took <strong>up to 1 minute</strong> to find the data section they logged in to view, but this was reduced to approximately <strong>5-10 seconds</strong>.</p></div>
             <div class="col-md-4"> <img loading="lazy" alt="gif of skip nav working to quickly travel from one section to another" src="/images/Aegon/SkipNav.gif"> </div>
 </div>
@@ -259,7 +306,7 @@
           <h3>Exported report</h3>
           <p> A consequence of the lean MVP was we had to launch with our most basic report design. Immediately via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
           <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liaise closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF software limitations</p>
-          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it incrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liaised with brand on the final look and feel. By the time we were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
+          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it incrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liaised with brand on the final look and feel. By the time the team were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
           <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
         </div>
         
@@ -310,7 +357,7 @@
                 <p> Originally, we had <strong>benchmarking</strong> on our roadmap, which was reliant on a 3rd party data provider. This initiative had to be dropped as costs proved prohibitive. Rather than admit defeat and tell our users we couldn't deliver this feature, I revisited research and noticed an expression of interest in a "Personal benchmarking idea". <br><br>
                    To validate this, I ran a series of moderated and unmoderated tests with users, understanding why they would want to benchmark in general, what sort of financial goals clients most often held, and how this fit into the reporting ecosystem
               <br><br> It became clear that users often had measurable financial goals such as <strong> prove benefit of a strategy by growing 3.5% in one year </strong> or <strong> reach a pension pot of £100,000 by age 35 </strong>. <br> <br> 
-              Financial targets often feel <strong>speculative </strong> and <strong>intangible</strong>, so if we could visualise these and include them in annual reports it would be a big benefit to clients and financial advisers.</p>
+              Financial targets often feel <strong>speculative </strong> and <strong>intangible</strong>, so if they could visualise goals and include them in annual reports it would be a big benefit to clients and financial advisers.</p>
                 </div>
               <div class="col-md-5">
                 <p>This project took a fair few iterations to get right and get a business case approved, and required working closely with senior leadership alongside my own sprint team to sell the value of this feature. <br><br> Eventually we were able to compromise and land on a new section allowing advisers to enter a £ or % target for their clients' investment products. They could set a target for each product the user held, then see every time they logged in how the client's current product value or growth compared with this target, and amend if required. <br>

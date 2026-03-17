@@ -135,6 +135,10 @@ hr{
   background:var(--orange)
 }
 
+.insightCard{
+  height:100%;
+}
+
 .projectSnapshot {
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +148,7 @@ hr{
   flex-direction:row;
 }
 
-.accessibility .snapshotCard{
+.accessibility .snapshotCard, .col-md-8 .snapshotCard{
   width:100%;
 }
 
@@ -154,6 +158,14 @@ hr{
 
 .heroMetrics I{
   margin-right: 0.5rem;
+}
+
+.insightList{
+  text-align:left;
+}
+
+.insightList i{
+  margin-right:0.5rem;
 }
 
 .snapshotCard {
