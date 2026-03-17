@@ -402,11 +402,6 @@ background: rgba(255, 141, 86, 0.14);
   height: 100%;
 }
 
-.metricCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(31, 41, 55, 0.12);
-}
-
 .metricIcon {
   font-size: 1.5rem;
   color: #ff8a5b; /* your orange */
