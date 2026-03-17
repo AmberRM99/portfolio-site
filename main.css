@@ -384,11 +384,67 @@ background: rgba(255, 141, 86, 0.14);
   }
 }
 
+.heroMetrics {
+  margin-top: 1.5rem;
+  /* gap: 1rem; */
+}
+
+.metricCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(31, 41, 55, 0.08);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  height: 100%;
+}
+
+.metricCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(31, 41, 55, 0.12);
+}
+
+.metricIcon {
+  font-size: 1.5rem;
+  color: #ff8a5b; /* your orange */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+}
+
+.metricContent h4 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.metricContent p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .metricCard {
+    margin-bottom: 0.75rem;
+  }
+  .heroMetrics {
+  gap: 1rem;
+}
+}
+
 .landing {
   align-items: center;
   background-image: url('/canva-assets/lightbulbs-resized.png');
   background-size: 100vw calc(100vh - 4rem);
   background-position: center;
+  background-size: 113%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
