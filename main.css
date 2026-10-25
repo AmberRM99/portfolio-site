@@ -1,14 +1,15 @@
 :root {
   --mainGrey: #2f2f2f;
-  --orange: #F88B58;
-  /* --darkOrange:#e15210; */
-  --darkOrange: #C8490E;
+  --orange: #A54D1A;
+  --orange-on-dark: #F7B178;
+  --darkOrange: #7A320B;
+  --orange-soft: #F8D3B3;
   --white: #ffffff;
   --black: #000000;
-  /* --lightGrey:#CDD6DD; */
   --lightGrey: #D2D7D9;
   --darkGrey: #1f1f1f;
   --bg: #e7e7e7;
+  --focus-ring: #0B1F33;
 }
 
 *,
@@ -17,9 +18,10 @@
   box-sizing: border-box;
 }
 
-*:focus, *:focus-visible {
-  outline: 3px solid var(--orange);
+*:focus-visible {
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
 }
 
 body {
@@ -48,6 +50,7 @@ body {
   padding: 0.75rem 1rem;
   background: var(--darkGrey);
   color: var(--white);
+  border: 2px solid var(--white);
   border-radius: 8px;
   z-index: 1000;
 }
@@ -137,8 +140,12 @@ footer ul {
   list-style-type: none;
 }
 
-a,
 footer a {
+  transition: all 0.2s ease;
+  color: var(--orange-on-dark);
+}
+
+a {
   transition: all 0.2s ease;
   color: var(--orange);
 }
@@ -152,9 +159,21 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
-.icon:focus-visible {
-  outline: 3px solid var(--orange);
+.icon:focus-visible,
+.projectPreview:focus-visible,
+.metricCard:focus-visible {
+  outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
+}
+
+.topnav a:focus-visible,
+.linkBtn:focus-visible,
+.socialBtn:focus-visible,
+.skip-link:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
 }
 
 .footer-social ul {
@@ -225,7 +244,8 @@ textarea:focus-visible,
   overflow: hidden;
 }
 
-.projectPreview:hover {
+.projectPreview:hover,
+.projectPreview:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(31, 41, 55, 0.2);
   text-decoration: underline;
@@ -530,7 +550,7 @@ background: rgba(255, 141, 86, 0.14);
     background:var(--orange);
     border-radius:5px;
     border:none;
-    color:#5C1B1B;
+    color: var(--white);
     font-weight: bolder;
     transition:all .2s ease;
     text-decoration: none;
@@ -542,7 +562,8 @@ background: rgba(255, 141, 86, 0.14);
     background: var(--mainGrey);
   }
 
-  .linkBtn:hover{
+  .linkBtn:hover,
+  .linkBtn:active{
   background:var(--darkOrange);
   transform:scale(1.05);
   color:var(--white);
