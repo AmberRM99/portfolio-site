@@ -249,7 +249,19 @@ textarea:focus-visible,
 .projectPreview:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(31, 41, 55, 0.2);
+}
+
+.projectPreview:hover h3,
+.projectPreview:focus-within h3 {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  color: var(--darkOrange);
+}
+
+.projectPreview:hover .projectPreview__content,
+.projectPreview:focus-within .projectPreview__content {
+  color: var(--darkGrey);
 }
 
 .projectPreview__content {

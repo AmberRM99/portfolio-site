@@ -981,10 +981,15 @@ ul.importantQuote span {
   border-radius: 50%;
   background-color: var(--mainGrey);
   border: none;
-  outline: none;
   cursor: pointer;
   filter: drop-shadow(1px 1px 2px var(--darkGrey));
   transition: all 0.3s ease;
+}
+
+.SkipIcon:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
 }
 
 .SkipIcon.active,
