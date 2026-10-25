@@ -9,7 +9,8 @@
   --lightGrey: #d2d7d9;
   --darkGrey: #1f1f1f;
   --bg: #e7e7e7;
-  --focus-ring: #0b1f33;
+  --focus-ring: #fb923c;
+  --focus-ring-soft: rgba(251, 146, 60, 0.18);
 }
 
 *,
@@ -21,7 +22,7 @@
 *:focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
-  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
+  box-shadow: 0 0 0 5px var(--focus-ring-soft);
 }
 
 body {
@@ -155,7 +156,7 @@ textarea:focus-visible,
 .metricCard:focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
-  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
+  box-shadow: 0 0 0 5px var(--focus-ring-soft);
 }
 
 .topnav a:focus-visible,
@@ -164,7 +165,7 @@ textarea:focus-visible,
 .skip-link:focus-visible {
   outline: 3px solid var(--focus-ring);
   outline-offset: 3px;
-  box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
+  box-shadow: 0 0 0 5px var(--focus-ring-soft);
 }
 
 .navbar-holder {
@@ -414,17 +415,22 @@ textarea:focus-visible,
   min-width: 40px;
 }
 
-.metricContent h4 {
+.metricValue {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 700;
   color: #1f2937;
 }
 
-.metricContent p {
+.metricLabel,
+.metricContext {
   margin: 0;
   font-size: 0.9rem;
   color: #6b7280;
+}
+
+.metricContext {
+  margin-top: 0.2rem;
 }
 
 /* Mobile spacing */
