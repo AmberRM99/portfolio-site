@@ -54,8 +54,9 @@ p {
 }
 
 .HeroSection {
+  text-align: center;
   min-height: unset;
-  /* margin-top:4rem; */
+  margin-top: 4rem;
   height: calc(100vh - 4rem) !important;
 }
 
@@ -881,6 +882,7 @@ footer {
   padding: 0.75rem 1.25rem;
   border-radius: 12px;
 }
+
 .importantQuote {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(248, 139, 88, 0.6);
@@ -893,7 +895,7 @@ footer {
 
 .importantQuote h4,
 .importantQuote h3 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 ul.importantQuote {
@@ -954,22 +956,7 @@ ul.importantQuote span {
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-}
-
-.SkipIcon {
-  width: 44px;
-  height: 44px;
-}
-
-.SkipIcon i {
-  font-size: 20px;
-}
-
-.skipBtns span {
-  display: flex;
   margin: 1rem 0;
-  flex-direction: column;
-  align-items: center;
 }
 
 .SkipIcon {
@@ -1042,7 +1029,7 @@ ul.importantQuote span {
   border-radius: 0.4em;
 }
 
-.speech-bubble:after {
+.speech-bubble::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1055,13 +1042,6 @@ ul.importantQuote span {
   border-left: 0;
   margin-left: -12px;
   margin-bottom: -24px;
-}
-
-.HeroSection {
-  text-align: center;
-  min-height: unset;
-  margin-top: 4rem;
-  height: calc(100vh - 4rem) !important;
 }
 
 div.gallery {
@@ -1086,6 +1066,7 @@ div.desc {
   box-sizing: border-box;
 }
 
+
 /* .responsive {
         padding: 0 6px;
         float: left;
@@ -1105,11 +1086,12 @@ div.desc {
         }
       } */
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+
 @media only screen and (max-width: 780px) {
   /* Remove the desktop "sidebar" container gap on mobile */
   .container {

@@ -59,7 +59,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 /* .projectCards{
@@ -101,19 +101,10 @@ h4 {
   transition: all 0.5s ease;
 }
 
-.topnav .linkBtn {
-  color: #5c1b1b;
-}
-
 .topnav a:hover {
   background-color: #ddd;
   color: black;
   border-radius: 10px;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
 }
 
 .topnav .icon {
@@ -176,11 +167,6 @@ textarea:focus-visible,
   box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
 }
 
-.footer-social ul {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .navbar-holder {
   background: var(--mainGrey);
   block-size: 5%;
@@ -223,7 +209,6 @@ textarea:focus-visible,
   transform: rotate(15deg);
 }
 
-/* bulb container */
 .projectTitle {
   display: flex;
   align-items: center;
@@ -344,16 +329,6 @@ textarea:focus-visible,
 
 .projectPreview:hover .previewImg {
   transform: scale(1.02);
-}
-
-.previewImgContainer {
-  height: 75%;
-  margin: 2rem auto;
-  width: 85%;
-}
-
-.projectRow {
-  justify-content: center;
 }
 
 .firstSection {
@@ -499,61 +474,6 @@ textarea:focus-visible,
   flex-direction: row-reverse;
 }
 
-#contact_form {
-  background-color: #405d27;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#contact_form .row label {
-  color: #ffffff;
-  font-size: 18px;
-  margin-left: 10px;
-}
-
-#contact_form input[type="text"],
-#contact_form textarea {
-  text-align: center;
-  background-color: #82b74b;
-  border-radius: 10px;
-  margin: 10px 0 10px 10px;
-  color: #ffffff;
-  box-shadow: 5px 5px 10px #3e4444;
-}
-
-#contact_form input[type="text"] {
-  height: 25px;
-}
-
-#contact_form input[type="submit"] {
-  background-color: #ff7b25;
-  color: #ffffff;
-  border-radius: 10px;
-  font-size: 18px;
-  margin-left: 10px;
-  box-shadow: 5px 5px 5px #3e4444;
-}
-
-/* Keep anchors inline so they flow within text (prevents unexpected block layout). */
-a {
-  display: inline;
-  padding: 0;
-  color: var(--orange);
-  text-decoration: underline;
-}
-
-/* .projectLink h3{
-   color: var(--orange);
-  } */
-
-.projectLink,
-.projectLink:hover {
-  text-decoration: none;
-  padding: 0;
-
-  color: inherit;
-}
-
 .btnOutline {
   border: 2px solid var(--orange);
   border-radius: 5px;
@@ -609,53 +529,6 @@ a {
   background: var(--darkOrange);
 }
 
-.carousel-indicators .active {
-  margin: 18px 6px;
-  background-color: var(--orange);
-}
-
-.carousel-indicators {
-  bottom: -5rem !important;
-}
-.carousel-indicators li {
-  background-color: var(--orange);
-}
-
-.closePopup {
-  right: 0;
-  position: absolute;
-  z-index: 99;
-  background: none;
-  border: none;
-  color: #d2d2d2;
-  font-size: 3rem;
-  font-weight: 900;
-}
-
-.popup {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 20;
-  cursor: pointer;
-}
-
-.carousel-pop {
-  z-index: 100;
-  position: absolute;
-  overflow: hidden;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, 0);
-}
-
 .Skills,
 .Achievements {
   background: var(--lightGrey);
@@ -677,7 +550,6 @@ a {
 .Achievements li i {
   font-size: 1.5rem;
   margin: 1rem;
-
   color: var(--orange);
 }
 
@@ -701,7 +573,7 @@ a {
 }
 
 .tag {
-  padding: 0px 10px;
+  padding: 0 10px;
   margin: 0.2rem;
   display: inline-block;
   border-radius: 10px;
