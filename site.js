@@ -10,7 +10,7 @@
     var nav = document.getElementById("myTopnav");
     if (!nav) return;
 
-    var toggle = nav.querySelector('.icon');
+    var toggle = nav.querySelector(".icon");
     var isOpen = nav.className !== "topnav";
 
     if (isOpen) {
@@ -22,8 +22,8 @@
     }
 
     if (toggle) {
-      toggle.setAttribute('aria-expanded', String(isOpen));
-      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
     }
   }
 
@@ -40,26 +40,25 @@ function initComparisons() {
     compareImages(x[i]);
   }
   function compareImages(img) {
-    var range, container, w, h;
+    var range, container, w;
 
-   function updateOverlay(percent) {
-  var val = Number(percent);
-  if (Number.isNaN(val)) val = 50;
-  if (val < 0) val = 0;
-  if (val > 100) val = 100;
+    function updateOverlay(percent) {
+      var val = Number(percent);
+      if (Number.isNaN(val)) val = 50;
+      if (val < 0) val = 0;
+      if (val > 100) val = 100;
 
-  if (container.classList.contains("img-comp-container--dashboard")) {
-    container.style.setProperty("--split", val + "%");
-  } else {
-    img.style.width = (w * (val / 100)) + "px";
-  }
-}
+      if (container.classList.contains("img-comp-container--dashboard")) {
+        container.style.setProperty("--split", val + "%");
+      } else {
+        img.style.width = w * (val / 100) + "px";
+      }
+    }
 
     function updateDimensions() {
-      /* Get the width and height of the parent container (the comparison frame) */
+      /* Get the width of the parent container (the comparison frame) */
       container = img.parentElement;
       w = container.offsetWidth;
-      h = container.offsetHeight;
       /* Keep the overlay width in sync with the range input */
       updateOverlay(range.value);
     }
@@ -85,20 +84,20 @@ function initComparisons() {
     /* Ensure dimensions are set immediately and once the image has loaded */
     updateDimensions();
     if (!img.complete) {
-      img.addEventListener('load', updateDimensions);
+      img.addEventListener("load", updateDimensions);
     }
 
     /* Update on window resize */
-    window.addEventListener('resize', updateDimensions);
+    window.addEventListener("resize", updateDimensions);
   }
 }
 
 // Auto-initialize comparison sliders once the DOM is ready.
 // This ensures pages that call initComparisons() in the <head> won't fail.
-if (typeof window !== 'undefined') {
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+if (typeof window !== "undefined") {
+  if (document.readyState === "complete" || document.readyState === "interactive") {
     initComparisons();
   } else {
-    document.addEventListener('DOMContentLoaded', initComparisons);
+    document.addEventListener("DOMContentLoaded", initComparisons);
   }
 }

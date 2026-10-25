@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.git
+*.min.js
+*.min.css
+images/
+logo/
+canva-assets/
+favicon_io (6)/

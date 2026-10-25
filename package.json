@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,css,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,css,json,md}\"",
+    "lint:js": "eslint \"**/*.js\" --no-error-on-unmatched-pattern",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

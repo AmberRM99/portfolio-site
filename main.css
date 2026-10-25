@@ -1,15 +1,15 @@
 :root {
   --mainGrey: #2f2f2f;
-  --orange: #A54D1A;
-  --orange-on-dark: #F7B178;
-  --darkOrange: #7A320B;
-  --orange-soft: #F8D3B3;
+  --orange: #a54d1a;
+  --orange-on-dark: #f7b178;
+  --darkOrange: #7a320b;
+  --orange-soft: #f8d3b3;
   --white: #ffffff;
   --black: #000000;
-  --lightGrey: #D2D7D9;
+  --lightGrey: #d2d7d9;
   --darkGrey: #1f1f1f;
   --bg: #e7e7e7;
-  --focus-ring: #0B1F33;
+  --focus-ring: #0b1f33;
 }
 
 *,
@@ -191,7 +191,6 @@ textarea:focus-visible,
   filter: drop-shadow(0 2px 2px var(--darkGrey));
 }
 
-
 .h2-title {
   text-align: center;
   margin: 2rem auto;
@@ -199,7 +198,7 @@ textarea:focus-visible,
   border-bottom: 2px solid var(--orange);
 }
 
-.cuteDecor{
+.cuteDecor {
   position: relative;
 }
 
@@ -207,11 +206,11 @@ textarea:focus-visible,
 .cuteDecor::before {
   content: "";
   position: absolute;
-   right: -17px;
-    width: 12px;
-    height: 3px;
-    background: #f28c38;
-    border-radius: 4px;
+  right: -17px;
+  width: 12px;
+  height: 3px;
+  background: #f28c38;
+  border-radius: 4px;
 }
 
 .cuteDecor::after {
@@ -232,7 +231,7 @@ textarea:focus-visible,
 }
 
 .projectPreview {
-  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(242,244,246,0.85));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(242, 244, 246, 0.85));
   border: 1px solid rgba(27, 31, 35, 0.12);
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(31, 41, 55, 0.12);
@@ -240,7 +239,9 @@ textarea:focus-visible,
   padding: 1.75rem;
   max-width: 1100px;
   width: calc(100% - 2rem);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   overflow: hidden;
 }
 
@@ -256,16 +257,14 @@ textarea:focus-visible,
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  text-align:left;
+  text-align: left;
 }
 
 .projectPreview h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: var(--darkOrange)
+  color: var(--darkOrange);
 }
-
-
 
 .projectPreview h6 {
   font-weight: 700;
@@ -297,7 +296,7 @@ textarea:focus-visible,
 }
 
 .projectPreview .tag.time {
-background: rgba(255, 141, 86, 0.14);
+  background: rgba(255, 141, 86, 0.14);
   color: #a64d2b;
 }
 
@@ -406,7 +405,9 @@ background: rgba(255, 141, 86, 0.14);
   border-radius: 16px;
   padding: 1rem 1.25rem;
   box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
   height: 100%;
 }
 
@@ -438,13 +439,13 @@ background: rgba(255, 141, 86, 0.14);
     margin-bottom: 0.75rem;
   }
   .heroMetrics {
-  gap: 1rem;
-}
+    gap: 1rem;
+  }
 }
 
 .landing {
   align-items: center;
-  background-image: url('/canva-assets/lightbulbs-resized.png');
+  background-image: url("/canva-assets/lightbulbs-resized.png");
   background-position: center;
   background-size: 113%;
   background-repeat: no-repeat;
@@ -514,193 +515,190 @@ background: rgba(255, 141, 86, 0.14);
   box-shadow: 5px 5px 5px #3e4444;
 }
 
-  
-  /* Keep anchors inline so they flow within text (prevents unexpected block layout). */
-  a {
-    display: inline;
-    padding: 0;
-    color: var(--orange);
-    text-decoration: underline;
-  }
+/* Keep anchors inline so they flow within text (prevents unexpected block layout). */
+a {
+  display: inline;
+  padding: 0;
+  color: var(--orange);
+  text-decoration: underline;
+}
 
-  /* .projectLink h3{
+/* .projectLink h3{
    color: var(--orange);
   } */
 
-  .projectLink, .projectLink:hover{
-    text-decoration: none;
-    padding: 0;
-  
-    color:inherit;
-  }
-
-  .btnOutline{
-    border:2px solid var(--orange);
-    border-radius:5px;
-    color:var(--orange);
-    font-weight: bolder;
-    transition:all .5s ease;
-  }
-  .btnOutline:hover{
-    background:var(--orange);
-    color:var(--black)
-  }
-  
-  .linkBtn{
-    background:var(--orange);
-    border-radius:5px;
-    border:none;
-    color: var(--white);
-    font-weight: bolder;
-    transition:all .2s ease;
-    text-decoration: none;
-    padding: 0.7rem;
-  }
-
-  .linkBtn.secondary{
-    color: var(--white);
-    background: var(--mainGrey);
-  }
-
-  .linkBtn:hover,
-  .linkBtn:active{
-  background:var(--darkOrange);
-  transform:scale(1.05);
-  color:var(--white);
+.projectLink,
+.projectLink:hover {
   text-decoration: none;
-  }
-  
-  .headerBtn{
-    width:40%;
-    display: inline-block
-  }
+  padding: 0;
 
+  color: inherit;
+}
 
+.btnOutline {
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+  color: var(--orange);
+  font-weight: bolder;
+  transition: all 0.5s ease;
+}
+.btnOutline:hover {
+  background: var(--orange);
+  color: var(--black);
+}
 
-  .socialBtn{
-    background:var(--orange);
-    border-radius:50%;
-    padding:5px;
-    transition: all .2s ease;
-    max-height:5rem;
-    max-width:5rem;
-    margin:1rem;
-    
-  }
-  .socialBtn:hover{
-    transform:scale(1.1);
-    background:var(--darkOrange);
-  
-  }
+.linkBtn {
+  background: var(--orange);
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-weight: bolder;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  padding: 0.7rem;
+}
 
-  .carousel-indicators .active {
-    margin: 18px 6px;
-    background-color:var(--orange);
-  }
-  
-  .carousel-indicators{
-    bottom:-5rem!important;
-  }
-  .carousel-indicators li{
-    background-color:var(--orange)
-  }
+.linkBtn.secondary {
+  color: var(--white);
+  background: var(--mainGrey);
+}
 
-  .closePopup{
-    right: 0;
-    position: absolute;
-    z-index: 99;
-    background: none;
-    border: none;
-    color: #d2d2d2;
-    font-size: 3rem;
-    font-weight: 900;
-  }
+.linkBtn:hover,
+.linkBtn:active {
+  background: var(--darkOrange);
+  transform: scale(1.05);
+  color: var(--white);
+  text-decoration: none;
+}
 
-  .popup{
-    
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    z-index: 20;
-    cursor: pointer;
-  }
+.headerBtn {
+  width: 40%;
+  display: inline-block;
+}
 
-  .carousel-pop{
-    z-index: 100;
-    position: absolute;
-    overflow: hidden;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%,0);
-  }
+.socialBtn {
+  background: var(--orange);
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.2s ease;
+  max-height: 5rem;
+  max-width: 5rem;
+  margin: 1rem;
+}
+.socialBtn:hover {
+  transform: scale(1.1);
+  background: var(--darkOrange);
+}
 
-  .Skills, .Achievements{
-    background: var(--lightGrey);
-    /* background:white; */
-    /* border:2px solid var(--orange); */
-    padding:5rem;
-    border-radius:10px;
-    filter:drop-shadow(0 2px 3px var(--darkGrey));
-    font-weight:bold;
-  }
+.carousel-indicators .active {
+  margin: 18px 6px;
+  background-color: var(--orange);
+}
 
-  .Skills li, .Achievements li{
-margin: 1rem 0;
-list-style: none;
-  }
+.carousel-indicators {
+  bottom: -5rem !important;
+}
+.carousel-indicators li {
+  background-color: var(--orange);
+}
 
-  .Skills li i, .Achievements li i{
-font-size:1.5rem;
-margin: 1rem;
+.closePopup {
+  right: 0;
+  position: absolute;
+  z-index: 99;
+  background: none;
+  border: none;
+  color: #d2d2d2;
+  font-size: 3rem;
+  font-weight: 900;
+}
 
-color: var(--orange);
-  }
+.popup {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 20;
+  cursor: pointer;
+}
 
-  .Skills ul, .Achievements ul{
-    padding: 0;
-    min-width: 30vw;
-  }
+.carousel-pop {
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+}
 
-  
+.Skills,
+.Achievements {
+  background: var(--lightGrey);
+  /* background:white; */
+  /* border:2px solid var(--orange); */
+  padding: 5rem;
+  border-radius: 10px;
+  filter: drop-shadow(0 2px 3px var(--darkGrey));
+  font-weight: bold;
+}
 
-  .Skills h3, .Achievements h3{
-    text-align:center
-  }
-  
-  .Skills{
-    height:100%;
-  }
-  
-  .Achievements{
-    margin:auto auto 2rem auto;
-  }
-  
-  .tag{
-       padding: 0px 10px;
-       margin: 0.2rem;
-       display: inline-block;
-       border-radius: 10px;
-       background: var(--orange);
-       font-weight:600;
-  }
+.Skills li,
+.Achievements li {
+  margin: 1rem 0;
+  list-style: none;
+}
 
-  
-@media screen and (max-width:780px){
-  .manualFlip{
+.Skills li i,
+.Achievements li i {
+  font-size: 1.5rem;
+  margin: 1rem;
+
+  color: var(--orange);
+}
+
+.Skills ul,
+.Achievements ul {
+  padding: 0;
+  min-width: 30vw;
+}
+
+.Skills h3,
+.Achievements h3 {
+  text-align: center;
+}
+
+.Skills {
+  height: 100%;
+}
+
+.Achievements {
+  margin: auto auto 2rem auto;
+}
+
+.tag {
+  padding: 0px 10px;
+  margin: 0.2rem;
+  display: inline-block;
+  border-radius: 10px;
+  background: var(--orange);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 780px) {
+  .manualFlip {
     flex-direction: column;
   }
-  .firstSection{
-    margin-top:7rem;
+  .firstSection {
+    margin-top: 7rem;
   }
-  .Skills:nth-of-type(2){
-    margin-top:5rem;
+  .Skills:nth-of-type(2) {
+    margin-top: 5rem;
   }
 }
 
@@ -716,7 +714,7 @@ color: var(--orange);
   .landing .col-md-6 {
     margin-bottom: 2rem;
     text-align: center;
-    margin-top:2rem;
+    margin-top: 2rem;
   }
 
   .heroActions {
@@ -729,30 +727,33 @@ color: var(--orange);
   }
 }
 
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-    font-size:3rem;
-      display: block;
-    }
-.logo{
-  height: 6rem;
-  margin-left: 1rem;
-}
-      .topnav{
-          display:block;
-      }
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
   }
+  .topnav a.icon {
+    float: right;
+    font-size: 3rem;
+    display: block;
+  }
+  .logo {
+    height: 6rem;
+    margin-left: 1rem;
+  }
+  .topnav {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
