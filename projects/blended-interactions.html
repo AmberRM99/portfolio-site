@@ -1,69 +1,97 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Blended Interactions - Academic</title>
-  <meta name="description" content="Blended learning case study: designing digital activities that support classroom practice, student engagement, and teacher workflow.">
-  <meta property="og:title" content="Blended learning case study | Amber Miller">
-  <meta property="og:description" content="Blended learning case study: designing digital activities that support classroom practice, student engagement, and teacher workflow.">
-  <meta property="og:type" content="website">
-  <meta name="keywords" content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design">
-  <meta name="author" content="Amber Miller">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-<!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3408768,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<style>
-    .swiper {
-  width: 600px;
-  height: 300px;
-}
-/* .swiper {
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blended Interactions - Academic</title>
+    <meta
+      name="description"
+      content="Blended learning case study: designing digital activities that support classroom practice, student engagement, and teacher workflow."
+    />
+    <meta property="og:title" content="Blended learning case study | Amber Miller" />
+    <meta
+      property="og:description"
+      content="Blended learning case study: designing digital activities that support classroom practice, student engagement, and teacher workflow."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="keywords"
+      content="User Experience, User Interaction, UX Design, UI Research, UX Developer, Product Design, Front End Development, Graphic Design"
+    />
+    <meta name="author" content="Amber Miller" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3408768, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <style>
+      .swiper {
+        width: 600px;
+        height: 300px;
+      }
+      /* .swiper {
       width: 100%;
       height: 100%;
     } */
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Gloria+Hallelujah&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
 
-<link rel="stylesheet" href="/main.css">
-<link rel="stylesheet" href="/caseStudy.css">
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
- 
-</head>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/caseStudy.css" />
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="navbar-holder" role="navigation" aria-label="Primary">
@@ -71,216 +99,317 @@
         <a class="logo" href="/" aria-label="Home"></a>
         <a href="/projects.html">Case Studies</a>
         <a href="/about.html">About</a>
-        <a href="/contact.html" >Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <a href="/contact.html">Contact</a>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="myFunction()"
+          role="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
           <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
       </div>
-    
     </nav>
     <main id="main-content">
-    <div class="skipBtns">
-      <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fas fa-project-diagram"></i>Jump to Research Stage</button>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-pencil"></i>Jump to Design Stage</button><br><br><br>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-forward"></i>Skip To Final Design</button>
-    </div>
-<section class="firstSection">
-  <section class="projectIntro">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <img loading="lazy" alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
-              </div>
-        <div class="col-md-8">
-          <span> <h1>Blended Interactions </h1><h2>Research and Design Project</h2></span>
-        <h2>What new and emerging technologies can help the academic experience more positive during covid?</h2>
-        
-        </div>
-    
-        <div class="col-md-2">
-    <img loading="lazy" alt="bitcoin icon" class="img-fluid landing-img" src="/images/decoration/bitcoin.svg">
-        </div>
+      <div class="skipBtns">
+        <button
+          onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+          class="btnOutline skip"
+        >
+          <i class="fas fa-project-diagram"></i>Jump to Research Stage
+        </button>
+        <button
+          onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+          class="btnOutline skip"
+        >
+          <i class="fa-solid fa-pencil"></i>Jump to Design Stage</button
+        ><br /><br /><br />
+        <button
+          onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+          class="btnOutline skip"
+        >
+          <i class="fa-solid fa-forward"></i>Skip To Final Design
+        </button>
       </div>
-      <div>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fas fa-project-diagram"></i>Jump to Research Stage</button>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-pencil"></i>Jump to Design Stage</button><br><br><br>
-        <p>No time to read the whole case study and just want to cut to the chase?</p>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="btnOutline skip"><i class="fa-solid fa-forward"></i>Skip To Final Design</button>
-    </div>
-       </div>
-    </section>
-  <section id="research" class="sectionHeading">
-    <h2>Project Plan</h2>
-</section>
-<section class="startofTopic">
-    <div class="container">
-        <h4>Project Resources</h4>
-        <div class="row ">
-            
-           <div class="col-md-4">
-            <h4>Team</h4>
-            <ul>
-                <li>Myself, UX/UI Designer, UX Researcher, Front End Developer</li>
-                <li>CEO - Front End Developer, Project Manager</li>
-            </ul>
+      <section class="firstSection">
+        <section class="projectIntro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <img
+                  loading="lazy"
+                  alt="bitcoin icon"
+                  class="img-fluid landing-img"
+                  src="/images/decoration/bitcoin.svg"
+                />
+              </div>
+              <div class="col-md-8">
+                <span>
+                  <h1>Blended Interactions</h1>
+                  <h2>Research and Design Project</h2></span
+                >
+                <h2>
+                  What new and emerging technologies can help the academic experience more positive
+                  during covid?
+                </h2>
+              </div>
+
+              <div class="col-md-2">
+                <img
+                  loading="lazy"
+                  alt="bitcoin icon"
+                  class="img-fluid landing-img"
+                  src="/images/decoration/bitcoin.svg"
+                />
+              </div>
             </div>
-            <div class="col-md-4">
+            <div>
+              <button
+                onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+                class="btnOutline skip"
+              >
+                <i class="fas fa-project-diagram"></i>Jump to Research Stage
+              </button>
+              <button
+                onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+                class="btnOutline skip"
+              >
+                <i class="fa-solid fa-pencil"></i>Jump to Design Stage</button
+              ><br /><br /><br />
+              <p>No time to read the whole case study and just want to cut to the chase?</p>
+              <button
+                onclick="document.getElementById('final').scrollIntoView({ behavior: 'smooth' })"
+                class="btnOutline skip"
+              >
+                <i class="fa-solid fa-forward"></i>Skip To Final Design
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="research" class="sectionHeading">
+          <h2>Project Plan</h2>
+        </section>
+        <section class="startofTopic">
+          <div class="container">
+            <h4>Project Resources</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <h4>Team</h4>
+                <ul>
+                  <li>Myself, UX/UI Designer, UX Researcher, Front End Developer</li>
+                  <li>CEO - Front End Developer, Project Manager</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
                 <h4>Resources</h4>
-            <ul>
-                <li>User Interviews</li>
-                <li>Personas</li>
-                <li>Figma - Mock Ups and Interactive Prototyping</li>
-                <li>Blockly - Front end of interface</li>
-            </ul>
-            </div>
-            <div class="col-md-4">
+                <ul>
+                  <li>User Interviews</li>
+                  <li>Personas</li>
+                  <li>Figma - Mock Ups and Interactive Prototyping</li>
+                  <li>Blockly - Front end of interface</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
                 <h4>Timeframe: 2 months</h4>
                 <ul>
-                    <li> Month One <span>Research, Ideation and Branding</span></li>
-                    <li> Month Two <span>Design, Building and Testing</span></li>
+                  <li>Month One <span>Research, Ideation and Branding</span></li>
+                  <li>Month Two <span>Design, Building and Testing</span></li>
                 </ul>
-                </div>
-         </div>
-    </div>
-</section>
-<section class="endOfTopic">
-    <div class="container">
-        <h4>What is the project?</h4>
-        <div class="row">
-           <h5>Blended Interactions is a research project run between Edinburgh Napier University in Scotland and Farmingdale State College in New York. It brings together design students from multiple disciplines and presents a challenge to use knowledge of user experience research to solve modern problems using modern technology.</h5>
-           <h5>This project focused on online learning, looking at the impact of COVID and proposing solutions to how technology could help restore the university experience during lockdown.</h5>
-        </div>
-    </div>
-</section>
-<section class="sectionHeading">
-    <div class="container">
-        <h2>Exploration and Discovery</h2>
-    </div>
-</section >
-    <section class="startofTopic">
-        <div class="container">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="endOfTopic">
+          <div class="container">
+            <h4>What is the project?</h4>
+            <div class="row">
+              <h5>
+                Blended Interactions is a research project run between Edinburgh Napier University
+                in Scotland and Farmingdale State College in New York. It brings together design
+                students from multiple disciplines and presents a challenge to use knowledge of user
+                experience research to solve modern problems using modern technology.
+              </h5>
+              <h5>
+                This project focused on online learning, looking at the impact of COVID and
+                proposing solutions to how technology could help restore the university experience
+                during lockdown.
+              </h5>
+            </div>
+          </div>
+        </section>
+        <section class="sectionHeading">
+          <div class="container">
+            <h2>Exploration and Discovery</h2>
+          </div>
+        </section>
+        <section class="startofTopic">
+          <div class="container">
             <h3>Brainstorming</h3>
             <div class="row">
-                <div class="col-md-4">
-               <p>As the subject matter was equally so new, and yet also part of our lived experience, we began with mind mapping and brainstorming to capture as many data points around the COVID university experience as possible, to help narrow the research topic.</p>
-               </div>
-               <div class="col-md-8">
-                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
-                <img loading="lazy" class="img-fluid" src="/images/Savings/Untitled.jpg" alt="Mindmap image showing initial brainstorming ideas for blended learning." >
-                </a>
-               </div>
-            </div>
-        </div>
-    </section>
-    <section >
-      <div class="container">
-          <h3>First Survey</h3>
-          <div class="row">
               <div class="col-md-4">
-             <p>Based on the mind-mapping, our focus on a loss of social space became central, and we constructed a survey based on this topic. For our research, it was important to establish a baseline of life before COVID and how it compared to now, to properly address the impact of the pandemic.</p>
-             </div>
-             <div class="col-md-8">
-              <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
-              <img loading="lazy" class="img-fluid" src="/images/Savings/Untitled.jpg" alt="Survey results visualisation screenshot.">
-              </a>
-             </div>
+                <p>
+                  As the subject matter was equally so new, and yet also part of our lived
+                  experience, we began with mind mapping and brainstorming to capture as many data
+                  points around the COVID university experience as possible, to help narrow the
+                  research topic.
+                </p>
+              </div>
+              <div class="col-md-8">
+                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
+                  <img
+                    loading="lazy"
+                    class="img-fluid"
+                    src="/images/Savings/Untitled.jpg"
+                    alt="Mindmap image showing initial brainstorming ideas for blended learning."
+                  />
+                </a>
+              </div>
+            </div>
           </div>
-      </div>
-  </section>
-  <section >
-    <div class="container">
-        <h3>First Survey</h3>
-        <div class="row">
-            <div class="col-md-4">
-           <p>Based on the mindmappings focus on a loss of social space became our primary focus, and we constructed a survey based on this topic. For our research, it was important to establish a baseline of before covid and how it compared to now, to properly address the impact of covid. </p>
-           </div>
-           <div class="col-md-8">
-            <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
-            <img loading="lazy" class="img-fluid" src="/images/Savings/Untitled.jpg" alt="Screenshot showing the survey design used in blended interaction research.">
-            </a>
-           </div>
-        </div>
-    </div>
-</section>
-<section >
-  <div class="container">
-      <h3>Second Survey</h3>
-      <div class="row">
-          <div class="col-md-4">
-         <p>Due to the support of the Greek life community in initial research, we chose to focus on this aspect of research.</p>
-         </div>
-         <div class="col-md-8">
-          <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
-          <img loading="lazy" class="img-fluid" src="/images/Savings/Untitled.jpg" alt="Survey analysis visualisation from the blended interactions research.">
-          </a>
-         </div>
-      </div>
-  </div>
-</section>
-</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
-<script src="../site.js" defer></script>
-<script>
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    
-    $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-    
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-    
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-    var lastScrollTop = 0;
-    window.onscroll = function(){
-      var st = window.pageYOffset || document.documentElement.scrollTop; 
-      if ($('#research').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','research')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','')
-       } 
-    }
-    if ($('#design').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','design')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','research')
-       } 
-    }
-    if ($('#final').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','final')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','design')
-       } 
-    }
-    lastScrollTop = st <= 0 ? 0 : st;
-    }
-    
-          function setActiveView(button, string){
-            let currStage;
-            if(button === ''){
-              currStage = string;
-            } else{
-              currStage = button.classList[1];
-            }
-            let Stage = document.getElementsByClassName('SkipIcon');
-    
-            for(let i=0; i< Stage.length; i++){
-              if(Stage[i].classList.contains(currStage)){
-                Stage[i].classList.add('active')
-              }else{
-                Stage[i].classList.remove('active')
-              }
+        </section>
+        <section>
+          <div class="container">
+            <h3>First Survey</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <p>
+                  Based on the mind-mapping, our focus on a loss of social space became central, and
+                  we constructed a survey based on this topic. For our research, it was important to
+                  establish a baseline of life before COVID and how it compared to now, to properly
+                  address the impact of the pandemic.
+                </p>
+              </div>
+              <div class="col-md-8">
+                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
+                  <img
+                    loading="lazy"
+                    class="img-fluid"
+                    src="/images/Savings/Untitled.jpg"
+                    alt="Survey results visualisation screenshot."
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <h3>First Survey</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <p>
+                  Based on the mindmappings focus on a loss of social space became our primary
+                  focus, and we constructed a survey based on this topic. For our research, it was
+                  important to establish a baseline of before covid and how it compared to now, to
+                  properly address the impact of covid.
+                </p>
+              </div>
+              <div class="col-md-8">
+                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
+                  <img
+                    loading="lazy"
+                    class="img-fluid"
+                    src="/images/Savings/Untitled.jpg"
+                    alt="Screenshot showing the survey design used in blended interaction research."
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <h3>Second Survey</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <p>
+                  Due to the support of the Greek life community in initial research, we chose to
+                  focus on this aspect of research.
+                </p>
+              </div>
+              <div class="col-md-8">
+                <a target="_blank" rel="noopener noreferrer" href="/images/Savings/Untitled.jpg">
+                  <img
+                    loading="lazy"
+                    class="img-fluid"
+                    src="/images/Savings/Untitled.jpg"
+                    alt="Survey analysis visualisation from the blended interactions research."
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+      <script src="../site.js" defer></script>
+      <script>
+        const height =
+          document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        $.fn.isInViewport = function () {
+          var elementTop = $(this).offset().top;
+          var elementBottom = elementTop + $(this).outerHeight();
+
+          var viewportTop = $(window).scrollTop();
+          var viewportBottom = viewportTop + $(window).height();
+
+          return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+        var lastScrollTop = 0;
+        window.onscroll = function () {
+          var st = window.pageYOffset || document.documentElement.scrollTop;
+          if ($("#research").isInViewport()) {
+            if (st > lastScrollTop) {
+              //down
+              setActiveView("", "research");
+            } else if (st < lastScrollTop) {
+              //up
+              setActiveView("", "");
             }
           }
-        </script>
-  </main>
-</body>
+          if ($("#design").isInViewport()) {
+            if (st > lastScrollTop) {
+              //down
+              setActiveView("", "design");
+            } else if (st < lastScrollTop) {
+              //up
+              setActiveView("", "research");
+            }
+          }
+          if ($("#final").isInViewport()) {
+            if (st > lastScrollTop) {
+              //down
+              setActiveView("", "final");
+            } else if (st < lastScrollTop) {
+              //up
+              setActiveView("", "design");
+            }
+          }
+          lastScrollTop = st <= 0 ? 0 : st;
+        };
+
+        function setActiveView(button, string) {
+          let currStage;
+          if (button === "") {
+            currStage = string;
+          } else {
+            currStage = button.classList[1];
+          }
+          let Stage = document.getElementsByClassName("SkipIcon");
+
+          for (let i = 0; i < Stage.length; i++) {
+            if (Stage[i].classList.contains(currStage)) {
+              Stage[i].classList.add("active");
+            } else {
+              Stage[i].classList.remove("active");
+            }
+          }
+        }
+      </script>
+    </main>
+  </body>
 </html>
