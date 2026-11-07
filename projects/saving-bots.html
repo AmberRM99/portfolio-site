@@ -47,9 +47,9 @@
           <!-- <a href="/designs.html">Designs</a> -->
           <a href="/about.html">About</a>
           <a href="/contact.html" >Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <button type="button" class="icon" onclick="myFunction()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="myTopnav">
             <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
+          </button>
         </div>
       
       </nav>
@@ -60,16 +60,16 @@
             <p>Jump To</p>
             <span>
                 <p>Start</p>
-              <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+              <button onclick="jumpToSection('start');setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i aria-hidden="true" class="fas fa-arrow-up"></i></button></span>
             <span>
               <p>Research</p>
-            <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research" title="Scroll to Research Process"><i class="fas fa-lightbulb"></i></button></span>
+            <button onclick="jumpToSection('research');setActiveView(this)" class="SkipIcon research" title="Scroll to Research Process"><i aria-hidden="true" class="fas fa-lightbulb"></i></button></span>
             <span>
               <p>Design</p>
-            <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+            <button onclick="jumpToSection('design');setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i aria-hidden="true" class="fa-solid fa-pencil"></i></button></span>
             <span>
               <p>Outcomes</p>
-        <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+        <button onclick="jumpToSection('final');setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i aria-hidden="true" class="fa-solid fa-forward"></i></button></span>
           </div>
         <section id="start" class="projectIntro">
             <div class="container">
@@ -87,7 +87,7 @@
                 </div>
                 <div>
                     <p>No time to read the whole case study and just want to cut to the chase?</p>
-                <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip"><i class="fa-solid fa-forward"></i>Skip To Final Design</button>
+                <button onclick="jumpToSection('final')" class="linkBtn skip"><i aria-hidden="true" class="fa-solid fa-forward"></i>Skip To Final Design</button>
                 </div>
                 
             </div>
@@ -193,7 +193,7 @@
                             <p>Research participants telling stories of their personal view on savings and finances led to persona creation. By telling the story of several different service users, each with unique challenges, allowed me to create a cohesive set of blocks which were varied enough to offer a simple solution to any hypothetical use case we or our user testers could generate.</p>
                             </div>
                             <div class="col-md-8">
-                                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                                <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="false">
                                     <ol class="carousel-indicators">
                                       <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
                                       <li data-target="#carousel-example" data-slide-to="1"></li>
@@ -325,7 +325,7 @@
                             <p> Blockly is not mobile friendly, however should the product be released for online banking, this issue had to be addressed.  An alternative version of the UI was developed for a mobile experience. This differed from simply having a responsive product, as unfortunately some aspects of the blockly core functionality did not respond well to resizing. Instead it offered two different views based on screen size. Alongside this, various prototypes of how this system could fit into the existing online banking ecosystem were explored. <br><br>The alternative was also considered that if need be, the mobile view would present an image and details of the strategy, with editing access restricted based on screen size. </p>
                             </div>
                             <div class="col-md-6">
-                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbYXAZ3BPRFCO4EZjKZNXpe%2FUntitled%3Fnode-id%3D105%253A70%26scaling%3Dscale-down%26starting-point-node-id%3D105%253A70" allowfullscreen></iframe>
+                                <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbYXAZ3BPRFCO4EZjKZNXpe%2FUntitled%3Fnode-id%3D105%253A70%26scaling%3Dscale-down%26starting-point-node-id%3D105%253A70" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -458,7 +458,7 @@
             <footer>
                 <p>Website designed, created and maintained by Amber Miller<br>
                   If you like my work, get in touch at
-                  <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+                  <a href="mailto:ambermillerinteractive@gmail.com"><i aria-hidden="true" class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
               <script src="../site.js" defer></script>

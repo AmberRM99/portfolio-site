@@ -29,44 +29,43 @@
           <a title="case studies" href="/projects.html">Case Studies</a>
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <button type="button" class="icon" onclick="myFunction()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="myTopnav">
             <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
+          </button>
         </div>
-      
+
       </nav>
-<main id="main-content">
-<section>
-    <section class="firstSection caseStudyHero">
+<main id="main-content" class="caseStudyPage">
+<section class="firstSection caseStudyHero">
       <div class="skipBtns">
         <p>Jump To</p>
         <span>
           <p>Project overview</p>
-        <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+        <button onclick="jumpToSection('start');setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i aria-hidden="true" class="fas fa-arrow-up"></i></button></span>
       <span>
           <p>Discovery</p>
-        <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research " title="Scroll to Research Process"><i class="fas fa-lightbulb"></i></button></span>
+        <button onclick="jumpToSection('research');setActiveView(this)" class="SkipIcon research " title="Scroll to Research Process"><i aria-hidden="true" class="fas fa-lightbulb"></i></button></span>
         <span>
           <p>Design</p>
-        <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+        <button onclick="jumpToSection('design');setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i aria-hidden="true" class="fa-solid fa-pencil"></i></button></span>
         <span>
           <p>Results</p>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+    <button onclick="jumpToSection('final');setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i aria-hidden="true" class="fa-solid fa-forward"></i></button></span>
       </div>
-     
+
 <section id="start">
   <div class="container">
 
     <div class="row">
 
       <!-- LEFT SIDE -->
-      <div class="col-md-7 projectIntro">
+      <div class="col-lg-7 projectIntro">
 
         <div>
 
           <div class="text-center">
             <h1>Simplifying our customer portal</h1>
-             <img src="/images/Aegon/FlatLay_Assets.jpg" alt="Flat lay image of annotated wireframes and paper sketching for customer portal redesign">
+             <img src="/images/responsive/customer-portal-640.jpg" srcset="/images/responsive/customer-portal-640.jpg 640w, /images/responsive/customer-portal-1280.jpg 1280w" sizes="(max-width: 780px) calc(100vw - 3rem), 550px" alt="Flat lay image of annotated wireframes and paper sketching for customer portal redesign" width="4032" height="2268">
              <br>
 
             <p class="intro-summary">
@@ -78,18 +77,18 @@
         <!-- Skip CTA -->
         <div class="skipIntro Micro">
           <p>No time to read the full case study?</p>
-          <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip">
-            <i class="fa-solid fa-forward"></i> Skip to outcomes
+          <button onclick="jumpToSection('final')" class="linkBtn skip">
+            <i aria-hidden="true" class="fa-solid fa-forward"></i> Skip to outcomes
           </button>
         </div>
 
       </div>
 
       <!-- RIGHT SIDE -->
-      <div class="projectSnapshot col-md-5 ">
+      <div class="projectSnapshot col-lg-5 ">
 
         <div class="snapshotCard">
-          <i class="fa fa-user"></i>
+          <i aria-hidden="true" class="fa fa-user"></i>
           <p class="Snapshotheader">My Role</p>
           <p>
             Senior UX Designer<br>
@@ -98,7 +97,7 @@
         </div>
 
         <div class="snapshotCard">
-          <i class="fa fa-users"></i>
+          <i aria-hidden="true" class="fa fa-users"></i>
           <p class="Snapshotheader">Team</p>
           <p>
             Product Owner<br>
@@ -109,7 +108,7 @@
         </div>
 
         <div class="snapshotCard">
-          <i class="fa fa-clock"></i>
+          <i aria-hidden="true" class="fa fa-clock"></i>
           <p class="Snapshotheader">Timeline</p>
           <p>
             3 Month Programme (originally sized at 10months, but paused due to restructuring).
@@ -117,7 +116,7 @@
         </div>
 
         <div class="snapshotCard">
-          <i class="fa-solid fa-champagne-glasses"></i>
+          <i aria-hidden="true" class="fa-solid fa-champagne-glasses"></i>
           <p class="Snapshotheader">Impact</p>
           <p>
             Simplification of<br>
@@ -131,6 +130,7 @@
 
     </div>
   </div>
+</section>
 </section>
 
 <section>
@@ -147,40 +147,40 @@
   </div>
 </section>
 
-<section id="research" class="sectionHeading">
+<section id="research" class="sectionHeading waveStart waveEnd">
 
         <h2>Discovery</h2>
 
 </section>
-<section class=" startofTopic">
-    <div class="container">
-            <div class="row importantQuote">
-              <div class="col-md-12"><h3>Where to begin?</h3>
-              <p>With so many moving parts and considerations, I needed to develop a clear design strategy for how to tackle this migration</p></div>
-               <div class="col-md-5 "> 
-               <a href="/images/Aegon/MentalModel.png" target="_blank">
-                 <img loading="lazy" alt="Miro diagram showing old platforms features vs new platforms features" class="img-fluid" src="/images/Aegon/MentalModel.png">
-               </a>
-             </div>
-        <div class="col-md-7">
-            <a href="/images/Aegon/ScopeVisual.png" target="_blank">
-              <img height="10%" loading="lazy" alt="Diagram detailing high and low level scope including key money in journeys, tools and support systems" class="img-fluid" src="/images/Aegon/ScopeVisual.png">
-            </a>
-            <br>
-            <p>I had to measure things not only by the value of the experience enhancement for users, but also the internal impact and buy-ins necessary to support their delivery.</p>
-             <a href="/images/Aegon/PriorityMapping.png" target="_blank">
-               <img height="60%" loading="lazy" alt="Miro table scoring key requirements based on insights, business and technical needs" class="img-fluid" src="/images/Aegon/PriorityMapping.png">
-             </a>
-        </div>
-            </div> 
+<section class="startofTopic">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 ExtraContent">
+        <h3>Where to begin?</h3>
+        <p>With so many moving parts and considerations, I needed to develop a clear design strategy for how to tackle this migration</p>
+      </div>
+      <div class="col-lg-5">
+        <a href="/images/Aegon/MentalModel.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" alt="Miro diagram showing old platforms features vs new platforms features" class="img-fluid" src="/images/Aegon/MentalModel.png" width="822" height="1308"></a>
+      </div>
     </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h3>Scope and prioritisation</h3>
+    <p>I had to measure things not only by the value of the experience enhancement for users, but also the internal impact and buy-ins necessary to support their delivery.</p>
+    <div class="row">
+      <div class="col-lg-6"><a href="/images/Aegon/ScopeVisual.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" alt="Diagram detailing high and low level scope including key money in journeys, tools and support systems" class="img-fluid" src="/images/Aegon/ScopeVisual.png" width="2344" height="1284"></a></div>
+      <div class="col-lg-6"><a href="/images/Aegon/PriorityMapping.png" target="_blank" rel="noopener noreferrer"><img loading="lazy" alt="Miro table scoring key requirements based on insights, business and technical needs" class="img-fluid" src="/images/Aegon/PriorityMapping.png" width="2490" height="804"></a></div>
+    </div>
+  </div>
 </section>
 <section >
   <div class="container">
     <h3>Early insights</h3>
 
     <div class="row earlyInsightsGrid">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="importantQuote researchSummaryCard">
           <h4 class="sectionEyebrow">Research inputs</h4>
           <p class="researchIntro">
@@ -199,23 +199,23 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="importantQuote insightCard">
           <h4 class="sectionEyebrow">What this revealed</h4>
 
           <div class="insightList">
             <div class="insightItem">
-              <h5><i class="fa-solid fa-hand"></i>Users felt excluded</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-hand"></i>Users felt excluded</h5>
               <p>The adviser-led platform felt intimidating and not designed for direct customers.</p>
             </div>
 
             <div class="insightItem">
-              <h5><i class="fa-solid fa-book"></i>Content assumed too much knowledge</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-book"></i>Content assumed too much knowledge</h5>
               <p>Jargon-heavy language reduced confidence and increased hesitation at key moments.</p>
             </div>
 
             <div class="insightItem">
-              <h5><i class="fa-solid fa-heart"></i>Emotional fit mattered</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-heart"></i>Emotional fit mattered</h5>
               <p>Even in pensions, customers valued reassurance, clarity, and signs the product was meant for them.</p>
             </div>
           </div>
@@ -242,94 +242,82 @@
   </div>
 </section>
 
-<section class="endOfTopic">
-    <div class="container ">
-      <h3>Navigating the landscape of user expectations</h3>
-      <div class="row manualFlip">
-          <div class="col-md-8 projectSnapshot">
-                <div class="snapshotCard">
+<section class="endOfTopic"><div class="container"><h3>Navigating the landscape of user expectations</h3><div class="row"><div class="col-lg-6"><div class="snapshotCard strategyCard">
                 <p>It wasn't going to be enough to take our existing journeys and retrofit changes; it was really important as a designer to get a fresh perspective and assess the competitor landscape.<br> <Strong>Jakob's law states our users spend most of their time online on other websites.</strong></p>
                 <br><p> By mapping out what experiences they may have on other platforms, I was able to make a much stronger case to our legal team around requirement changes, for example - <strong>Why are we the only provider who need to know the source of wealth for a £1 payment? </strong></p>
-              </div>
-               <div class="insightList snapshotCard">
-               <h4>Design KPIs</h4> 
+              </div></div><div class="col-lg-4"><div class="insightList snapshotCard strategyCard">
+               <h4>Design KPIs</h4>
             <div class="insightItem">
-              <p><i class="fa-solid fa-arrow-down"></i>Reduce user steps by at least <strong>20%</strong></p>
+              <p><i aria-hidden="true" class="fa-solid fa-arrow-down"></i>Reduce user steps by at least <strong>20%</strong></p>
             </div>
 
             <div class="insightItem">
-              <p><i class="fa-solid fa-compress"></i>Shrink journeys by at least <strong>2 pages</strong></p>
+              <p><i aria-hidden="true" class="fa-solid fa-compress"></i>Shrink journeys by at least <strong>2 pages</strong></p>
             </div>
 
             <div class="insightItem">
-              <p><i class="fa-solid fa-book-open"></i>Earn a comprehension score on a single payment journey of <strong>at least 80% </strong></p> <p><em>(80% is our threshold for the "easy to understand" category)</em></p>
+              <p><i aria-hidden="true" class="fa-solid fa-book-open"></i>Earn a comprehension score on a single payment journey of <strong>at least 80% </strong></p> <p><em>(80% is our threshold for the "easy to understand" category)</em></p>
             </div>
-          </div>
-              </div>
-              <div class="col-md-3">
-            <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
-            <a target="_blank" rel="noopener" href="/images/Aegon/Competitors.jpg">
-            <img loading="lazy" alt="Notebook and Miro board detailing competitors experiences vs our existing ones." class="img-fluid" src="/images/Aegon/Competitors.jpg">
-            </a>
-        </div>
-      </div>
-  </div>
-</section>
+          </div></div><div class="col-lg-2"><a target="_blank" rel="noopener" href="/images/Aegon/Competitors.jpg">
+            <img loading="lazy" alt="Notebook and Miro board detailing competitors experiences vs our existing ones." class="img-fluid" src="/images/Aegon/Competitors.jpg" width="2268" height="4032">
+            </a></div></div></div></section>
 
-<section id="design" class="sectionHeading">
+<section id="design" class="sectionHeading waveStart waveEnd">
         <h2>Design process</h2>
 </section>
 <section class="startofTopic">
     <div class="container">
             <div class="row manualFlip">
-               <div class="col-md-7 ExtraContent"> 
+               <div class="col-lg-7 ExtraContent">
                 <h3>Money in journeys</h3>
                  <p>The number one starting point was addressing the expectation mismatch in the steps to add money to a product.</p>
                  <p> Our current experience was a combined "Top Up" process, allowing users to set up a one-off payment, recurring payment, or transfers in one journey. This worked <strong>great for advisers</strong> as they're often doing multiple payment types at once, but for <strong>customers less than 1% were doing multiple processes at once</strong>. The natural next move was to split the one journey into <strong>3 separate journeys, one per user intention</strong>.</p>
-                 <p>Building three new journeys while the clear best case for the user, presented significant maintenance challenges and technical resistance, especially as the team couldn't rely solely on web components. Negotiations with the technology team were key for finding a solution.</p>
-                 <p>Eventually we struck a balance that suited our technical needs, timeframe, budget and, most importantly, the users. I designed and built the experience as one journey, as so many assets were shared, but linked it in a way that users would always perceive it as three separate journeys.</p>
-                 <p>This took the technical benefits of our original journey and married them with the users' needs, resulting in a seamless experience shift.</p>
+
+
+
                 </div>
-        <div class="col-md-5">
-            <!-- <img loading="lazy" height="20%" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png"> -->
+        <div class="col-lg-5">
+            <!-- <img loading="lazy" class="img-fluid" src="/images/ArcTaurus/Colour Guide.png" width="2344" height="4135"> -->
             <a target="_blank" rel="noopener" href="/images/Aegon/Comparison.jpg">
-            <img loading="lazy" alt="Journey maps detailing the previous, combined journey, and our new streamlined, relevant only content journey." class="img-fluid" src="/images/Aegon/Comparison.jpg">
+            <img loading="lazy" alt="Journey maps detailing the previous, combined journey, and our new streamlined, relevant only content journey." class="img-fluid" src="/images/Aegon/Comparison.jpg" width="4032" height="2268">
             </a>
         </div>
-            </div> 
+            </div>
     </div>
 </section>
+<section><div class="container ExtraContent"><h3>Delivering three journeys from shared components</h3><p>Building three new journeys while the clear best case for the user, presented significant maintenance challenges and technical resistance, especially as the team couldn't rely solely on web components. Negotiations with the technology team were key for finding a solution.</p><p>Eventually we struck a balance that suited our technical needs, timeframe, budget and, most importantly, the users. I designed and built the experience as one journey, as so many assets were shared, but linked it in a way that users would always perceive it as three separate journeys.</p><p>This took the technical benefits of our original journey and married them with the users' needs, resulting in a seamless experience shift.</p></div></section>
 <section>
     <div class="container">
             <div class="row">
-               <div class="col-md-5 ExtraContent"> 
+               <div class="col-lg-5 ExtraContent">
                 <h3>Reusable components</h3>
                  <p>With so much similarity and shared assets between the journeys, it was important to me to set up the project to be as easy to maintain as possible.</p>
                  <p>A key enhancement which the UX team hadn't previously trialled was creating components of full design patterns, including documentation.</p>
                  <p>This meant I could make an edit once, and have it automatically apply to 3 separate journeys. This made final refinement much easier as typo amendments or new requirements were much quicker to rectify, and documentation could become more detailed as it only required writing once.</p>
                 </div>
-        <div class="col-md-7">
-            <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Component1.png">
-            <br> <img height="60%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Component2.png">
+        <div class="col-lg-7">
+            <img loading="lazy" alt="Reusable payment journey components and their documentation" class="img-fluid" src="/images/Aegon/Component1.png" width="1930" height="736">
+            <br> <img loading="lazy" alt="Shared payment journey patterns in the design library" class="img-fluid" src="/images/Aegon/Component2.png" width="1918" height="1450">
         </div>
-            </div> 
+            </div>
     </div>
 </section>
+<section>
   <div class="container">
     <div class="row manualFlip">
-        <div class="col-md-6 ExtraContent">
+        <div class="col-lg-6 ExtraContent">
           <h3>Simplified content</h3>
           <p>One of the biggest learnings from user testing was that there was <strong>too much jargon</strong> in our current journeys, and users didn't feel confident making a decision, so <strong>many would abandon the process rather than guess wrong</strong>.</p>
           <p>I cut out as many unnecessary technical questions and disclaimers as possible, but some remained and required simplifying.</p>
           <p>Indexation proved a particularly difficult point; in lay terms it means increasing a payment each year to align with inflation or the Retail Price Index, but the concept was completely new to our users. By making the question more wordy and explaining and highlighting an example of how it works, I was able to bypass one of our toughest drop-off points.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="img-comp-container">
               <div class="img-comp-img">
-                  <img src="/images/Aegon/Indexation (new).png" alt="New indexation question layout, showing simplified wording and examples.">
+                  <img src="/images/Aegon/Indexation (new).png" alt="New indexation question layout, showing simplified wording and examples." width="1194" height="552">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                  <img src="/images/Aegon/Indexation (old).png" alt="Old indexation question layout, showing more technical language.">
+                  <img src="/images/Aegon/Indexation (old).png" alt="Old indexation question layout, showing more technical language." width="1198" height="404">
               </div>
             </div>
         </div>
@@ -341,18 +329,18 @@
 <section>
     <div class="container">
             <div class="row">
-                <div class="col-md-5 ExtraContent">
+                <div class="col-lg-5 ExtraContent">
                     <h3>Fighting Legal-ese</h3>
                 <p>As a regulated industry, it's natural that there are lots of technical terms and required fields to contend with. I found compromises to simplify questions legally required, making them less intimidating to our users.</p>
                 <p>My changes were a success in balancing regulations and user needs, our updated comprehension scores averaged <strong> 84%</strong></p>
             </div>
-            <div class="col-md-7">
+            <div class="col-lg-7">
             <div class="img-comp-container">
               <div class="img-comp-img">
-                  <img src="/images/Aegon/MPAA (new).png" alt="Previous question layout with more legalistic language." />
+                  <img src="/images/Aegon/MPAA (new).png" alt="Updated question layout reducing legal jargon." width="867" height="400">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                  <img src="/images/Aegon/MPAA (old).png" alt="Updated question layout reducing legal jargon" >
+                  <img src="/images/Aegon/MPAA (old).png" alt="Previous question layout with more legalistic language." width="867" height="400">
               </div>
             </div>
         </div>
@@ -363,34 +351,34 @@
 <section class="endOfTopic">
     <div class="container">
             <div class="row manualFlip">
-                <div class="col-md-8 ExtraContent">
+                <div class="col-lg-8 ExtraContent">
                     <h3>Core page transformations</h3>
                     <p>In research, our users reacted with horror to our as is dashboard designs. They were too technical-looking, too stark, too serious.</p>
                     <p>Fixing this came in two parts: making the actions easier to understand, and bringing more tools and features into the experience to feel more welcoming, tailored to customer needs.</p>
                 </div>
-            <div class="col-md-4">
-              <div class="img-comp-container img-comp-container--dashboard" style="aspect-ratio:1/3;">
+            <div class="col-lg-4">
+              <div class="img-comp-container img-comp-container--dashboard">
               <div class="img-comp-img">
-                <img src="/images/Aegon/After.png" alt="Redesigned dashboard with softer visual language and clearer actions.">
+                <img src="/images/Aegon/After.png" alt="Redesigned dashboard with softer visual language and clearer actions." width="331" height="993">
               </div>
               <div class="img-comp-img img-comp-overlay">
-                <img src="/images/Aegon/Before.png" alt="Original dashboard with technical UI and stark layout.">
+                <img src="/images/Aegon/Before.png" alt="Original dashboard with technical UI and stark layout." width="331" height="993">
               </div>
             </div>
         </div>
             </div>
     </div>
 </section>
-<section id="final" class="sectionHeading finalSections">
+<section id="final" class="sectionHeading finalSections waveStart waveEnd">
     <div class="container">
     <div class="row" style="text-align: center;">
-          <div class="col-md-7 ExtraContent">
-             <h2 style="color:var(--darkGrey)">Outcome</h2>
+          <div class="col-lg-7 ExtraContent">
+             <h2 >Outcome</h2>
              <p>Unfortunately, our work had to be paused due to large-scale organisation restructuring. While we can't currently deliver the value as planned, there is a clear, well-documented series of design files and business artifacts awaiting a future team to pick up the work if desired.</p>
           <p>Pausing the project, while disappointing, allowed me to refine my UI spec work, as I had to ensure the new component designs could be picked up and shipped even if no one attached without relying on current stakeholders. The Specs (formerly EightShapes) were a great tool for accomplishing this, as when I had clean components I could automate some of the more repetitive documentation, allowing me to spend my time on detailed work like accessibility tagging.</p>
         </div>
-          <div class="col-md-5">
-            <img width="80%" loading="lazy" alt="Example of UI spec sticker sheet for new button holder and promotional panel components" src="/images/Aegon/UIspec.png">
+          <div class="col-lg-5">
+            <img loading="lazy" alt="Example of UI spec sticker sheet for new button holder and promotional panel components" src="/images/Aegon/UIspec.png" width="710" height="780">
           </div>
     </div>
     </div>
@@ -414,20 +402,20 @@
 </section>
 
 
-<section class="sectionHeading finalSections">
+<section class="sectionHeading finalSections waveStart">
     <div class="container">
         <h3>Insights</h3>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-arrow-down"></i> Simplified key transaction (money in) with an average <b>25% reduction in user steps</b> and <b>2-3 page reduction in length</b> to increase money in volumes</li><hr>
-             <li><i class="fas fa-book"></i> Increased user understanding of the journey steps and core pages earning a comprehension score of <b>84%</b></li><hr>
-            <li><i class="fas fa-heart"></i>Drastically decreased user concerns about not belonging into  <b>an experience they'd be enthusiastic to use</b></li>
-           </ul> 
+            <li><i aria-hidden="true" class="fas fa-arrow-down"></i> Simplified key transaction (money in) with an average <b>25% reduction in user steps</b> and <b>2-3 page reduction in length</b> to increase money in volumes</li><hr>
+             <li><i aria-hidden="true" class="fas fa-book"></i> Increased user understanding of the journey steps and core pages earning a comprehension score of <b>84%</b></li><hr>
+            <li><i aria-hidden="true" class="fas fa-heart"></i>Drastically decreased user concerns about not belonging into  <b>an experience they'd be enthusiastic to use</b></li>
+           </ul>
         </div>
     </div>
 </section>
 
-<section class="sectionHeading finalSections">
+<section class="sectionHeading finalSections waveEnd">
     <div class="container">
         <h2>What I learned</h2>
         <div class="row importantQuote">
@@ -435,84 +423,15 @@
         </div>
     </div>
 </section>
-</section>
-</section>
 </main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at
-    <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+    <a href="mailto:ambermillerinteractive@gmail.com"><i aria-hidden="true" class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../site.js" defer></script>
-<script>
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-$.fn.isInViewport = function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-var lastScrollTop = 0;
-window.onscroll = function(){
-  var st = window.pageYOffset || document.documentElement.scrollTop; 
-  if ($('#start').isInViewport()) {
-    
-    if (st > lastScrollTop) { //down
-      setActiveView('','start')
-     } else if (st < lastScrollTop) { //up
-      setActiveView('','')
-     } 
-  }
-      if ($('#research').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','research')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','start')
-       } 
-    }
-if ($('#design').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','design')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','research')
-   } 
-}
-if ($('#final').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','final')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','design')
-   } 
-}
-lastScrollTop = st <= 0 ? 0 : st;
-}
-
-      function setActiveView(button, string){
-        let currStage;
-        if(button === ''){
-          currStage = string;
-        } else{
-          currStage = button.classList[1];
-        }
-        let Stage = document.getElementsByClassName('SkipIcon');
-
-        for(let i=0; i< Stage.length; i++){
-          if(Stage[i].classList.contains(currStage)){
-            Stage[i].classList.add('active')
-          }else{
-            Stage[i].classList.remove('active')
-          }
-        }
-      }
-    </script>
   </body>
 </html>

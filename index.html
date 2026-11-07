@@ -33,9 +33,9 @@
       <a href="/projects.html">Case Studies</a>
       <a href="/about.html">About</a>
       <a href="/contact.html" >Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+      <button type="button" class="icon" onclick="myFunction()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="myTopnav">
         <i class="fa fa-bars" aria-hidden="true"></i>
-      </a>
+      </button>
     </div>
   </nav>
   <main id="main-content">
@@ -60,7 +60,7 @@
               <div class="col-md-4 col-sm-12">
                 <div class="metricCard">
                   <div class="metricIcon">
-                    <i class="fas fa-arrow-trend-up"></i>
+                    <i aria-hidden="true" class="fas fa-arrow-trend-up"></i>
                   </div>
                   <div class="metricContent">
                     <p class="metricValue">300%</p>
@@ -73,7 +73,7 @@
               <div class="col-md-4 col-sm-12">
                 <div class="metricCard">
                   <div class="metricIcon">
-                    <i class="fas fa-cube"></i>
+                    <i aria-hidden="true" class="fas fa-cube"></i>
                   </div>
                   <div class="metricContent">
                     <p class="metricValue">50+</p>
@@ -86,7 +86,7 @@
               <div class="col-md-4 col-sm-12">
                 <div class="metricCard">
                   <div class="metricIcon">
-                    <i class="fas fa-users"></i>
+                    <i aria-hidden="true" class="fas fa-users"></i>
                   </div>
                   <div class="metricContent">
                     <p class="metricValue">7</p>
@@ -114,9 +114,9 @@
               <strong> Aegon </strong>
              <p>Helping financial advisers translate complex investment data into clear, easy to understand, client reports.</p>
               <div class="projectMeta">
-                <span class="tag time"><i class="fas fa-clock"></i> 12 months</span>
-                <span class="projectMeta__text"> <i class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Design Systems</span> <span class="tag">User Research</span> <span class="tag">Visual design</span></span>
-                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i class="fas fa-arrow-trend-up"></i> 300% increase in product adoption</span></span>
+                <span class="tag time"><i aria-hidden="true" class="fas fa-clock"></i> 12 months</span>
+                <span class="projectMeta__text"> <i aria-hidden="true" class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Design Systems</span> <span class="tag">User Research</span> <span class="tag">Visual design</span></span>
+                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i aria-hidden="true" class="fas fa-arrow-trend-up"></i> 300% increase in product adoption</span></span>
               </div>
               </div>
               <div class="col-md-6">
@@ -131,13 +131,13 @@
                 <h3> Simplifying our customer portal </h3> <strong> Aegon </strong>
              <p>Transforming our un-advised customer portal experience from "I don't belong here" to "this feels like it was made for me"</p>
              <div class="projectMeta">
-                <span class="tag time"><i class="fas fa-clock"></i> 3 months</span>
-                <span class="projectMeta__text"> <i class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Data + Analytics</span> <span class="tag">User Research</span> <span class="tag">Design Systems</span> </span>
-                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i class="fa-solid fa-arrow-down"></i> Average of 25% reduction in steps per journey</span></span>
+                <span class="tag time"><i aria-hidden="true" class="fas fa-clock"></i> 3 months</span>
+                <span class="projectMeta__text"> <i aria-hidden="true" class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Data + Analytics</span> <span class="tag">User Research</span> <span class="tag">Design Systems</span> </span>
+                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i aria-hidden="true" class="fa-solid fa-arrow-down"></i> Average of 25% reduction in steps per journey</span></span>
               </div>
             </div>
             <div class="col-md-6">
-                <img loading="lazy" alt="Dark customer portal mock-up showing a simplified digital journey and dashboard layout" height="100%" width="100%" class="previewImg" src="/images/Aegon/FlatLay_Assets.jpg">
+                <img loading="lazy" alt="Dark customer portal mock-up showing a simplified digital journey and dashboard layout" class="previewImg" src="/images/responsive/customer-portal-640.jpg" srcset="/images/responsive/customer-portal-640.jpg 640w, /images/responsive/customer-portal-1280.jpg 1280w" sizes="(max-width: 780px) calc(100vw - 3rem), 550px" width="4032" height="2268">
             </div>
              </a>
           </div>
@@ -148,11 +148,11 @@
                 <h3> Accessibility and inclusive design </h3> <strong> Aegon </strong>
              <p>Turning low-priority legacy digital experiences into a catalyst for inclusive design change.</p>
              <div class="projectMeta">
-                <span class="projectMeta__text"> <i class="fas fa-tie"></i> <p> <span class="tag">Mini case study</span> </span>
+                <span class="projectMeta__text"> <i aria-hidden="true" class="fas fa-tie"></i> <p> <span class="tag">Mini case study</span> </span>
               </div>
             </div>
             <div class="col-md-6">
-                <img loading="lazy" alt="Top trump style card of a user persona on an orange background surrounded by pencils" height="100%" width="100%" class="previewImg" src="/Personas/AccessibilityCover.png">
+                <img loading="lazy" alt="Top trump style card of a user persona on an orange background surrounded by pencils" class="previewImg" src="/images/responsive/accessibility-cover-640.jpg" srcset="/images/responsive/accessibility-cover-640.jpg 640w, /images/responsive/accessibility-cover-1280.jpg 1280w" sizes="(max-width: 780px) calc(100vw - 3rem), 550px" width="4000" height="2667">
             </div>
              </a>
           </div>
@@ -163,13 +163,13 @@
                 <h3> No-Code automated trading bots </h3> <strong>ArcTaurus </strong>
              <p>Redesign a no-code trading platform to be as usable as possible for traders regardless of their coding knowledge</p>
              <div class="projectMeta">
-                <span class="tag time"><i class="fas fa-clock"></i> 9 months</span>
-                <span class="projectMeta__text"> <i class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Front end development</span> <span class="tag">User Research</span></span>
-                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i class="fa-solid fa-forward-fast"></i> Average completion speed from 15 minutes → 2 minutes</span></span>
+                <span class="tag time"><i aria-hidden="true" class="fas fa-clock"></i> 9 months</span>
+                <span class="projectMeta__text"> <i aria-hidden="true" class="fas fa-tie"></i> <p> Responsibilities </p> <span class="tag">UX Design</span>  <span class="tag">Front end development</span> <span class="tag">User Research</span></span>
+                <span class="projectMeta__text"><p>Impact</p><span class="tag result"><i aria-hidden="true" class="fa-solid fa-forward-fast"></i> Average completion speed from 15 minutes → 2 minutes</span></span>
               </div>
             </div>
             <div class="col-md-6">
-              <img loading="lazy" alt="No-code trading interface with layered neon blocks and a dark workflow canvas" height="100%" width="100%" class="previewImg" src="/images/arcTaurus/Arctaurus_Cover.png">
+              <img loading="lazy" alt="No-code trading interface with layered neon blocks and a dark workflow canvas" class="previewImg" src="/images/arcTaurus/Arctaurus_Cover.png" width="800" height="540">
             </div>
              </a>
           </div>
@@ -180,7 +180,7 @@
     <footer>
       <p>Website designed, created and maintained by Amber Miller<br>
         If you like my work, get in touch at
-        <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+        <a href="mailto:ambermillerinteractive@gmail.com"><i aria-hidden="true" class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
     </footer>
     <script src="site.js" defer></script>
 </body>

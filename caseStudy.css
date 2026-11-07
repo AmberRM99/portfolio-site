@@ -1,7 +1,3 @@
-/* html, body, section {
-     block-size: 100%; 
-  } */
-
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -60,17 +56,6 @@ p {
   height: calc(100vh - 4rem) !important;
 }
 
-section:not(.navbar-holder):not(#start):not(.personaCard__face) {
-  padding: 4rem 0;
-  width: 100%;
-  min-height: calc(100vh - 4rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-}
-
 section#start {
   padding: 0;
 }
@@ -85,12 +70,6 @@ section#start {
 }
 
 /* Ensure case study hero aligns to the top while still supporting scroll snap sections */
-.caseStudyHero.firstSection {
-  min-height: calc(100vh - 4rem);
-  margin-top: 0;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 
 .caseStudyHero.firstSection .container {
   display: block;
@@ -112,17 +91,6 @@ section#start {
   text-align: center;
 }
 
-.caseStudyHero .projectIntro {
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 18px;
-  box-shadow: 0 18px 40px rgba(31, 41, 55, 0.14);
-  padding: 3rem;
-  max-width: 1080px;
-  margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
-}
-
 .skipIntro {
   text-align: center;
   background: #ececec;
@@ -140,15 +108,6 @@ hr {
 
 .insightCard {
   height: 100%;
-}
-
-.projectSnapshot {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: row;
 }
 
 .accessibility .snapshotCard,
@@ -172,41 +131,10 @@ hr {
   margin-right: 0.5rem;
 }
 
-.snapshotCard {
-  width: calc(50% - 0.625rem);
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(31, 41, 55, 0.08);
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  box-shadow: 0 12px 28px rgba(31, 41, 55, 0.12);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .snapshotCard i {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
-/* .projectSnapshot > div {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(31, 41, 55, 0.08);
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  box-shadow: 0 12px 28px rgba(31, 41, 55, 0.12);
-  transition: transform 180ms ease, box-shadow 180ms ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.projectSnapshot>div:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.14);
-} */
 
 .Micro {
   font-size: 0.9rem;
@@ -248,6 +176,9 @@ hr {
 }
 
 .projectIntro img {
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
   width: 60%;
 }
 
@@ -267,18 +198,6 @@ footer {
 
 .skip i {
   margin: 4px 10px;
-}
-
-.img-comp-container {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  max-height: calc(100vh - 14rem);
-  aspect-ratio: 16 / 9;
-  margin: 1.5rem auto;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 14px 30px rgba(31, 41, 55, 0.14);
 }
 
 /* Labels for the comparison slider (before/after) */
@@ -307,16 +226,6 @@ footer {
 }
 
 /* The range input that controls the comparison state */
-.img-comp-range {
-  display: block;
-  width: calc(100% - 3rem);
-  max-width: 520px;
-  margin: 1rem auto 0;
-  cursor: pointer;
-  background: transparent;
-  -webkit-appearance: none;
-  appearance: none;
-}
 
 .img-comp-range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -397,50 +306,11 @@ footer {
   -webkit-user-select: none;
 }
 
-.img-comp-slider {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 56px;
-  height: 56px;
-  background-color: #f88b58bf;
-  border: 3px solid rgba(255, 255, 255, 0.85);
-  opacity: 1;
-  border-radius: 50%;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.1rem;
-}
-
-.img-comp-slider i {
-  pointer-events: none;
-}
-
 /* Dashboard-specific comparison mode */
-.img-comp-container--dashboard {
-  --split: 50%;
-}
 
 .img-comp-container--dashboard .img-comp-overlay {
   width: 100% !important;
   clip-path: inset(0 calc(100% - var(--split)) 0 0);
-}
-
-.img-comp-container--dashboard .img-comp-img img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* good for full dashboard screenshots */
-  object-position: top center;
-  display: block;
 }
 
 .img-comp-container--dashboard .img-comp-overlay::after {
@@ -736,55 +606,6 @@ footer {
   margin-bottom: 0.65rem;
 }
 
-.personaCarousel__control {
-  width: 56px;
-  height: 56px;
-  top: auto;
-  bottom: -0.5rem;
-  opacity: 1;
-}
-
-.personaCarousel__control.carousel-control-prev {
-  left: calc(50% - 80px);
-}
-
-.personaCarousel__control.carousel-control-next {
-  right: calc(50% - 80px);
-}
-
-.personaCarousel__arrow {
-  width: 56px;
-  height: 56px;
-  border-radius: 999px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #0b6bb8;
-  font-size: 1.1rem;
-}
-
-.personaCarousel__indicators {
-  bottom: -0.25rem;
-  margin-bottom: 0;
-}
-
-.personaCarousel__indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  border: none;
-  background: rgba(11, 107, 184, 0.28);
-  opacity: 1;
-  margin: 0 6px;
-}
-
-.personaCarousel__indicators .active {
-  background: #0b6bb8;
-}
-
 @media (max-width: 991px) {
   .personaPanel {
     padding: 2rem 1.5rem 2rem;
@@ -814,7 +635,7 @@ footer {
 .endOfTopic {
   background-position: bottom;
   width: 100vw;
-  background-image: url(/images/decoration/wiggle-bottom.svg);
+  background-image: url(/images/decoration/wiggle-bottom.svg?v=2);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -822,7 +643,7 @@ footer {
 .startofTopic {
   background-position: top;
   width: 100vw;
-  background-image: url(/images/decoration/wiggle-top.svg);
+  background-image: url(/images/decoration/wiggle-top.svg?v=2);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -863,13 +684,6 @@ footer {
 .startofTopic .img-comp-container,
 .endOfTopic .img-comp-container {
   max-height: calc(100vh - 16rem);
-}
-
-.sectionHeading {
-  width: 100%;
-  padding: 4rem 1rem;
-  background: var(--orange);
-  text-align: center;
 }
 
 .sectionHeading h2 {
@@ -918,29 +732,8 @@ li i {
 ul.importantQuote span {
   font-weight: normal;
 }
-
-/* ul.importantQuote li{
-  font-size:1.6rem;
-} */
 .carousel-indicators.video {
   bottom: -5rem !important;
-}
-
-.skipBtns {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  position: fixed;
-  top: 25%;
-  right: 1rem;
-  align-items: center;
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 18px;
-  box-shadow: 0 10px 26px rgba(31, 41, 55, 0.16);
-  backdrop-filter: blur(10px);
-  width: 88px;
-  gap: 0.6rem;
 }
 
 .skipBtns p {
@@ -979,13 +772,6 @@ ul.importantQuote span {
   box-shadow: 0 0 0 5px rgba(167, 84, 26, 0.18);
 }
 
-.SkipIcon.active,
-.SkipIcon:hover {
-  border: 2px solid var(--orange);
-  transform: scale(1.2);
-  background: var(--darkGrey);
-}
-
 .SkipIcon i {
   font-size: 24px;
   color: var(--white);
@@ -1001,10 +787,6 @@ ul.importantQuote span {
   height: 63vh;
   margin: auto;
 }
-
-/* .blocktypes{
-  height:10em;
-} */
 .niceHeaders {
   width: 100%;
 }
@@ -1023,72 +805,8 @@ ul.importantQuote span {
   justify-content: start;
 }
 
-.speech-bubble {
-  position: relative;
-  background: #00aabb;
-  border-radius: 0.4em;
-}
-
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 24px solid transparent;
-  border-top-color: #00aabb;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -12px;
-  margin-bottom: -24px;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 * {
   box-sizing: border-box;
-}
-
-/* .responsive {
-        padding: 0 6px;
-        float: left;
-        width: 15%;
-      }
-      
-      @media only screen and (max-width: 700px) {
-        .responsive {
-          width: 49.99999%;
-          margin: 6px 0;
-        }
-      }
-      
-      @media only screen and (max-width: 500px) {
-        .responsive {
-          width: 100%;
-        }
-      } */
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media only screen and (max-width: 780px) {
@@ -1164,5 +882,934 @@ div.desc {
   .bigHeader,
   .niceHeaders {
     display: none;
+  }
+}
+
+/* Let content determine section height instead of forcing full-screen gaps. */
+html,
+body,
+footer {
+  scroll-snap-type: none;
+}
+
+section:where(:not(.navbar-holder, #start, .personaCard__face)) {
+  padding: 4rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  scroll-snap-align: none;
+}
+
+.caseStudyHero.firstSection {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: var(--header-height);
+  min-height: auto;
+}
+
+[id] {
+  scroll-margin-top: 0;
+}
+
+.caseStudyHero .container {
+  max-width: min(1200px, calc(100% - 240px));
+}
+
+.caseStudyHero .projectIntro {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(31, 41, 55, 0.14);
+  max-width: 1080px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.projectSnapshot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  align-content: start;
+}
+
+.snapshotCard {
+  width: calc(50% - 0.625rem);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(31, 41, 55, 0.08);
+  border-radius: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 28px rgba(31, 41, 55, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.25rem;
+}
+
+.skipBtns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: fixed;
+  top: 25%;
+  right: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(31, 41, 55, 0.16);
+  backdrop-filter: blur(10px);
+  width: 88px;
+  gap: 0.6rem;
+  z-index: 90;
+}
+
+.SkipIcon.active,
+.SkipIcon:hover {
+  border: 2px solid var(--orange);
+  background: var(--darkGrey);
+  transform: none;
+  box-shadow: 0 0 0 3px var(--orange);
+}
+
+.img-comp-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 14px 30px rgba(31, 41, 55, 0.14);
+  aspect-ratio: 4 / 3;
+  max-height: none;
+  background: white;
+
+  --split: 50%;
+}
+
+.img-comp-container .img-comp-overlay {
+  width: 100% !important;
+  clip-path: inset(0 calc(100% - var(--split)) 0 0);
+}
+
+.img-comp-container .img-comp-img img {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.img-comp-container .img-comp-overlay::after {
+  left: var(--split);
+  right: auto;
+}
+
+.img-comp-container--dashboard {
+  --split: 50%;
+
+  aspect-ratio: 3 / 4;
+  width: min(100%, 640px);
+}
+
+.img-comp-container--dashboard .img-comp-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%; /* good for full dashboard screenshots */
+  object-position: top center;
+  display: block;
+  object-fit: cover;
+}
+
+.img-comp-range {
+  display: block;
+  width: calc(100% - 3rem);
+  max-width: 520px;
+  margin: 1rem auto 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 44px;
+  accent-color: var(--darkOrange);
+}
+
+.comparisonLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.finalSections .comparisonLinks a {
+  color: white;
+  text-decoration: underline;
+}
+
+.carousel {
+  padding-bottom: 4rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: auto;
+  bottom: 0.5rem;
+  width: 44px;
+  height: 44px;
+  background: var(--mainGrey);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: calc(50% - 60px);
+}
+
+.carousel-control-next {
+  right: calc(50% - 60px);
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carouselStatus {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--darkGrey);
+}
+
+.finalArcVid,
+.youtube {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+iframe[title="Target growth concept prototype"] {
+  aspect-ratio: auto;
+  height: 650px;
+  max-height: 80vh;
+}
+
+@media (min-width: 781px) and (max-width: 1500px) {
+  .caseStudyHero .projectIntro,
+  .caseStudyHero .projectSnapshot {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .projectSnapshot .snapshotCard {
+    width: calc(50% - 0.625rem);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .caseStudyHero .container {
+    max-width: 100%;
+  }
+
+  .skipBtns {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    min-width: 0;
+    max-width: calc(100% - 2rem);
+    margin: 0 auto 1.5rem;
+    padding: 0.75rem;
+    border-radius: 16px;
+    gap: 0.75rem;
+  }
+
+  .skipBtns > p {
+    display: none;
+  }
+
+  .skipBtns span {
+    margin: 0;
+    flex: 1;
+  }
+
+  .skipBtns span p {
+    display: block;
+  }
+}
+
+@media (max-width: 780px) {
+  .caseStudyHero.firstSection {
+    padding-top: 1.5rem;
+  }
+
+  .caseStudyHero .projectIntro,
+  .ExtraContent {
+    padding: 1.5rem;
+  }
+
+  .caseStudyHero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.3rem);
+    line-height: 1.2;
+  }
+
+  .sectionHeading h2 {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    padding: 0.5rem 0;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  section:where(:not(.navbar-holder, #start, .personaCard__face)) {
+    padding-block: 2rem;
+  }
+
+  .importantQuote,
+  ul.importantQuote {
+    padding: 1.5rem;
+  }
+
+  .skipIntro {
+    padding: 1rem;
+  }
+
+  .projectIntro img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .img-comp-container--dashboard {
+    aspect-ratio: 3 / 4;
+  }
+
+  .startofTopic .row,
+  .endOfTopic .row {
+    row-gap: 1.5rem;
+  }
+
+  .SkipIcon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Wave fills match --orange; content sections retain their natural height. */
+.sectionHeading {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: var(--orange);
+  text-align: center;
+  color: var(--white);
+}
+
+.sectionHeading .ExtraContent,
+.sectionHeading .importantQuote,
+.sectionHeading .personaCard,
+.sectionHeading .personaPanel {
+  color: var(--darkGrey);
+}
+
+section.sectionHeading:not(.finalSections) {
+  padding-block: 1.5rem;
+}
+
+section.sectionHeading:not(.finalSections) > .container {
+  padding-block: 0.5rem;
+}
+
+section.startofTopic {
+  background-position: center -1px;
+  background-size: 100% auto;
+  padding-top: max(2rem, 8.5vw);
+}
+
+section.endOfTopic {
+  background-position: center calc(100% + 1px);
+  background-size: 100% auto;
+  padding-bottom: max(2rem, 8.5vw);
+}
+
+@media (max-width: 780px) {
+  .firstSection [class*="col"]:not(.projectSnapshot) {
+    justify-content: flex-start;
+  }
+
+  .caseStudyHero #start > .container {
+    padding-top: 0;
+  }
+
+  section .container {
+    padding-block: 1rem;
+  }
+
+  section.sectionHeading.finalSections {
+    padding-block: 1.5rem;
+  }
+
+  .HeroSection {
+    height: auto !important;
+    min-height: 0;
+  }
+
+  .personaPanel {
+    padding: 1.5rem;
+  }
+
+  .personaPanel__imageWrap {
+    min-height: 0;
+    margin-bottom: 1rem;
+  }
+
+  .personaPanel__image {
+    max-height: 200px;
+  }
+
+  .resources .col-md-4:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid var(--mainGrey);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Rows without Bootstrap column parents must not use negative gutters. */
+.blockTypesRow,
+.sectionHeading > .row {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sectionHeading > .row {
+  padding-inline: 1rem;
+}
+
+/* Responsive article layout and explicit foregrounds for pale content panels. */
+main > section {
+  position: relative;
+  min-height: 0;
+  height: auto;
+  padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+main .container {
+  width: min(100% - 2rem, 72rem);
+  max-width: none;
+  padding: 1rem 0;
+}
+
+main .row {
+  align-items: start;
+  row-gap: 1.5rem;
+}
+
+main .row > [class*="col-"] {
+  min-width: 0;
+}
+
+main .ExtraContent,
+main .importantQuote,
+main .snapshotCard,
+main .resources-holder,
+main .personaPanel,
+main .personaCard__face {
+  color: var(--darkGrey);
+}
+
+main .ExtraContent h2,
+main .importantQuote h2,
+main .resources-holder h2 {
+  color: var(--darkGrey);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+main .ExtraContent {
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+main .resources-holder {
+  padding: 1.5rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+main .row > [class*="col-"] > img,
+main .row > [class*="col-"] > a:has(img) {
+  display: block;
+  flex: none;
+  width: 100%;
+  margin: auto;
+}
+
+main .row > [class*="col-"] > img,
+main .row > [class*="col-"] > a > img {
+  max-height: min(70svh, 42rem);
+  object-fit: contain;
+}
+
+main .img-comp-container {
+  max-height: none;
+}
+
+main .img-comp-container .img-comp-img img {
+  height: 100%;
+  max-height: none;
+}
+
+main .caseStudyHero {
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: none;
+}
+
+main .caseStudyHero .container {
+  width: min(100% - 2rem, 72rem);
+  max-width: none;
+}
+
+.caseStudyHero #start > .container > .row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.caseStudyHero #start .projectIntro,
+.caseStudyHero #start .projectSnapshot {
+  width: 100%;
+  max-width: none;
+  padding-inline: 1.5rem;
+}
+
+.caseStudyHero #start .projectSnapshot {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.caseStudyHero #start .snapshotCard {
+  width: 100%;
+  min-width: 0;
+}
+
+.caseStudyHero #start .projectIntro img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(40svh, 22rem);
+  object-fit: contain;
+  margin: 1rem auto;
+}
+
+main .carousel:not(.personaCarousel) .carousel-inner {
+  height: clamp(16rem, 65svh, 40rem);
+}
+
+main .carousel:not(.personaCarousel) .carousel-item,
+main .carousel:not(.personaCarousel) .carousel-item > a {
+  height: 100%;
+}
+
+main .carousel:not(.personaCarousel) .carousel-item > a {
+  display: block;
+}
+
+main .carousel:not(.personaCarousel) img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  background: white;
+}
+
+/* Waves belong to each orange/grey boundary, including previously unmarked ones. */
+main.caseStudyPage .startofTopic,
+main.caseStudyPage .endOfTopic {
+  background-image: none;
+  padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+main .waveStart {
+  margin-top: calc(100vw / 12);
+}
+
+main .waveEnd {
+  margin-bottom: calc(100vw / 12);
+}
+
+main .waveStart::before,
+main .waveEnd::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100vw / 12);
+  background: var(--orange);
+  pointer-events: none;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+
+main .waveStart::before {
+  bottom: calc(100% - 1px);
+  mask-image: url("/images/decoration/wiggle-bottom.svg?v=2");
+}
+
+main .waveEnd::after {
+  top: calc(100% - 1px);
+  mask-image: url("/images/decoration/wiggle-top.svg?v=2");
+}
+
+@media (min-width: 1200px) {
+  main > section > .container,
+  main .caseStudyHero .container {
+    width: min(100% - 16rem, 72rem);
+  }
+
+  .caseStudyHero #start > .container > .row {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 991.98px) {
+  main .manualFlip {
+    flex-direction: column;
+  }
+
+  main .row > [class*="col-lg-"] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  main .resources [class*="col-lg-"]:not(:last-child) {
+    border-bottom: 1px solid var(--mainGrey);
+    padding-bottom: 1rem;
+  }
+
+  main .niceHeaders {
+    display: none;
+  }
+
+  main .smallHeader {
+    display: block;
+  }
+}
+
+@media (max-width: 599px) {
+  .caseStudyHero #start .projectSnapshot {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main .img-comp-container--dashboard {
+    width: 100%;
+  }
+
+  main .sectionHeading h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  main .sectionHeading .ExtraContent h2,
+  main .sectionHeading .importantQuote h2 {
+    font-size: 1.5rem;
+  }
+
+  main .importantQuote,
+  main ul.importantQuote {
+    padding: 1.25rem;
+  }
+}
+
+main .img-comp-container:not(.img-comp-container--dashboard) img {
+  object-fit: contain;
+}
+
+/* A comparison is one layout item; its controls always follow its image. */
+.comparisonWidget {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  flex: 0 0 100%;
+  margin: 0 auto;
+}
+
+.comparisonWidget > .img-comp-container {
+  margin-inline: auto;
+}
+
+.comparisonWidget > .img-comp-range {
+  display: block;
+  width: calc(100% - 3rem);
+  max-width: 520px;
+  margin: 1rem auto 0;
+}
+
+.comparisonWidget > .comparisonLinks {
+  width: 100%;
+}
+
+/* Desktop reading panels: reserve room for the header, title and controls. */
+@media (min-width: 1200px) {
+  .caseStudyPage {
+    --panel-height: calc(100svh - var(--header-height) - 2rem);
+    --wave-height: clamp(1.5rem, 3vw, 3rem);
+    --comparison-height: calc(100svh - 22rem);
+  }
+
+  main.caseStudyPage > section {
+    padding-block: 1.5rem;
+  }
+
+  main.caseStudyPage .container {
+    padding-block: 0.5rem;
+  }
+
+  main.caseStudyPage .row {
+    row-gap: 1rem;
+  }
+
+  main.caseStudyPage .ExtraContent,
+  main.caseStudyPage .importantQuote,
+  main.caseStudyPage ul.importantQuote {
+    padding: 1.5rem;
+    margin-block: 0.75rem;
+  }
+
+  main.caseStudyPage h2,
+  main.caseStudyPage .sectionHeading h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    padding-block: 0.5rem;
+  }
+
+  main.caseStudyPage h3 {
+    font-size: 1.6rem;
+  }
+
+  main.caseStudyPage li {
+    margin-block: 0.65rem;
+  }
+
+  main.caseStudyPage .importantQuote li i {
+    font-size: 1.5rem;
+    margin: 0 0.75rem 0 0;
+  }
+
+  main.caseStudyPage .waveStart {
+    margin-top: var(--wave-height);
+  }
+
+  main.caseStudyPage .waveEnd {
+    margin-bottom: var(--wave-height);
+  }
+
+  main.caseStudyPage .waveStart::before,
+  main.caseStudyPage .waveEnd::after {
+    height: var(--wave-height);
+    mask-size: 100% 100%;
+  }
+
+  main.caseStudyPage .row > [class*="col-"] > img,
+  main.caseStudyPage .row > [class*="col-"] > a > img,
+  main.caseStudyPage > section > img {
+    max-height: calc(100svh - 12rem);
+    object-fit: contain;
+  }
+
+  main.caseStudyPage .row > [class*="col-"]:has(> img ~ img) > img {
+    max-height: calc((100svh - 14rem) / 2);
+  }
+
+  main.caseStudyPage .caseStudyHero #start .projectIntro {
+    padding: 1.25rem;
+  }
+
+  main.caseStudyPage .caseStudyHero h1 {
+    font-size: 2.1rem;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+
+  main.caseStudyPage .caseStudyHero #start .projectIntro img {
+    max-height: 22svh;
+    margin: 0.5rem auto;
+  }
+
+  main.caseStudyPage .intro-summary {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+
+  main.caseStudyPage .skipIntro {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  main.caseStudyPage .skipIntro p {
+    margin-bottom: 0.5rem;
+  }
+
+  main.caseStudyPage .snapshotCard {
+    padding: 1rem;
+  }
+
+  main.caseStudyPage .snapshotCard > i {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  main.caseStudyPage .carousel:not(.personaCarousel) .carousel-inner {
+    height: calc(100svh - 20rem);
+  }
+
+  main.caseStudyPage .personaPanel {
+    padding: 1.5rem;
+  }
+
+  main.caseStudyPage .personaPanel__title {
+    margin-bottom: 0.75rem;
+  }
+
+  main.caseStudyPage .personaPanel__summary,
+  main.caseStudyPage .personaPanel__contentBlock {
+    margin-bottom: 1rem;
+  }
+
+  main.caseStudyPage .personaPanel__image {
+    max-height: 200px;
+  }
+
+  main.caseStudyPage .personaCard__image {
+    height: 100px;
+    width: auto;
+  }
+
+  main.caseStudyPage .personaCard__face,
+  main.caseStudyPage .personaCard__content {
+    gap: 0.5rem;
+  }
+
+  main.caseStudyPage .personaCard__highlight {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  main.caseStudyPage .img-comp-container {
+    width: min(100%, calc(var(--comparison-height) * 4 / 3));
+    max-height: var(--comparison-height);
+    margin-block: 0.5rem;
+  }
+
+  main.caseStudyPage .img-comp-container--dashboard {
+    width: min(100%, calc(var(--comparison-height) * 3 / 4));
+  }
+
+  main.caseStudyPage .comparisonWidget > .img-comp-range,
+  main.caseStudyPage .comparisonWidget > .comparisonLinks {
+    margin-top: 0.5rem;
+  }
+
+  main.caseStudyPage .finalArcVid,
+  main.caseStudyPage .youtube {
+    width: min(100%, calc((100svh - 18rem) * 16 / 9));
+    max-height: calc(100svh - 18rem);
+  }
+
+  main.caseStudyPage iframe[title="Target growth concept prototype"] {
+    width: 100%;
+    height: calc(100svh - 16rem);
+    max-height: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  main.caseStudyPage > section.startofTopic,
+  main.caseStudyPage > section.endOfTopic {
+    padding-block: 1.5rem;
+  }
+
+  main.caseStudyPage .row > [class*="col-"] > a {
+    flex: none;
+  }
+
+  main.caseStudyPage .row > [class*="col-"] > a > img {
+    max-height: calc(100svh - 18rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  main.caseStudyPage > section {
+    --wave-before: 0px;
+    --wave-after: 0px;
+
+    min-height: calc(var(--panel-height) - var(--wave-before) - var(--wave-after));
+  }
+
+  main.caseStudyPage > section.waveStart {
+    --wave-before: var(--wave-height);
+  }
+
+  main.caseStudyPage > section.waveEnd {
+    --wave-after: var(--wave-height);
+  }
+
+  main.caseStudyPage > section.sectionHeading:not(.finalSections) {
+    min-height: 0;
+  }
+
+  main.caseStudyPage .strategyCard {
+    width: 100%;
+  }
+
+  main.caseStudyPage .personaCard__face {
+    padding: 0.75rem;
+  }
+
+  main.caseStudyPage .personaCard__image {
+    height: 80px;
+  }
+
+  main.caseStudyPage .blocktypes img {
+    max-height: 120px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  main.caseStudyPage .resources-holder {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  main.caseStudyPage .strategyCard {
+    width: 100%;
   }
 }

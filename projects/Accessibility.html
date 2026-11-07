@@ -29,43 +29,43 @@
           <a title="case studies" href="/projects.html">Case Studies</a>
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <button type="button" class="icon" onclick="myFunction()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="myTopnav">
             <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
+          </button>
         </div>
-      
+
       </nav>
-    <main id="main-content">
+    <main id="main-content" class="caseStudyPage">
     <section class="firstSection caseStudyHero">
       <div class="skipBtns">
         <p>Jump To</p>
         <span>
           <p>Project overview</p>
-        <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+        <button onclick="jumpToSection('start');setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i aria-hidden="true" class="fas fa-arrow-up"></i></button></span>
       <span>
           <p>Planning</p>
-        <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research " title="Scroll to Planning Process"><i class="fas fa-lightbulb"></i></button></span>
+        <button onclick="jumpToSection('research');setActiveView(this)" class="SkipIcon research " title="Scroll to Planning Process"><i aria-hidden="true" class="fas fa-lightbulb"></i></button></span>
         <span>
           <p>Findings</p>
-        <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+        <button onclick="jumpToSection('design');setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i aria-hidden="true" class="fa-solid fa-pencil"></i></button></span>
         <span>
           <p>Results</p>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+    <button onclick="jumpToSection('final');setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i aria-hidden="true" class="fa-solid fa-forward"></i></button></span>
       </div>
-     
+
 <section id="start">
   <div class="container">
 
     <div class="row">
 
       <!-- LEFT SIDE -->
-      <div class="col-md-7 projectIntro">
+      <div class="col-lg-7 projectIntro">
 
         <div>
 
           <div class="text-center">
             <h1>Accessibility and Inclusive Design</h1>
-            <img src="/Personas/AccessibilityCover.png" loading="lazy" class="img-fluid heroImage"alt="Accessibility audit slides, inclusive persona cards, and workshop artefacts used to identify barriers and educate teams">
+            <img src="/images/responsive/accessibility-cover-640.jpg" srcset="/images/responsive/accessibility-cover-640.jpg 640w, /images/responsive/accessibility-cover-1280.jpg 1280w" sizes="(max-width: 780px) calc(100vw - 3rem), 550px" loading="lazy" class="img-fluid heroImage" alt="Accessibility audit slides, inclusive persona cards, and workshop artefacts used to identify barriers and educate teams" width="4000" height="2667">
              <br>
 
             <p class="intro-summary">
@@ -77,37 +77,38 @@
         <!-- Skip CTA -->
         <div class="skipIntro Micro">
           <p>No time to read the full case study?</p>
-          <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip">
-            <i class="fa-solid fa-forward"></i> Skip to outcomes
+          <button onclick="jumpToSection('final')" class="linkBtn skip">
+            <i aria-hidden="true" class="fa-solid fa-forward"></i> Skip to outcomes
           </button>
         </div>
 
       </div>
 
       <!-- RIGHT SIDE -->
-      <div class="projectSnapshot col-md-5 accessibility">
+      <div class="projectSnapshot col-lg-5 accessibility">
 
         <div class="snapshotCard">
-          <i class="fa fa-circle-info"></i>
+          <i aria-hidden="true" class="fa fa-circle-info"></i>
           <p class="intro-summary">
-I conducted an accessibility audit of a legacy service, using inclusive personas and assistive technology testing to uncover usability barriers.  
+I conducted an accessibility audit of a legacy service, using inclusive personas and assistive technology testing to uncover usability barriers.
 By translating WCAG issues into human stories, I helped stakeholders understand the impact and sparked wider internal conversations about accessibility.
-</p>  
-        </div>  
+</p>
+        </div>
         <div class="snapshotCard">
-          <i class="fa-solid fa-champagne-glasses"></i>
+          <i aria-hidden="true" class="fa-solid fa-champagne-glasses"></i>
           <!-- <p class="Snapshotheader">Impact</p> -->
           <div class="heroMetrics">
-  <span class="metricChip"><i class="fas fa-bug"></i> 90+ issues identified</span><br>
-  <span class="metricChip"><i class="fas fa-bullhorn"></i> 100 internal requests</span><br>
-  <span class="metricChip"><i class="fas fa-users"></i> Workshop for 30 colleagues</span><br>
+  <span class="metricChip"><i aria-hidden="true" class="fas fa-bug"></i> 90+ issues identified</span><br>
+  <span class="metricChip"><i aria-hidden="true" class="fas fa-bullhorn"></i> 100 internal requests</span><br>
+  <span class="metricChip"><i aria-hidden="true" class="fas fa-users"></i> Workshop for 30 colleagues</span><br>
 </div>
         </div>
- 
+
       </div>
 
     </div>
   </div>
+</section>
 </section>
 
 <section class="endOfTopic">
@@ -120,9 +121,10 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
               <br>
               <p> I chose to make personas a central theme of this project so I could stay accountable to a broad range of user needs.</p>
           </div>
+</div>
 </section>
 
-  <section id="research" class="sectionHeading">
+  <section id="research" class="sectionHeading waveStart waveEnd">
     <h2>Planning</h2>
   </section>
 
@@ -132,7 +134,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
       <div class="row">
               <div class="projectSnapshot">
                 <div class="snapshotCard">
-                 <i class="fa fa-flask"></i>
+                 <i aria-hidden="true" class="fa fa-flask"></i>
                 <p class="Snapshotheader">Methods</p>
                 <ul>
                   <li> Heuristic evaluation to get a baseline of the experience </li>
@@ -142,7 +144,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </ul>
               </div>
               <div class="snapshotCard">
-                 <i class="fa fa-bullseye"></i>
+                 <i aria-hidden="true" class="fa fa-bullseye"></i>
                 <p class="Snapshotheader">Testing goals</p>
                 <ul>
                   <li> Understand what support topics are available </li>
@@ -160,9 +162,9 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
   <div class="container">
     <div class="row">
     <h3>Inclusive personas</h3>
-    <div class="col-md-11">
+    <div class="col-lg-11">
     <div id="carousel-onboarding2" class="carousel slide personaCarousel" data-ride="carousel" data-interval="false">
-      
+
        <ol class="carousel-indicators">
                       <li data-target="#carousel-onboarding2" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-onboarding2" data-slide-to="1"></li>
@@ -177,7 +179,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="carousel-item active">
           <article class="personaPanel">
             <div class="row align-items-center">
-              <div class="col-md-6 personaPanel__left">
+              <div class="col-lg-6 personaPanel__left">
                 <h4 class="personaPanel__title">Assumed Sam</h4>
 
                 <p class="personaPanel__summary">
@@ -185,11 +187,11 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 1.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 1.png" alt="Illustration of example user" class="personaPanel__image" width="600" height="600">
                 </div>
               </div>
 
-              <div class="col-md-6 personaPanel__right">
+              <div class="col-lg-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding our assumed user</h5>
                   <p>
@@ -213,7 +215,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="carousel-item">
           <article class="personaPanel">
             <div class="row align-items-center">
-              <div class="col-md-6 personaPanel__left">
+              <div class="col-lg-6 personaPanel__left">
                 <h4 class="personaPanel__title">Visually Impaired Sam</h4>
 
                 <p class="personaPanel__summary">
@@ -221,11 +223,11 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 3.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 3.png" alt="Illustration of example user" class="personaPanel__image" width="600" height="600">
                 </div>
               </div>
 
-              <div class="col-md-6 personaPanel__right">
+              <div class="col-lg-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding visually impaired users</h5>
                   <p>
@@ -249,7 +251,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="carousel-item">
           <article class="personaPanel">
             <div class="row align-items-center">
-              <div class="col-md-6 personaPanel__left">
+              <div class="col-lg-6 personaPanel__left">
                 <h4 class="personaPanel__title">Motor Impaired Sam</h4>
 
                 <p class="personaPanel__summary">
@@ -257,11 +259,11 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 2.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 2.png" alt="Illustration of example user" class="personaPanel__image" width="600" height="600">
                 </div>
               </div>
 
-              <div class="col-md-6 personaPanel__right">
+              <div class="col-lg-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding motor impaired users</h5>
                   <p>
@@ -273,7 +275,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                   <h5>Key needs</h5>
                   <ul class="personaPanel__list">
                     <li>Visible, obvious focus states highlighting where the user is within the page</li>
-                    <li>Forgiveness and ability to correct mis-clicks</li> 
+                    <li>Forgiveness and ability to correct mis-clicks</li>
                     <li>Interactive content must accept input from alternatives input devices</li>
                   </ul>
                 </div>
@@ -286,7 +288,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="carousel-item">
           <article class="personaPanel">
             <div class="row align-items-center">
-              <div class="col-md-6 personaPanel__left">
+              <div class="col-lg-6 personaPanel__left">
                 <h4 class="personaPanel__title">Neurodiverse Sam</h4>
 
                 <p class="personaPanel__summary">
@@ -294,11 +296,11 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 4.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 4.png" alt="Illustration of example user" class="personaPanel__image" width="600" height="600">
                 </div>
               </div>
 
-              <div class="col-md-6 personaPanel__right">
+              <div class="col-lg-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding neurodiverse users</h5>
                   <p>
@@ -323,7 +325,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="carousel-item">
           <article class="personaPanel">
             <div class="row align-items-center">
-              <div class="col-md-6 personaPanel__left">
+              <div class="col-lg-6 personaPanel__left">
                 <h4 class="personaPanel__title">Mobile Phone Sam</h4>
 
                 <p class="personaPanel__summary">
@@ -331,15 +333,15 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 </p>
 
                 <div class="personaPanel__imageWrap">
-                  <img src="/Personas/Persona 5.png" alt="Illustration of example user" class="personaPanel__image">
+                  <img src="/Personas/Persona 5.png" alt="Illustration of example user" class="personaPanel__image" width="600" height="600">
                 </div>
               </div>
 
-              <div class="col-md-6 personaPanel__right">
+              <div class="col-lg-6 personaPanel__right">
                 <div class="personaPanel__contentBlock">
                   <h5>Understanding mobile phone users</h5>
                   <p>
-                    Using a mobile phone is not by any means an impairment. However, users accessing us via mobile devices require additional considerations, such as how design scales and how much content is visible at a time. Using the web on a mobile device opens up new ways to interact with the content, thinking about scrolling, pinching and tapping. Depending on the environment they're using their phone in, they may also fall temporarily under other accessibility categories. 
+                    Using a mobile phone is not by any means an impairment. However, users accessing us via mobile devices require additional considerations, such as how design scales and how much content is visible at a time. Using the web on a mobile device opens up new ways to interact with the content, thinking about scrolling, pinching and tapping. Depending on the environment they're using their phone in, they may also fall temporarily under other accessibility categories.
                   </p>
                 </div>
 
@@ -372,40 +374,40 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 </section>
 
 
-<section id="design" class="sectionHeading">
+<section id="design" class="sectionHeading waveStart waveEnd">
         <h2>Findings</h2>
 </section>
 
 <section class="startofTopic">
     <div class="container ExtraContent">
             <div class="row ">
-               <div class="col-md-6">
+               <div class="col-lg-6">
   <h3>How to present an accessibility audit?</h3>
   <p>In my week of exploration, I uncovered around 90 different issues with the portal.</p>
   <p>The findings varied widely, from buttons with no visible focus state and page titles labelled simply as "container" to misleading language</p>
   <p>This was far too much to take to the stakeholders in charge of this service. I also had to be mindful I was not dealing with technical stakeholders, but business leaders focused on return on investment into their propositions.</p>
 </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
            <p>Because the personas had been so useful in uncovering issues and adding human context to the metrics, I chose to weave them throughout the presentation.</p>
            <p>I was no longer telling them, for example, that an incorrect page title failed <strong> WCAG 2.4.2 at A level </strong>, but instead weaving a tale about Sam who opened a new tab to find their plan number and <strong>can no longer spot which of their 10 tabs open contains the form </strong> they were completing.</p>
            <p> I got the biggest impact when presenting as I screen recording of the current experience, which included over 1 minute of the screen reader announcing the existing alternative text of an asterisk denoting a mandatory field.</p>
         </div>
-            </div> 
+            </div>
     </div>
 </section>
 
 <section>
-    <div class="container">  
+    <div class="container">
             <div class="row">
                     <h3>Example audit findings</h3>
-                <!-- <div class="col-md-8 ExtraContent">
-               
+                <!-- <div class="col-lg-8 ExtraContent">
+
                 <p>As much as I'd have loved to fix everything, I had to be realistic about what could be pitched to stakeholders. I focused on the most critical functionality issues and A level WCAG failings such as buttons with no focus states or dead links</p>
                 <p>Long term the hope would be to pick up more cosmetic defects, but in this moment as a designer the far more important call was prioritising usability over aesthetics</p>
                 <p>When pointing out technical issues, such as buttons lacking focus states or incorrect alternative text, I made sure to also include prescribed fixes, making it easier to hand over my final results</p>
             </div> -->
-            <div class="col-md-11"> 
-              <div id="carousel-onboarding" class="carousel slide" data-ride="carousel">
+            <div class="col-lg-11">
+              <div id="carousel-onboarding" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-onboarding" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="1"></li>
@@ -414,16 +416,16 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings1.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Accessibility/Findings1.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings1.png"><img loading="lazy" alt="Accessibility audit findings, slide 1" class="d-block w-100" src="/images/Accessibility/Findings1.png" width="1652" height="928"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings2.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Accessibility/Findings2.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings2.png"><img loading="lazy" alt="Accessibility audit findings, slide 2" class="d-block w-100" src="/images/Accessibility/Findings2.png" width="1650" height="926"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings3.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Accessibility/Findings3.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings3.png"><img loading="lazy" alt="Accessibility audit findings, slide 3" class="d-block w-100" src="/images/Accessibility/Findings3.png" width="1642" height="932"></a>
                       </div>
                       <div class="carousel-item">
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings4.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Accessibility/Findings4.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Accessibility/Findings4.png"><img loading="lazy" alt="Accessibility audit findings, slide 4" class="d-block w-100" src="/images/Accessibility/Findings4.png" width="1648" height="932"></a>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
@@ -439,17 +441,17 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 </div>
 </section>
 
-<section id="final" class="sectionHeading finalSections">
+<section id="final" class="sectionHeading finalSections waveStart">
     <div class="container importantQuote">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
                    <h2>Post-audit activities</h2>
              <p>The slide deck containing my audit, while originally intended for a small group of immediate stakeholders, gained traction internally as an example of how we should be addressing accessibility concerns and why it matters. To date, I've received over 100 access requests from senior leaders throughout the business to help them understand our issues and empathise with them, including members of the C-suite.</p>
              <p>I've also shared this presentation with other departments including technology and product management to help them better understand some of the accessibility concerns, and prevent them from being repeated in the future</p>
              <br>
             <p> Since presenting my audit, we've seen much earlier UX involvement in initiatives, as we've proven the value of our input early on for preventing rework like this.</p>
         </div>
-           <div class="col-md-6">
+           <div class="col-lg-6">
             <h3> Next steps</h3>
              <p> To keep momentum going, I took the personas, the most requested part of my audit, and turned them into easily shareable flashcards highlighting different users and their needs. I was able to collaborate with our vulnerable customers lead to understand some more niche vulnerability scenarios affecting our contact strategy, to build a more robust persona list. </p>
              <p>The idea behind the cards was simple and functioned a bit like a Top Trumps, allowing anyone interested to pick a card at random and learn a bit more about a vulnerability they might not have thought about before.</p>
@@ -469,7 +471,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
     <div class="col-12 col-sm-6 col-lg-4">
       <article class="personaCard" data-persona-card>
         <div class="personaCard__inner">
-          
+
           <!-- Front -->
           <section class="personaCard__face personaCard__face--front" id="persona-nyla-front">
             <div class="personaCard__imageWrap">
@@ -477,7 +479,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
                 src="/Personas/Persona 2.png"
                 alt="Illustrated portrait of Nyla"
                 class="personaCard__image"
-              >
+ width="600" height="600">
             </div>
 
             <div class="personaCard__content">
@@ -562,7 +564,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="personaCard__inner">
           <section class="personaCard__face personaCard__face--front" id="persona-2-front">
             <div class="personaCard__imageWrap">
-              <img src="/Personas/Persona 5.png" alt="Illustrated portrait of Maya" class="personaCard__image">
+              <img src="/Personas/Persona 5.png" alt="Illustrated portrait of Marcia" class="personaCard__image" width="600" height="600">
             </div>
 
             <div class="personaCard__content">
@@ -609,7 +611,7 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <div class="personaCard__inner">
           <section class="personaCard__face personaCard__face--front" id="persona-3-front">
             <div class="personaCard__imageWrap">
-              <img src="/Personas/Persona 4.png" alt="Illustrated portrait of Daniel" class="personaCard__image">
+              <img src="/Personas/Persona 4.png" alt="Illustrated portrait of Pierre" class="personaCard__image" width="600" height="600">
             </div>
 
             <div class="personaCard__content">
@@ -655,19 +657,19 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
 <section class="sectionHeading finalSections">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 ExtraContent">
+            <div class="col-lg-6 ExtraContent">
                <h3>Inclusive design workshop</h3><br>
              <p> At our most recent team day, featuring 30 participants across design, research and management, I took the opportunity to run an inclusive design training workshop inspired by my findings.</p>
              <p>I designed a hands-on accessibility training workshop to help teams experience the barriers different users face, building skills from empathy rather than from textbooks.</p>
              <p> This workshop involved splitting into teams and receiving two persona cards, detailing realistic and relatable barriers like language, chronic health or money worries, and a common situation they had to design for. </p>
              </div>
-            <div class="col-md-3">
-               <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_1.jpg">
-            <!-- <br> <img height="60%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_2.jpg"> -->
+            <div class="col-lg-3">
+               <img loading="lazy" alt="Inclusive design workshop output from a team exercise" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_1.jpg" width="3072" height="4080">
+            <!-- <br> <img loading="lazy" alt="Design ideas produced during the inclusive design workshop" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_2.jpg" width="3072" height="4080"> -->
          </div>
-         <div class="col-md-3">
-               <!-- <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_1.jpg"> -->
-            <br> <img height="60%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_2.jpg">
+         <div class="col-lg-3">
+               <!-- <img loading="lazy" alt="Inclusive design workshop output from a team exercise" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_1.jpg" width="3072" height="4080"> -->
+            <br> <img loading="lazy" alt="Design ideas produced during the inclusive design workshop" class="img-fluid" src="/images/Accessibility/WorkshopOutcome_2.jpg" width="3072" height="4080">
          </div>
          </div>
 
@@ -678,15 +680,15 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-bug"></i> <strong>90+ </strong>accessibility and usability issues found in production legacy code<hr>
-            <li><i class="fas fa-bullhorn"></i><strong>100 access requests </strong>from across the organisation for my audit findings </li><hr>
-             <li><i class="fas fa-id-card"></i>Learnings transformed into a workshop for <strong>30 UX researchers, designers, managers and senior leadership</strong></li>
-           </ul> 
+            <li><i aria-hidden="true" class="fas fa-bug"></i> <strong>90+ </strong>accessibility and usability issues found in production legacy code<hr>
+            <li><i aria-hidden="true" class="fas fa-bullhorn"></i><strong>100 access requests </strong>from across the organisation for my audit findings </li><hr>
+             <li><i aria-hidden="true" class="fas fa-id-card"></i>Learnings transformed into a workshop for <strong>30 UX researchers, designers, managers and senior leadership</strong></li>
+           </ul>
         </div>
     </div>
 </section>
 
-<section class="sectionHeading finalSections">
+<section class="sectionHeading finalSections waveEnd">
     <div class="container">
         <h2>What I learned</h2>
         <div class="row importantQuote">
@@ -694,85 +696,16 @@ By translating WCAG issues into human stories, I helped stakeholders understand 
         </div>
     </div>
 </section>
-</section>
-</section>
 </main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at
-    <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+    <a href="mailto:ambermillerinteractive@gmail.com"><i aria-hidden="true" class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../site.js" defer></script>
-<script>
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-$.fn.isInViewport = function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-var lastScrollTop = 0;
-window.onscroll = function(){
-  var st = window.pageYOffset || document.documentElement.scrollTop; 
-  if ($('#start').isInViewport()) {
-    
-    if (st > lastScrollTop) { //down
-      setActiveView('','start')
-     } else if (st < lastScrollTop) { //up
-      setActiveView('','')
-     } 
-  }
-      if ($('#research').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','research')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','start')
-       } 
-    }
-if ($('#design').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','design')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','research')
-   } 
-}
-if ($('#final').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','final')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','design')
-   } 
-}
-lastScrollTop = st <= 0 ? 0 : st;
-}
-
-      function setActiveView(button, string){
-        let currStage;
-        if(button === ''){
-          currStage = string;
-        } else{
-          currStage = button.classList[1];
-        }
-        let Stage = document.getElementsByClassName('SkipIcon');
-
-        for(let i=0; i< Stage.length; i++){
-          if(Stage[i].classList.contains(currStage)){
-            Stage[i].classList.add('active')
-          }else{
-            Stage[i].classList.remove('active')
-          }
-        }
-      }
-    </script>
 
       <script>
   document.querySelectorAll("[data-persona-card]").forEach((card) => {
@@ -796,6 +729,5 @@ lastScrollTop = st <= 0 ? 0 : st;
     });
   });
 </script>
-        </script>
   </body>
 </html>

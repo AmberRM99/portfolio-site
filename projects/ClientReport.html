@@ -29,43 +29,43 @@
           <a title="case studies" href="/projects.html">Case Studies</a>
           <a title="about" href="/about.html">About</a>
           <a title="contact" href="/contact.html" >Contact</a>
-          <a title="Hamburger Nav" href="javascript:void(0);" class="icon" onclick="myFunction()" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <button type="button" class="icon" onclick="myFunction()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="myTopnav">
             <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
+          </button>
         </div>
-      
+
       </nav>
-    <main id="main-content">
+    <main id="main-content" class="caseStudyPage">
     <section class="firstSection caseStudyHero">
       <div class="skipBtns">
         <p>Jump To</p>
         <span>
           <p>Project overview</p>
-        <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i class="fas fa-arrow-up"></i></button></span>
+        <button onclick="jumpToSection('start');setActiveView(this)" class="SkipIcon start active" title="Scroll to Start"><i aria-hidden="true" class="fas fa-arrow-up"></i></button></span>
       <span>
           <p>Discovery</p>
-        <button onclick="document.getElementById('research').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon research " title="Scroll to Research Process"><i class="fas fa-lightbulb"></i></button></span>
+        <button onclick="jumpToSection('research');setActiveView(this)" class="SkipIcon research " title="Scroll to Research Process"><i aria-hidden="true" class="fas fa-lightbulb"></i></button></span>
         <span>
           <p>Design</p>
-        <button onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i class="fa-solid fa-pencil"></i></button></span>
+        <button onclick="jumpToSection('design');setActiveView(this)" class="SkipIcon design" title="Scroll to Design Process"><i aria-hidden="true" class="fa-solid fa-pencil"></i></button></span>
         <span>
           <p>Results</p>
-    <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'});setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i class="fa-solid fa-forward"></i></button></span>
+    <button onclick="jumpToSection('final');setActiveView(this)" class="SkipIcon final" title="Skip To Final Design"><i aria-hidden="true" class="fa-solid fa-forward"></i></button></span>
       </div>
-     
+
 <section id="start" >
   <div class="container">
 
     <div class="row">
 
       <!-- LEFT SIDE -->
-      <div class="col-md-7 projectIntro">
+      <div class="col-lg-7 projectIntro">
 
         <div>
 
           <div class="text-center">
             <h1>Client Reporting</h1>
-            <img src="/images/Aegon/Product Report.png" alt="Example of a client report interface showing investment data">
+            <img src="/images/Aegon/Product Report.png" alt="Example of a client report interface showing investment data" width="1796" height="1448">
             <br>
 
             <p class="intro-summary">
@@ -77,19 +77,19 @@
         <!-- Skip CTA -->
         <div class="skipIntro Micro">
           <p>No time to read the full case study?</p>
-          <button onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})" class="linkBtn skip">
-            <i class="fa-solid fa-forward"></i> Skip to outcomes
+          <button onclick="jumpToSection('final')" class="linkBtn skip">
+            <i aria-hidden="true" class="fa-solid fa-forward"></i> Skip to outcomes
           </button>
         </div>
 
       </div>
 
       <!-- RIGHT SIDE -->
-      <div class="projectSnapshot col-md-5 ">
+      <div class="projectSnapshot col-lg-5 ">
   <!-- <div class="projectSnapshot"> -->
 
     <div class="snapshotCard">
-      <i class="fa fa-user"></i>
+      <i aria-hidden="true" class="fa fa-user"></i>
       <p class="Snapshotheader">My Role</p>
       <p>
         Senior UX Designer<br>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="snapshotCard">
-      <i class="fa fa-users"></i>
+      <i aria-hidden="true" class="fa fa-users"></i>
       <p class="Snapshotheader">Team</p>
       <p>
         Product Owner<br>
@@ -111,7 +111,7 @@
     </div>
 
     <div class="snapshotCard">
-      <i class="fa fa-clock"></i>
+      <i aria-hidden="true" class="fa fa-clock"></i>
       <p class="Snapshotheader">Timeline</p>
       <p>
         12 Month Programme<br><br>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="snapshotCard">
-      <i class="fa-solid fa-champagne-glasses"></i>
+      <i aria-hidden="true" class="fa-solid fa-champagne-glasses"></i>
       <p class="Snapshotheader">Impact</p>
       <p>
         Monthly users grew<br>
@@ -135,6 +135,7 @@
 
     </div>
   </div>
+</section>
 </section>
 
 <section>
@@ -153,13 +154,14 @@
 
               <p>The goal of this project was to rebuild reporting capabilities and long-term position Aegon as a market leader in adviser reporting tools.</p>
           </div>
+</div>
 </section>
 
- <section style="padding-top:4rem;" class="endOfTopic">
+ <section  class="endOfTopic">
   <h3>Project roadmap</h3>
-        <img class="img-fluid" src="/images/Aegon/Timeline.png" alt="Project timeline showing key milestones for the reporting platform redesign">
+        <img class="img-fluid" src="/images/Aegon/Timeline.png" alt="Project timeline showing key milestones for the reporting platform redesign" width="2046" height="1342">
   </section>
-  <section id="research" class="sectionHeading">
+  <section id="research" class="sectionHeading waveStart waveEnd">
     <h2>Discovery</h2>
   </section>
 <section class=" startofTopic">
@@ -170,12 +172,12 @@
               <p>Our key discovery was there are two types of financial advisers looking to use our tool: <strong>explorers</strong> and <strong>finders</strong>.</li>
               <div class="projectSnapshot">
                 <div class="snapshotCard">
-                 <i class="fa fa-rocket"></i>
+                 <i aria-hidden="true" class="fa fa-rocket"></i>
                 <p class="Snapshotheader">Explorers</p>
                 <p>Explorers want raw data and the power to play with it, expecting strong visuals, customisation opportunities, and the ability to see the different stories data can tell. They're more likely to spend longer on the page and make use of the full tool suite.</p>
               </div>
               <div class="snapshotCard">
-                 <i class="fa fa-magnifying-glass"></i>
+                 <i aria-hidden="true" class="fa fa-magnifying-glass"></i>
                 <p class="Snapshotheader">Finders</p>
                 <p>Finders are advisers and their accompanying ParaPlanner staff who will benefit from a new reporting tool but want to use it for immediate fact finding and data exports. Even in a positive experience, their goal is getting in and getting out as fast as possible.</p>
               </div>
@@ -187,7 +189,7 @@
   <div class="container">
 
     <div class="row earlyInsightsGrid">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="importantQuote researchSummaryCard">
           <h4 class="sectionEyebrow">Research inputs</h4>
           <p class="researchIntro">
@@ -204,23 +206,23 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="importantQuote insightCard">
           <h4 class="sectionEyebrow">What this revealed</h4>
 
           <div class="insightList">
             <div class="insightItem">
-              <h5><i class="fa-solid fa-people-pulling"></i>We have two distinct user types</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-people-pulling"></i>We have two distinct user types</h5>
               <p>Our explorers and finders were equally prominent, but had different needs, behaviours and expectations.</p>
             </div>
 
             <div class="insightItem">
-              <h5><i class="fa-solid fa-box-open"></i>Bespoke patterns were more effective than the design system</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-box-open"></i>Bespoke patterns were more effective than the design system</h5>
               <p>Testing showed that generic design system components did not support the depth of analytics and clarity the product needed. We needed a more tailored pattern language so the reporting experience felt credible, navigable, and specific to advisers' work.</p>
             </div>
 
             <div class="insightItem">
-              <h5><i class="fa-solid fa-map-location"></i>More data, more problems</h5>
+              <h5><i aria-hidden="true" class="fa-solid fa-map-location"></i>More data, more problems</h5>
               <p>Users wanted everything at their fingertips, but were concerned about how they would then navigate all the data they desired.</p>
             </div>
           </div>
@@ -232,86 +234,86 @@
 <section class="standAlone ">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 importantQuote">
-            <h3>Building a backlog</h3> 
+        <div class="col-lg-6 importantQuote">
+            <h3>Building a backlog</h3>
             <p>With building a tool from scratch, there's an unlimited number of feature combinations we could have delivered. To determine what was essential to an MVP, and then where I wanted to take the project long term, I needed data.</p>
             <p>I created a very low fidelity design showing the majority of features we could possibly deliver. This was then taken to the user panel for surveys and card sorts where users selected what their ideal reporting tool would contain. I then aggregated this data into a visual guide, showing what we had to have, what was nice to have, and what had a low return for effort.</p>
         </div>
-        <div class="col-md-6">
-             <img height="30%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Research example.png">
-            <br> <img height="60%" loading="lazy" alt="Figma screenshot showing a component example" class="img-fluid" src="/images/Aegon/Research example 2.png">
+        <div class="col-lg-6">
+             <img loading="lazy" alt="Early reporting concept used for feature prioritisation research" class="img-fluid" src="/images/Aegon/Research example.png" width="1646" height="1006">
+            <br> <img loading="lazy" alt="Visual summary of reporting feature priorities" class="img-fluid" src="/images/Aegon/Research example 2.png" width="1656" height="924">
         </div>
         </div>
-  
+
 </div>
 </section>
 
 
 <section class="endOfTopic">
-    <div class="container" class="endOfTopic">
+    <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="importantQuote">
                 <h3>“Having something visual makes finances feel more tangible. When planning for the future, it can feel very speculative”</h3> <em>-Key finding through customer interviews</em>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <h3>Customer insights</h3>
         <p>Not only does the tool need to work for our advisers, but it also has to work for customers who wish to self‑serve. Customers' needs were very different from advisers' despite similar goals, and an emphasis on clean, visual-heavy design became apparent as it reduced cognitive load and the intimidation of engaging with financial planning.</p>
     </div>
-    
+
     </div>
 </div>
 </section>
 
-<section id="design" class="sectionHeading">
+<section id="design" class="sectionHeading waveStart waveEnd">
         <h2>Design process</h2>
 </section>
 
 <section class="startofTopic">
     <div class="container">
             <div class="row">
-               <div class="col-md-5 ExtraContent">
+               <div class="col-lg-5 ExtraContent">
   <h3>Phase 1 – get an MVP live</h3>
   <p>Based on our research findings and available technology, I delivered a lean MVP to address the immediate need for basic reporting functionality.</p>
   <p>The biggest learning of getting the MVP live was finding a charting library that met our design needs, was technically easy to work with, but most importantly met our strict accessibility guidelines.</p>
   <p >After some robust internal testing and more user research, I landed on <a href="https://www.highcharts.com/demo/highcharts/accessible-line" target="_blank" rel="noopener noreferrer"> HighCharts</a>, which could be configured to our design system and offered excellent baked-in accessibility such as sonification (turning data into audio), raw data exports, and screen reader configurations. To ensure it was suitable, I even mocked up a few HTML prototypes utilising it for user and internal testing to make sure it met our needs and performed as expected, no matter the data.</p>
 </div>
-        <div class="col-md-7">
+        <div class="col-lg-7">
             <a target="_blank" rel="noopener noreferrer" href="https://www.highcharts.com/demo/highcharts/accessible-line">
-            <img loading="lazy" alt="Photo of figma detailing showing the amount of detail that goes into documenting one chart, including tooltips and accessibility considerations" class="img-fluid" src="/images/Aegon/Chart Spec.jpg">
+            <img loading="lazy" alt="Photo of figma detailing showing the amount of detail that goes into documenting one chart, including tooltips and accessibility considerations" class="img-fluid" src="/images/Aegon/Chart Spec.jpg" width="4032" height="2268">
             </a>
         </div>
-            </div> 
+            </div>
     </div>
 </section>
 
 <section>
     <div class="container">
             <div class="row manualFlip">
-                <div class="col-md-8 ExtraContent">
+                <div class="col-lg-8 ExtraContent">
                     <h3>Improved navigation</h3>
                 <p>
                 With the ambitions of our project, I knew the contents of the page would grow and grow, making it a taller, denser experience to navigate. To combat this, and to satisfy our "Finder" user's need of getting straight to the information they're looking for, I implemented a sticky navigation. This fixed menu details all the categories in the tool, taking cues from the contents page of the report to align the online and printed experiences. I tested and refined it across device sizes to keep the reading order logical and the controls accessible for screen magnification and keyboard users.
             </p><p>This relatively simple enhancement reduced the time to reach a key data section from <strong>up to 1 minute</strong> to approximately <strong>5-10 seconds</strong>.</p></div>
-            <div class="col-md-4"> <img loading="lazy" alt="GIF showing the sticky navigation quickly jumping to the relevant section of the report" src="/images/Aegon/SkipNav.gif"> </div>
+            <div class="col-lg-4"> <img loading="lazy" alt="GIF showing the sticky navigation quickly jumping to the relevant section of the report" src="/images/Aegon/SkipNav.gif" width="800" height="700"> </div>
 </div>
 </section>
 
 <section>
   <div class="container">
     <div class="row">
-        <div class="col-md-7 extraContent">
+        <div class="col-lg-7 extraContent">
           <h3>Exported report</h3>
           <p> A consequence of the lean MVP was we had to launch with our most basic report design. Immediately via our continuous research and business development partners, we received an influx of feedback that the report output was a letdown compared to the digital experience. </p>
-          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p> <p> As the company was undergoing a major rebrand during this time period, I had to liaise closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF software limitations</p>
-          <p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it incrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liaised with brand on the final look and feel. By the time the team were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p>
-          <p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p>
+          <p> While not a typical UX task, I ran solo designer for this project and served as proxy Product Owner as I was best placed to understand the exact requirements. </p>
+
+
         </div>
-        
-         <div class="col-md-4">
+
+         <div class="col-lg-4">
                 <h4>Report design over time</h4>
-                <div id="carousel-onboarding" class="carousel slide" data-ride="carousel">
+                <div id="carousel-onboarding" class="carousel slide" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-onboarding" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-onboarding" data-slide-to="1"></li>
@@ -320,15 +322,15 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <p>Original report</p>
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report older.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report older.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report older.png" width="1682" height="1502"></a>
                       </div>
                       <div class="carousel-item">
                         <p>Hybrid design</p>
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report old.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report old.png"><img loading="lazy" alt="Older version of the report design" class="d-block w-100" src="/images/Aegon/Report old.png" width="1422" height="1430"></a>
                       </div>
                       <div class="carousel-item">
                          <p>Full rebrand</p>
-                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Aegon/Report new.png" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="/images/Aegon/Report new.png"><img loading="lazy" alt="Newer version of the report design" class="d-block w-100" src="/images/Aegon/Report new.png" width="1376" height="1514"></a>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
@@ -345,20 +347,21 @@
     </div>
 
 </section>
+<section><div class="container ExtraContent"><h3>Delivering the report redesign</h3><p> As the company was undergoing a major rebrand during this time period, I had to liaise closely with the brand team to ensure I was using the latest approved assets, and work closely with the developers to understand our current PDF software limitations</p><p> Based on internal technology feedback, rather than a big bang report redesign, I opted to deliver it incrementally. The biggest challenge was moving from a portrait to vertical layout, so developers completed this first in the old style. They then incrementally added new features we were missing like a cover page and contents while I liaised with brand on the final look and feel. By the time the team were ready to implement and release the final design, all the known technical hurdles had been overcome ensuring a smooth delivery.</p><p> This change has been very well received internally and externally, as it was a relatively cheap project to run but instrumentally changed the user experience for the better, leading to us being described by users as market leading in the reporting space. </p></div></section>
 
 <section>
     <div class="container">
-      
+
             <div class="ExtraContent">
               <h3>New Feature - Target growth</h3>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                 <p> Originally, we had <strong>benchmarking</strong> on our roadmap, which was reliant on a 3rd party data provider. This initiative had to be dropped as costs proved prohibitive. Rather than admit defeat and tell our users we couldn't deliver this feature, I revisited research and noticed an expression of interest in a "Personal benchmarking idea". <br><br>
                    To validate this, I ran a series of moderated and unmoderated tests with users, understanding why they would want to benchmark in general, what sort of financial goals clients most often held, and how this fit into the reporting ecosystem
-              <br><br> It became clear that users often had measurable financial goals such as <strong> prove benefit of a strategy by growing 3.5% in one year </strong> or <strong> reach a pension pot of £100,000 by age 35 </strong>. <br> <br> 
+              <br><br> It became clear that users often had measurable financial goals such as <strong> prove benefit of a strategy by growing 3.5% in one year </strong> or <strong> reach a pension pot of £100,000 by age 35 </strong>. <br> <br>
               Financial targets often feel <strong>speculative </strong> and <strong>intangible</strong>, so if they could visualise goals and include them in annual reports it would be a big benefit to clients and financial advisers.</p>
                 </div>
-              <div class="col-md-5">
+              <div class="col-lg-5">
                 <p>This project took a fair few iterations to get right and get a business case approved, and required working closely with senior leadership alongside my own sprint team to sell the value of this feature. <br><br> Eventually we were able to compromise and land on a new section allowing advisers to enter a £ or % target for their clients' investment products. They could set a target for each product the user held, then see every time they logged in how the client's current product value or growth compared with this target, and amend if required. <br>
                   <br> This compromise met the research need of visually tracking performance against a personal benchmark, whilst limiting it to a smaller MVP-style delivery to ensure market receptiveness before investing further.
                 </p>
@@ -372,24 +375,24 @@
     <div class="container">
         <h3>Target growth concept demo</h3>
         <div class="row">
-              <iframe title="Target growth concept prototype" style="display:block" class="finalArcVid" src="https://select-waltz-64556150.figma.site">
+              <iframe loading="lazy" title="Target growth concept prototype" style="display:block" class="finalArcVid" src="https://select-waltz-64556150.figma.site">
               </iframe>
-              
+
               <p>Rapid prototypes like this were useful for aligning senior stakeholders around scope and trade-offs, as I could quickly toggle features to see how each one affected the overall experience.</p>
         </div>
 
 </section>
 
-<section id="final" class="sectionHeading finalSections">
+<section id="final" class="sectionHeading finalSections waveStart">
     <div class="container">
         <h2>12 months of transformation</h2>
         <div class="row">
-             <div class="img-comp-container img-comp-container--dashboard" style="aspect-ratio:1/3;">
+             <div class="img-comp-container img-comp-container--dashboard">
               <div class="img-comp-img">
-               <a src="/images//Aegon/New experience.png"> <img src="/images/Aegon/New experience.png" alt="Redesigned dashboard with softer visual language and clearer actions."></a>
+               <img src="/images/Aegon/New experience.png" alt="Redesigned dashboard with softer visual language and clearer actions." width="520" height="3368">
               </div>
               <div class="img-comp-img img-comp-overlay">
-               <img src="/images/Aegon/MVP.png" alt="Original dashboard with technical UI and stark layout.">
+               <img src="/images/Aegon/MVP.png" alt="Original dashboard with technical UI and stark layout." width="710" height="1406">
               </div>
             </div>
          </div>
@@ -400,16 +403,16 @@
         <h2>Insights</h2>
         <div class="row">
            <ul  class="importantQuote">
-            <li><i class="fas fa-clock"></i> Within the first year of launch, monthly users grew from an average of <strong>328</strong> to more than <strong>1,300</strong>, showing strong adoption among eligible advisers.</li><hr>
-            <li><i class="fas fa-file"></i>Number of reports produced using the tool reached <strong>7,255+</strong> within the first operational year.</li><hr>
-            <li><i class="fas fa-code"></i>We delivered a sustained iteration programme, releasing a total of <strong>17 improvements</strong> after the initial rollout.</li><hr>
-            <li><i class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandoning their own in-house or competitor-owned solutions.</li>
-           </ul> 
+            <li><i aria-hidden="true" class="fas fa-clock"></i> Within the first year of launch, monthly users grew from an average of <strong>328</strong> to more than <strong>1,300</strong>, showing strong adoption among eligible advisers.</li><hr>
+            <li><i aria-hidden="true" class="fas fa-file"></i>Number of reports produced using the tool reached <strong>7,255+</strong> within the first operational year.</li><hr>
+            <li><i aria-hidden="true" class="fas fa-code"></i>We delivered a sustained iteration programme, releasing a total of <strong>17 improvements</strong> after the initial rollout.</li><hr>
+            <li><i aria-hidden="true" class="fas fa-users"></i>We built a loyal user base of advisers switching entirely to our reporting services, abandoning their own in-house or competitor-owned solutions.</li>
+           </ul>
         </div>
     </div>
 </section>
 
-<section class="sectionHeading finalSections">
+<section class="sectionHeading finalSections waveEnd">
     <div class="container">
         <h2>What I learned</h2>
         <div class="row importantQuote">
@@ -420,84 +423,15 @@
         </div>
     </div>
 </section>
-</section>
-</section>
 </main>
 <footer>
   <p>Website designed, created and maintained by Amber Miller<br>
     If you like my work, get in touch at
-    <a href="mailto:ambermillerinteractive@gmail.com"><i class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
+    <a href="mailto:ambermillerinteractive@gmail.com"><i aria-hidden="true" class="fas fa-envelope"></i> ambermillerinteractive@gmail.com</a></p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../site.js" defer></script>
-<script>
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-$.fn.isInViewport = function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-var lastScrollTop = 0;
-window.onscroll = function(){
-  var st = window.pageYOffset || document.documentElement.scrollTop; 
-  if ($('#start').isInViewport()) {
-    
-    if (st > lastScrollTop) { //down
-      setActiveView('','start')
-     } else if (st < lastScrollTop) { //up
-      setActiveView('','')
-     } 
-  }
-      if ($('#research').isInViewport()) {
-    
-      if (st > lastScrollTop) { //down
-        setActiveView('','research')
-       } else if (st < lastScrollTop) { //up
-        setActiveView('','start')
-       } 
-    }
-if ($('#design').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','design')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','research')
-   } 
-}
-if ($('#final').isInViewport()) {
-
-  if (st > lastScrollTop) { //down
-    setActiveView('','final')
-   } else if (st < lastScrollTop) { //up
-    setActiveView('','design')
-   } 
-}
-lastScrollTop = st <= 0 ? 0 : st;
-}
-
-      function setActiveView(button, string){
-        let currStage;
-        if(button === ''){
-          currStage = string;
-        } else{
-          currStage = button.classList[1];
-        }
-        let Stage = document.getElementsByClassName('SkipIcon');
-
-        for(let i=0; i< Stage.length; i++){
-          if(Stage[i].classList.contains(currStage)){
-            Stage[i].classList.add('active')
-          }else{
-            Stage[i].classList.remove('active')
-          }
-        }
-      }
-    </script>
   </body>
 </html>
