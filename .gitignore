@@ -1,0 +1,6 @@
+# Installed packages are restored from package-lock.json.
+node_modules/
+
+# Local operating-system and hosting metadata.
+.DS_Store
+.vercel/
